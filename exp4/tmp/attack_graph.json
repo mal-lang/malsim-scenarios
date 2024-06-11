@@ -1,0 +1,356 @@
+[
+    {
+        "id": "Host:0:0:attemptUseVulnerability",
+        "type": "or",
+        "name": "attemptUseVulnerability",
+        "ttc": null,
+        "children": [
+            "Exploit:0:5:lowLevelAccessFirmwareVuln"
+        ],
+        "parents": [],
+        "compromised_by": [
+            "Attacker:1"
+        ],
+        "asset": "host:0",
+        "is_viable": "True",
+        "is_necessary": "True",
+        "tags": "['hidden']"
+    },
+    {
+        "id": "Host:1:1:1:attemptUseVulnerability",
+        "type": "or",
+        "name": "attemptUseVulnerability",
+        "ttc": null,
+        "children": [
+            "Exploit:1:1:6:attemptExploit"
+        ],
+        "parents": [],
+        "compromised_by": [
+            "Attacker:1"
+        ],
+        "asset": "host:1",
+        "is_viable": "True",
+        "is_necessary": "True",
+        "tags": "['hidden']"
+    },
+    {
+        "id": "Host:2:2:2:attemptUseVulnerability",
+        "type": "or",
+        "name": "attemptUseVulnerability",
+        "ttc": null,
+        "children": [
+            "Exploit:2:2:7:accessControlBypassed"
+        ],
+        "parents": [],
+        "compromised_by": [
+            "Attacker:1"
+        ],
+        "asset": "host:2",
+        "is_viable": "True",
+        "is_necessary": "True",
+        "tags": "['hidden']"
+    },
+    {
+        "id": "Exploit:0:5:restrictDMAaccess",
+        "type": "defense",
+        "name": "restrictDMAaccess",
+        "ttc": null,
+        "children": [
+            "Exploit:0:5:directMemoryAccess"
+        ],
+        "parents": [],
+        "compromised_by": [],
+        "asset": "hardwareVulnerability:5",
+        "defense_status": "0.0",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Exploit:0:5:lowLevelAccessFirmwareVuln",
+        "type": "or",
+        "name": "lowLevelAccessFirmwareVuln",
+        "ttc": null,
+        "children": [
+            "Exploit:0:5:directMemoryAccess"
+        ],
+        "parents": [
+            "Host:0:0:attemptUseVulnerability"
+        ],
+        "compromised_by": [],
+        "asset": "hardwareVulnerability:5",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Exploit:0:5:directMemoryAccess",
+        "type": "and",
+        "name": "directMemoryAccess",
+        "ttc": null,
+        "children": [
+            "Data:0:0:8:attemptRead"
+        ],
+        "parents": [
+            "Exploit:0:5:restrictDMAaccess",
+            "Exploit:0:5:lowLevelAccessFirmwareVuln"
+        ],
+        "compromised_by": [],
+        "asset": "hardwareVulnerability:5",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Exploit:1:1:6:PrivilegesRequired",
+        "type": "defense",
+        "name": "PrivilegesRequired",
+        "ttc": null,
+        "children": [
+            "Exploit:1:1:6:attemptExploit"
+        ],
+        "parents": [],
+        "compromised_by": [],
+        "asset": "vulnerability:6",
+        "defense_status": "0.0",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Exploit:1:1:6:attemptExploit",
+        "type": "or",
+        "name": "attemptExploit",
+        "ttc": null,
+        "children": [
+            "Exploit:1:1:6:exploit"
+        ],
+        "parents": [
+            "Host:1:1:1:attemptUseVulnerability",
+            "Exploit:1:1:6:PrivilegesRequired"
+        ],
+        "compromised_by": [],
+        "asset": "vulnerability:6",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Exploit:1:1:6:exploit",
+        "type": "or",
+        "name": "exploit",
+        "ttc": null,
+        "children": [
+            "Data:1:1:9:attemptRead"
+        ],
+        "parents": [
+            "Exploit:1:1:6:attemptExploit"
+        ],
+        "compromised_by": [],
+        "asset": "vulnerability:6",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Exploit:2:2:7:networkAccessControl",
+        "type": "defense",
+        "name": "networkAccessControl",
+        "ttc": null,
+        "children": [
+            "Exploit:2:2:7:accessControlBypassed"
+        ],
+        "parents": [],
+        "compromised_by": [],
+        "asset": "network:7",
+        "defense_status": "0.0",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Exploit:2:2:7:accessControlBypassed",
+        "type": "or",
+        "name": "accessControlBypassed",
+        "ttc": null,
+        "children": [
+            "Exploit:2:2:7:successfulAccessFromPhysicalAccess"
+        ],
+        "parents": [
+            "Host:2:2:2:attemptUseVulnerability",
+            "Exploit:2:2:7:networkAccessControl"
+        ],
+        "compromised_by": [],
+        "asset": "network:7",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Exploit:2:2:7:successfulAccessFromPhysicalAccess",
+        "type": "or",
+        "name": "successfulAccessFromPhysicalAccess",
+        "ttc": null,
+        "children": [
+            "Data:2:2:10:attemptRead"
+        ],
+        "parents": [
+            "Exploit:2:2:7:accessControlBypassed"
+        ],
+        "compromised_by": [],
+        "asset": "network:7",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Data:0:0:8:notPresent",
+        "type": "defense",
+        "name": "notPresent",
+        "ttc": null,
+        "children": [
+            "Data:0:0:8:attemptRead",
+            "Data:0:0:8:read"
+        ],
+        "parents": [],
+        "compromised_by": [],
+        "asset": "data:8",
+        "defense_status": "0.0",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Data:0:0:8:attemptRead",
+        "type": "and",
+        "name": "attemptRead",
+        "ttc": null,
+        "children": [
+            "Data:0:0:8:read"
+        ],
+        "parents": [
+            "Exploit:0:5:directMemoryAccess",
+            "Data:0:0:8:notPresent"
+        ],
+        "compromised_by": [],
+        "asset": "data:8",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Data:0:0:8:read",
+        "type": "or",
+        "name": "read",
+        "ttc": null,
+        "children": [],
+        "parents": [
+            "Data:0:0:8:notPresent",
+            "Data:0:0:8:attemptRead"
+        ],
+        "compromised_by": [],
+        "asset": "data:8",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Data:1:1:9:notPresent",
+        "type": "defense",
+        "name": "notPresent",
+        "ttc": null,
+        "children": [
+            "Data:1:1:9:attemptRead",
+            "Data:1:1:9:read"
+        ],
+        "parents": [],
+        "compromised_by": [],
+        "asset": "data:9",
+        "defense_status": "0.0",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Data:1:1:9:attemptRead",
+        "type": "and",
+        "name": "attemptRead",
+        "ttc": null,
+        "children": [
+            "Data:1:1:9:read"
+        ],
+        "parents": [
+            "Exploit:1:1:6:exploit",
+            "Data:1:1:9:notPresent"
+        ],
+        "compromised_by": [],
+        "asset": "data:9",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Data:1:1:9:read",
+        "type": "or",
+        "name": "read",
+        "ttc": null,
+        "children": [],
+        "parents": [
+            "Data:1:1:9:notPresent",
+            "Data:1:1:9:attemptRead"
+        ],
+        "compromised_by": [],
+        "asset": "data:9",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Data:2:2:10:notPresent",
+        "type": "defense",
+        "name": "notPresent",
+        "ttc": null,
+        "children": [
+            "Data:2:2:10:attemptRead",
+            "Data:2:2:10:read"
+        ],
+        "parents": [],
+        "compromised_by": [],
+        "asset": "data:10",
+        "defense_status": "0.0",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Data:2:2:10:attemptRead",
+        "type": "and",
+        "name": "attemptRead",
+        "ttc": null,
+        "children": [
+            "Data:2:2:10:read"
+        ],
+        "parents": [
+            "Exploit:2:2:7:successfulAccessFromPhysicalAccess",
+            "Data:2:2:10:notPresent"
+        ],
+        "compromised_by": [],
+        "asset": "data:10",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Data:2:2:10:read",
+        "type": "or",
+        "name": "read",
+        "ttc": null,
+        "children": [],
+        "parents": [
+            "Data:2:2:10:notPresent",
+            "Data:2:2:10:attemptRead"
+        ],
+        "compromised_by": [],
+        "asset": "data:10",
+        "is_viable": "True",
+        "is_necessary": "True"
+    },
+    {
+        "id": "Attacker:1:firstSteps",
+        "type": "or",
+        "name": "firstSteps",
+        "ttc": {},
+        "children": [
+            "Host:0:0:attemptUseVulnerability",
+            "Host:1:1:1:attemptUseVulnerability",
+            "Host:2:2:2:attemptUseVulnerability"
+        ],
+        "parents": [],
+        "compromised_by": [],
+        "is_viable": "True",
+        "is_necessary": "True"
+    }
+]

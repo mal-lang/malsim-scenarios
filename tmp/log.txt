@@ -1,0 +1,933 @@
+06-05 11:00 maltoolbox   INFO     Set loggin level of maltoolbox to DEBUG.
+06-05 11:00 maltoolbox.language.specification INFO     Load language specfication from 'lang/lang_spec.json'.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating user asset JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating host asset JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating hardwareVulnerability asset JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating vulnerability asset JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating network asset JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating credentials asset JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating data asset JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating userDataAssociation association JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating secondUserDataAssociation association JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating credentialAssociation association JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating physicalExploitAssociation association JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating vulnerabilityAssociation association JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating networkAssociation association JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating physicVulandDataAssociation association JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating vulandDataAssociation association JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    Creating networkandDataAssociation association JSON schema entry.
+06-05 11:00 maltoolbox.language.classes_factory DEBUG    {
+  "title": "LanguageObject",
+  "type": "object",
+  "oneOf": [
+    {
+      "$ref": "#/definitions/LanguageAsset"
+    },
+    {
+      "$ref": "#/definitions/LanguageAssociation"
+    }
+  ],
+  "definitions": {
+    "LanguageAsset": {
+      "title": "LanguageAsset",
+      "type": "object",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/LanguageAsset/definitions/user"
+        },
+        {
+          "$ref": "#/definitions/LanguageAsset/definitions/host"
+        },
+        {
+          "$ref": "#/definitions/LanguageAsset/definitions/hardwareVulnerability"
+        },
+        {
+          "$ref": "#/definitions/LanguageAsset/definitions/vulnerability"
+        },
+        {
+          "$ref": "#/definitions/LanguageAsset/definitions/network"
+        },
+        {
+          "$ref": "#/definitions/LanguageAsset/definitions/credentials"
+        },
+        {
+          "$ref": "#/definitions/LanguageAsset/definitions/data"
+        }
+      ],
+      "definitions": {
+        "user": {
+          "title": "user",
+          "type": "object",
+          "properties": {
+            "metaconcept": {
+              "type": "string",
+              "default": "user"
+            },
+            "securityAwareness": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0.0
+            }
+          }
+        },
+        "host": {
+          "title": "host",
+          "type": "object",
+          "properties": {
+            "metaconcept": {
+              "type": "string",
+              "default": "host"
+            }
+          }
+        },
+        "hardwareVulnerability": {
+          "title": "hardwareVulnerability",
+          "type": "object",
+          "properties": {
+            "metaconcept": {
+              "type": "string",
+              "default": "hardwareVulnerability"
+            },
+            "restrictDMAaccess": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0.0
+            }
+          }
+        },
+        "vulnerability": {
+          "title": "vulnerability",
+          "type": "object",
+          "properties": {
+            "metaconcept": {
+              "type": "string",
+              "default": "vulnerability"
+            },
+            "PrivilegesRequired": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0.0
+            }
+          }
+        },
+        "network": {
+          "title": "network",
+          "type": "object",
+          "properties": {
+            "metaconcept": {
+              "type": "string",
+              "default": "network"
+            },
+            "networkAccessControl": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0.0
+            }
+          }
+        },
+        "credentials": {
+          "title": "credentials",
+          "type": "object",
+          "properties": {
+            "metaconcept": {
+              "type": "string",
+              "default": "credentials"
+            },
+            "unique": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0.0
+            }
+          }
+        },
+        "data": {
+          "title": "data",
+          "type": "object",
+          "properties": {
+            "metaconcept": {
+              "type": "string",
+              "default": "data"
+            },
+            "notPresent": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0.0
+            }
+          }
+        }
+      }
+    },
+    "LanguageAssociation": {
+      "title": "LanguageAssociation",
+      "type": "object",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/LanguageAssociation/definitions/userDataAssociation"
+        },
+        {
+          "$ref": "#/definitions/LanguageAssociation/definitions/secondUserDataAssociation"
+        },
+        {
+          "$ref": "#/definitions/LanguageAssociation/definitions/credentialAssociation"
+        },
+        {
+          "$ref": "#/definitions/LanguageAssociation/definitions/physicalExploitAssociation"
+        },
+        {
+          "$ref": "#/definitions/LanguageAssociation/definitions/vulnerabilityAssociation"
+        },
+        {
+          "$ref": "#/definitions/LanguageAssociation/definitions/networkAssociation"
+        },
+        {
+          "$ref": "#/definitions/LanguageAssociation/definitions/physicVulandDataAssociation"
+        },
+        {
+          "$ref": "#/definitions/LanguageAssociation/definitions/vulandDataAssociation"
+        },
+        {
+          "$ref": "#/definitions/LanguageAssociation/definitions/networkandDataAssociation"
+        }
+      ],
+      "definitions": {
+        "userDataAssociation": {
+          "title": "userDataAssociation",
+          "type": "object",
+          "properties": {
+            "dataAttacked": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/user"
+              },
+              "maxItems": 1
+            },
+            "attackData": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/data"
+              },
+              "maxItems": 1
+            }
+          }
+        },
+        "secondUserDataAssociation": {
+          "title": "secondUserDataAssociation",
+          "type": "object",
+          "properties": {
+            "AttackGotData": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/user"
+              },
+              "maxItems": 1
+            },
+            "gotAttackData": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/data"
+              },
+              "maxItems": 1
+            }
+          }
+        },
+        "credentialAssociation": {
+          "title": "credentialAssociation",
+          "type": "object",
+          "properties": {
+            "attackdataCredential": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/credentials"
+              },
+              "maxItems": 1
+            },
+            "credentialAttackData": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/data"
+              },
+              "maxItems": 1
+            }
+          }
+        },
+        "physicalExploitAssociation": {
+          "title": "physicalExploitAssociation",
+          "type": "object",
+          "properties": {
+            "hardwareVuluse": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/host"
+              },
+              "maxItems": 1
+            },
+            "useHardwareVul": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/hardwareVulnerability"
+              },
+              "maxItems": 1
+            }
+          }
+        },
+        "vulnerabilityAssociation": {
+          "title": "vulnerabilityAssociation",
+          "type": "object",
+          "properties": {
+            "softwareVulUse": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/host"
+              },
+              "maxItems": 1
+            },
+            "useSoftwareVul": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/vulnerability"
+              },
+              "maxItems": 1
+            }
+          }
+        },
+        "networkAssociation": {
+          "title": "networkAssociation",
+          "type": "object",
+          "properties": {
+            "networkVulUse": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/host"
+              },
+              "maxItems": 1
+            },
+            "useNetworkVul": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/network"
+              },
+              "maxItems": 1
+            }
+          }
+        },
+        "physicVulandDataAssociation": {
+          "title": "physicVulandDataAssociation",
+          "type": "object",
+          "properties": {
+            "memoryDataDirect": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/hardwareVulnerability"
+              },
+              "maxItems": 1
+            },
+            "directMemoryData": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/data"
+              },
+              "maxItems": 1
+            }
+          }
+        },
+        "vulandDataAssociation": {
+          "title": "vulandDataAssociation",
+          "type": "object",
+          "properties": {
+            "dataExploitRead": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/vulnerability"
+              },
+              "maxItems": 1
+            },
+            "exploitReadData": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/data"
+              },
+              "maxItems": 1
+            }
+          }
+        },
+        "networkandDataAssociation": {
+          "title": "networkandDataAssociation",
+          "type": "object",
+          "properties": {
+            "networkExploitReadData": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/network"
+              },
+              "maxItems": 1
+            },
+            "exploitNetworkReadData": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LanguageAsset/definitions/data"
+              },
+              "maxItems": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create asset language graph nodes for asset user
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create asset language graph nodes for asset host
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create asset language graph nodes for asset hardwareVulnerability
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create asset language graph nodes for asset vulnerability
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create asset language graph nodes for asset network
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create asset language graph nodes for asset credentials
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create asset language graph nodes for asset data
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create association language graph nodes for asset user
+06-05 11:00 maltoolbox.language.specification DEBUG    Get associations for user asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create association language graph nodes for asset host
+06-05 11:00 maltoolbox.language.specification DEBUG    Get associations for host asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create association language graph nodes for asset hardwareVulnerability
+06-05 11:00 maltoolbox.language.specification DEBUG    Get associations for hardwareVulnerability asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create association language graph nodes for asset vulnerability
+06-05 11:00 maltoolbox.language.specification DEBUG    Get associations for vulnerability asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create association language graph nodes for asset network
+06-05 11:00 maltoolbox.language.specification DEBUG    Get associations for network asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create association language graph nodes for asset credentials
+06-05 11:00 maltoolbox.language.specification DEBUG    Get associations for credentials asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create association language graph nodes for asset data
+06-05 11:00 maltoolbox.language.specification DEBUG    Get associations for data asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack steps language graph nodes for asset user.
+06-05 11:00 maltoolbox.language.specification DEBUG    Get attack steps for user asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for bruteForce.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for securityAwareness.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for attemptSocialEngineering.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for byPassSecuityAwareness.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for securityAwarenessBypassed.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for successfulSocialEngineering.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for socialEngineering.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for credentialTheft.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack steps language graph nodes for asset host.
+06-05 11:00 maltoolbox.language.specification DEBUG    Get attack steps for host asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for attemptUseVulnerability.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack steps language graph nodes for asset hardwareVulnerability.
+06-05 11:00 maltoolbox.language.specification DEBUG    Get attack steps for hardwareVulnerability asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for restrictDMAaccess.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for lowLevelAccessFirmwareVuln.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for directMemoryAccess.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack steps language graph nodes for asset vulnerability.
+06-05 11:00 maltoolbox.language.specification DEBUG    Get attack steps for vulnerability asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for PrivilegesRequired.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for attemptExploit.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for exploit.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack steps language graph nodes for asset network.
+06-05 11:00 maltoolbox.language.specification DEBUG    Get attack steps for network asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for networkAccessControl.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for accessControlBypassed.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for successfulAccessFromPhysicalAccess.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack steps language graph nodes for asset credentials.
+06-05 11:00 maltoolbox.language.specification DEBUG    Get attack steps for credentials asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for unique.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for attemptCredentialsReuse.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for credentialsReuse.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for attemptUse.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for use.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack steps language graph nodes for asset data.
+06-05 11:00 maltoolbox.language.specification DEBUG    Get attack steps for data asset from language specification.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for notPresent.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for attemptRead.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Create attack step language graph nodes for read.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step user:bruteForce.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "collect",
+  "lhs": {
+    "type": "field",
+    "name": "gotAttackData"
+  },
+  "rhs": {
+    "type": "attackStep",
+    "name": "attemptRead"
+  }
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "field",
+  "name": "gotAttackData"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptRead"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step user:securityAwareness.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "securityAwarenessBypassed"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step user:attemptSocialEngineering.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "successfulSocialEngineering"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "byPassSecuityAwareness"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step user:byPassSecuityAwareness.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "securityAwarenessBypassed"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step user:securityAwarenessBypassed.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "successfulSocialEngineering"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step user:successfulSocialEngineering.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "socialEngineering"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step user:socialEngineering.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "credentialTheft"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step user:credentialTheft.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "collect",
+  "lhs": {
+    "type": "field",
+    "name": "attackData"
+  },
+  "rhs": {
+    "type": "attackStep",
+    "name": "attemptRead"
+  }
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "field",
+  "name": "attackData"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptRead"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step host:attemptUseVulnerability.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "collect",
+  "lhs": {
+    "type": "field",
+    "name": "useSoftwareVul"
+  },
+  "rhs": {
+    "type": "attackStep",
+    "name": "attemptExploit"
+  }
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "field",
+  "name": "useSoftwareVul"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptExploit"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "collect",
+  "lhs": {
+    "type": "field",
+    "name": "useHardwareVul"
+  },
+  "rhs": {
+    "type": "attackStep",
+    "name": "lowLevelAccessFirmwareVuln"
+  }
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "field",
+  "name": "useHardwareVul"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "lowLevelAccessFirmwareVuln"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "collect",
+  "lhs": {
+    "type": "field",
+    "name": "useNetworkVul"
+  },
+  "rhs": {
+    "type": "attackStep",
+    "name": "accessControlBypassed"
+  }
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "field",
+  "name": "useNetworkVul"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "accessControlBypassed"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step hardwareVulnerability:restrictDMAaccess.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "directMemoryAccess"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step hardwareVulnerability:lowLevelAccessFirmwareVuln.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "directMemoryAccess"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step hardwareVulnerability:directMemoryAccess.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "collect",
+  "lhs": {
+    "type": "field",
+    "name": "directMemoryData"
+  },
+  "rhs": {
+    "type": "attackStep",
+    "name": "attemptRead"
+  }
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "field",
+  "name": "directMemoryData"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptRead"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step vulnerability:PrivilegesRequired.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptExploit"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step vulnerability:attemptExploit.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "exploit"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step vulnerability:exploit.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "collect",
+  "lhs": {
+    "type": "field",
+    "name": "exploitReadData"
+  },
+  "rhs": {
+    "type": "attackStep",
+    "name": "attemptRead"
+  }
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "field",
+  "name": "exploitReadData"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptRead"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step network:networkAccessControl.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "accessControlBypassed"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step network:accessControlBypassed.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "successfulAccessFromPhysicalAccess"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step network:successfulAccessFromPhysicalAccess.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "collect",
+  "lhs": {
+    "type": "field",
+    "name": "exploitNetworkReadData"
+  },
+  "rhs": {
+    "type": "attackStep",
+    "name": "attemptRead"
+  }
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "field",
+  "name": "exploitNetworkReadData"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptRead"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step credentials:unique.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "credentialsReuse"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step credentials:attemptCredentialsReuse.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "credentialsReuse"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step credentials:credentialsReuse.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptUse"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step credentials:attemptUse.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "use"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step credentials:use.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "collect",
+  "lhs": {
+    "type": "field",
+    "name": "credentialAttackData"
+  },
+  "rhs": {
+    "type": "attackStep",
+    "name": "attemptRead"
+  }
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "field",
+  "name": "credentialAttackData"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptRead"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step data:notPresent.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptRead"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "read"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step data:attemptRead.
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "read"
+}
+06-05 11:00 maltoolbox.language.languagegraph DEBUG    Determining children for attack step data:read.
+06-05 11:00 maltoolbox.model INFO     Loading model from exp5/model.json file.
+06-05 11:00 maltoolbox.model DEBUG    Loading asset from exp5/model.json:
+{
+  "name": "User:0",
+  "metaconcept": "user",
+  "eid": "0",
+  "defenses": {}
+}
+06-05 11:00 maltoolbox.model DEBUG    Add User:0:0(id:0) to model "Simplest Example Model".
+06-05 11:00 maltoolbox.model DEBUG    Loading asset from exp5/model.json:
+{
+  "name": "Data:1:1",
+  "metaconcept": "data",
+  "eid": "1",
+  "defenses": {
+    "notPresent": "0.0"
+  }
+}
+06-05 11:00 maltoolbox.model DEBUG    Add Data:1:1:1(id:1) to model "Simplest Example Model".
+06-05 11:00 maltoolbox.model DEBUG    Get asset with id "0" from model "Simplest Example Model".
+06-05 11:00 maltoolbox.model DEBUG    Get asset with id "1" from model "Simplest Example Model".
+06-05 11:00 maltoolbox.model DEBUG    Get asset with id "0" from model "Simplest Example Model".
+06-05 11:00 maltoolbox.model DEBUG    Get asset with id "1" from model "Simplest Example Model".
+06-05 11:00 maltoolbox.model DEBUG    Get asset with id "0" from model "Simplest Example Model".
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack steps for asset User:0:0 which is of class user.
+06-05 11:00 maltoolbox.language.specification DEBUG    Get attack steps for user asset from language specification.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack step node for bruteForce.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack step node for securityAwareness.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Setting the defense status of User:0:0:securityAwareness to 0.0.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack step node for attemptSocialEngineering.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack step node for byPassSecuityAwareness.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack step node for securityAwarenessBypassed.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack step node for successfulSocialEngineering.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack step node for socialEngineering.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack step node for credentialTheft.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack steps for asset Data:1:1:1 which is of class data.
+06-05 11:00 maltoolbox.language.specification DEBUG    Get attack steps for data asset from language specification.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack step node for notPresent.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Setting the defense status of Data:1:1:1:notPresent to 0.0.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack step node for attemptRead.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Generating attack step node for read.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Determining children for attack step User:0:0:bruteForce.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "collect",
+  "lhs": {
+    "type": "field",
+    "name": "gotAttackData"
+  },
+  "rhs": {
+    "type": "attackStep",
+    "name": "attemptRead"
+  }
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "field",
+  "name": "gotAttackData"
+}
+06-05 11:00 maltoolbox.model DEBUG    Get associated assets for asset User:0:0(id:0) by field name gotAttackData.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptRead"
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id Data:1:1:1:attemptRead
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Determining children for attack step User:0:0:securityAwareness.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "securityAwarenessBypassed"
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id User:0:0:securityAwarenessBypassed
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Determining children for attack step User:0:0:attemptSocialEngineering.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "successfulSocialEngineering"
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id User:0:0:successfulSocialEngineering
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "byPassSecuityAwareness"
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id User:0:0:byPassSecuityAwareness
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Determining children for attack step User:0:0:byPassSecuityAwareness.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "securityAwarenessBypassed"
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id User:0:0:securityAwarenessBypassed
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Determining children for attack step User:0:0:securityAwarenessBypassed.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "successfulSocialEngineering"
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id User:0:0:successfulSocialEngineering
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Determining children for attack step User:0:0:successfulSocialEngineering.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "socialEngineering"
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id User:0:0:socialEngineering
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Determining children for attack step User:0:0:socialEngineering.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "credentialTheft"
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id User:0:0:credentialTheft
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Determining children for attack step User:0:0:credentialTheft.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "collect",
+  "lhs": {
+    "type": "field",
+    "name": "attackData"
+  },
+  "rhs": {
+    "type": "attackStep",
+    "name": "attemptRead"
+  }
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "field",
+  "name": "attackData"
+}
+06-05 11:00 maltoolbox.model DEBUG    Get associated assets for asset User:0:0(id:0) by field name attackData.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptRead"
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id Data:1:1:1:attemptRead
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Determining children for attack step Data:1:1:1:notPresent.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "attemptRead"
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id Data:1:1:1:attemptRead
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "read"
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id Data:1:1:1:read
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Determining children for attack step Data:1:1:1:attemptRead.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Processing Step Expression:
+{
+  "type": "attackStep",
+  "name": "read"
+}
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id Data:1:1:1:read
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Determining children for attack step Data:1:1:1:read.
+06-05 11:00 maltoolbox.attackgraph.attackgraph INFO     Attach attackers from 'Simplest Example Model' model to the graph.
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id User:0:0:bruteForce
+06-05 11:00 maltoolbox.attackgraph.attacker DEBUG    Attacker "1" is compromising node "User:0:0:bruteForce".
+06-05 11:00 maltoolbox.attackgraph.attackgraph DEBUG    Looking up node with id User:0:0:attemptSocialEngineering
+06-05 11:00 maltoolbox.attackgraph.attacker DEBUG    Attacker "1" is compromising node "User:0:0:attemptSocialEngineering".
+06-05 11:00 maltoolbox.attackgraph.attackgraph INFO     Saving attack graph with 12 attack step nodes to exp5/tmp/attack_graph.json file.
