@@ -15,7 +15,7 @@ exp = "exp5"
 
 logger = logging.getLogger(__name__)
 
-lang = path.join('lang','lang_spec.json')
+lang = path.join('langs','lang_spec.json')
 model_path = path.join(exp,'model.json')
 
 tmp = path.join(exp, 'tmp','attack_graph.json')
