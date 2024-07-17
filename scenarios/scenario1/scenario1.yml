@@ -1,5 +1,5 @@
 lang_file: ../../langs/org.mal-lang.coreLang-1.0.0.mar
-model_file: example_model.json
+model_file: model1.json
 
 # Rewards for each attack step
 rewards:
