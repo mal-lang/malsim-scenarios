@@ -30,14 +30,14 @@ associations:
     networks:
     - 4
 - HostUsers:
-    usersOnHost:
+    users:
     - 3
-    hostsWithUser:
+    hosts:
     - 0
 - HostData:
-    dataOnHost:
+    data:
     - 2
-    hostWithData:
+    host:
     - 0
 
 attackers:
