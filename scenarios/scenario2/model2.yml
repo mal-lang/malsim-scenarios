@@ -43,12 +43,9 @@ associations:
 attackers:
   5:
     entry_points:
-      4:
-        attack_steps:
-        - access
       3:
         attack_steps:
-        - phish
+        - phishing
     name: Attacker:5
 
 metadata:
