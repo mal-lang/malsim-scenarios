@@ -1,5 +1,5 @@
-lang_file: ../../langs/org.mal-lang.trainingLang-1.0.0.mar
-model_file: model2.yml
+lang_file: ../../../langs/org.mal-lang.trainingLang-1.0.0.mar
+model_file: model.yml
 
 # Rewards for each attack step
 rewards:
@@ -8,9 +8,9 @@ rewards:
   Data:2:notPresent: 8
   Data:2:read: 100
 
-# The possible entry points
+# Create attacker and entry points in resulting AttackGraph
 attacker_entry_points:
-  0:
+  'Attacker1':
     - 'User:3:phishing'
 
 attacker_agent_class: 'BreadthFirstAttacker'
