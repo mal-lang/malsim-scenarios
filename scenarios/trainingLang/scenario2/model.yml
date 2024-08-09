@@ -74,8 +74,8 @@ associations:
     - 1
 
 metadata:
-  MAL-Toolbox Version: 0.1.*
-  info: Created manually by Joakim.
+  MAL-Toolbox Version: 0.1.6
+  info: Created manually.
   langID: org.mal-lang.trainingLang
   langVersion: 1.0.0
   malVersion: 0.1.0-SNAPSHOT

@@ -1,0 +1,18 @@
+lang_file: ../../../langs/org.mal-lang.trainingLang-1.0.0.mar
+model_file: multi-network-model.yml
+
+# Rewards for each attack step
+rewards:
+  Host A:notPresent: 10
+  Host B:notPresent: 10
+  Host A:access: 100
+  Host B:access: 100
+
+# Create attacker and entry points in resulting AttackGraph
+attacker_entry_points:
+  'Attacker1':
+    - 'User:4:phishing'
+    - 'Network A:access'
+
+attacker_agent_class: 'KeyboardAgent'
+defender_agent_class: 'KeyboardAgent'

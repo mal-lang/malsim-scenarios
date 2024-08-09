@@ -49,8 +49,8 @@ attackers:
     name: Attacker:5
 
 metadata:
-  MAL-Toolbox Version: 0.0.40
-  info: Created manually by Joakim.
+  MAL-Toolbox Version: 0.1.6
+  info: Created manually.
   langID: org.mal-lang.trainingLang
   langVersion: 1.0.0
   malVersion: 0.1.0-SNAPSHOT

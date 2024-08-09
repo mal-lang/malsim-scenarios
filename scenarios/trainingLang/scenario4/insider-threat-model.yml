@@ -1,0 +1,34 @@
+assets:
+  0:
+    defenses:
+      notPresent: 0.0
+    name: Host A
+    type: Host
+  1:
+    defenses:
+      notPresent: 0.0
+    name: Sensitive Data
+    type: Data
+  2:
+    name: User:2
+    type: User
+
+associations:
+  - HostUsers:
+      users:
+      - 2
+      hosts:
+      - 0
+  - HostData:
+      data:
+      - 1
+      host:
+      - 0
+
+metadata:
+  MAL-Toolbox Version: 0.1.6
+  info: Created manually
+  langID: org.mal-lang.trainingLang
+  langVersion: 1.0.0
+  malVersion: 0.1.0-SNAPSHOT
+  name: insider-threat-model
