@@ -14,5 +14,5 @@ attacker_entry_points:
     - 'User:4:phishing'
     - 'Network A:access'
 
-attacker_agent_class: 'KeyboardAgent'
+attacker_agent_class: 'BreadthFirstAttacker'
 defender_agent_class: 'KeyboardAgent'

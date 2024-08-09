@@ -11,5 +11,5 @@ attacker_entry_points:
   'Attacker1':
     - 'User:2:phishing'
 
-attacker_agent_class: 'KeyboardAgent'
+attacker_agent_class: 'BreadthFirstAttacker'
 defender_agent_class: 'KeyboardAgent'
