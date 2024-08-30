@@ -1,0 +1,54 @@
+{
+    "metadata": {
+      "name": "Simplest Example Model",
+      "langVersion": "1.0.0",
+      "langID": "",
+      "malVersion": "",
+      "info": ""
+    },
+"assets" : 
+{
+    "0": {
+        "name" : "Credential:0",
+        "metaconcept" : "credentials", 
+        "eid" : "0",
+        "defenses" : {
+            "unique" : "0.0"
+        }
+    },
+    "1" : {
+        "name" : "Data:1:1",
+        "metaconcept" : "data",
+        "eid" : "1",
+        "defenses" : {
+            "notPresent": "0.0"
+        }
+
+    }
+},
+"associations": [
+    {
+        "metaconcept": "credentialAssociation",
+        "association": {
+        "attackdataCredential": [
+          "0"
+        ],
+        "credentialAttackData": [
+          "1"
+        ]
+      }
+    }
+],
+"attackers" : {
+"1" : {
+    "name" : "Attacker:1",
+    "entry_points": {
+        "0":{
+            "attack_steps":[
+                "attemptCredentialsReuse"
+            ]
+        }
+    }
+}
+}
+}

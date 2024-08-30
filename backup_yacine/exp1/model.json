@@ -1,0 +1,57 @@
+{
+    "metadata": {
+      "name": "Simplest Example Model",
+      "langVersion": "1.0.0",
+      "langID": "org.mal-lang.coreLang",
+      "malVersion": "0.1.0-SNAPSHOT",
+      "info": "Created by the mal-toolbox model python module."
+    },
+"assets" : 
+{
+    "0": {
+        "name" : "User:0",
+        "metaconcept" : "user", 
+        "eid" : "0",
+        "defenses" : {
+            "securityAwareness" : "0.0"
+        }
+    },
+    "1" : {
+        "name" : "Data:1:1",
+        "metaconcept" : "data",
+        "eid" : "1",
+        "defenses" : {
+            "notPresent": "0.0"
+        }
+
+    }
+
+
+},
+"associations": [
+    {
+      "metaconcept": "userDataAssociation",
+      "association": {
+        "dataAttacked": [
+          "0"
+        ],
+        "attackData": [
+          "1"
+        ]
+      }
+    }
+],
+"attackers" : {
+"1" : {
+    "name" : "Attacker:1",
+    "entry_points": {
+        "0":{
+            "attack_steps":[
+                "attemptSocialEngineering"
+                                
+            ]
+        }
+    }
+}
+}
+}
