@@ -1,0 +1,22 @@
+assets:
+  0:
+    name: Host:0
+    type: Host
+  1:
+    name: User:1
+    type: User
+
+associations:
+- UsersOnHosts:
+    hosts:
+    - 0
+    users:
+    - 1
+
+metadata:
+  MAL-Toolbox Version: 0.1.6
+  info: Created manually
+  langID: org.mal-lang.trainingLang
+  langVersion: 1.0.0
+  malVersion: 0.1.0-SNAPSHOT
+  name: model1

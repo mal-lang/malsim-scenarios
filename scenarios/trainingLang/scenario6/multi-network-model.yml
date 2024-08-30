@@ -1,0 +1,70 @@
+assets:
+  0:
+    name: Host A
+    type: Host
+  1:
+    name: Host B
+    type: Host
+  2:
+    name: Sensitive Data A
+    type: Data
+  3:
+    name: Sensitive Data B
+    type: Data
+  4:
+    name: User:4
+    type: User
+  5:
+    name: Network A
+    type: Network
+  6:
+    name: Network B
+    type: Network
+  7:
+    name: User:7
+    type: User
+
+associations:
+  - HostsInNetworks:
+      hosts:
+      - 0
+      networks:
+      - 5
+  - HostsInNetworks:
+      hosts:
+      - 1
+      networks:
+      - 6
+  - InterNetworkConnectivity:
+      fromNetworks:
+      - 5
+      toNetworks:
+      - 6
+  - UsersOnHosts:
+      users:
+      - 4
+      hosts:
+      - 0
+  - UsersOnHosts:
+      users:
+      - 7
+      hosts:
+      - 0
+  - DataOnHosts:
+      data:
+      - 2
+      host:
+      - 0
+  - DataOnHosts:
+      data:
+      - 3
+      hosts:
+      - 1
+
+metadata:
+  MAL-Toolbox Version: 0.1.6
+  info: Created manually
+  langID: org.mal-lang.trainingLang
+  langVersion: 1.0.0
+  malVersion: 0.1.0-SNAPSHOT
+  name: multi-network-model
