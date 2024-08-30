@@ -1,4 +1,4 @@
-lang_file: ../../../langs/org.mal-lang.coreLang-1.0.0.mar
+lang_file: ../../../langs/org.mal-lang.trainingLang-1.0.0.mar
 model_file: model.yml
 
 # Rewards for each attack step
