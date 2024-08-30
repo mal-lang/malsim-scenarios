@@ -22,14 +22,14 @@ assets:
     type: Network
 
 associations:
-  - NetworkHostAccess:
+  - HostsInNetworks:
       hosts:
       - 0
       - 1
       - 2
       networks:
       - 4
-  - HostUsers:
+  - UsersOnHosts:
       users:
       - 3
       hosts:

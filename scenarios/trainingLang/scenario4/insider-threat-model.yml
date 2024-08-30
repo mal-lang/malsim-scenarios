@@ -14,15 +14,15 @@ assets:
     type: User
 
 associations:
-  - HostUsers:
+  - UsersOnHosts:
       users:
       - 2
       hosts:
       - 0
-  - HostData:
+  - DataOnHosts:
       data:
       - 1
-      host:
+      hosts:
       - 0
 
 metadata:

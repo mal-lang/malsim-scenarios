@@ -25,40 +25,40 @@ assets:
     type: User
 
 associations:
-  - NetworkHostAccess:
+  - HostsInNetworks:
       hosts:
       - 0
       networks:
       - 5
-  - NetworkHostAccess:
+  - HostsInNetworks:
       hosts:
       - 1
       networks:
       - 6
-  - NetworkToNetworkAccess:
-      network:
+  - InterNetworkConnectivity:
+      fromNetworks:
       - 5
-      networks:
+      toNetworks:
       - 6
-  - HostUsers:
+  - UsersOnHosts:
       users:
       - 4
       hosts:
       - 0
-  - HostUsers:
+  - UsersOnHosts:
       users:
       - 7
       hosts:
       - 0
-  - HostData:
+  - DataOnHosts:
       data:
       - 2
       host:
       - 0
-  - HostData:
+  - DataOnHosts:
       data:
       - 3
-      host:
+      hosts:
       - 1
 
 metadata:

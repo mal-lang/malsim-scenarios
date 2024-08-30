@@ -17,20 +17,20 @@ assets:
     type: Network
 
 associations:
-  - NetworkHostAccess:
+  - HostsInNetworks:
       hosts:
       - 0
       networks:
       - 3
-  - HostUsers:
+  - UsersOnHosts:
       users:
       - 2
       hosts:
       - 0
-  - HostData:
+  - DataOnHosts:
       data:
       - 1
-      host:
+      hosts:
       - 0
 
 metadata:

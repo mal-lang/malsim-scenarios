@@ -7,7 +7,7 @@ assets:
     type: User
 
 associations:
-- HostUsers:
+- UsersOnHosts:
     hosts:
     - 0
     users:

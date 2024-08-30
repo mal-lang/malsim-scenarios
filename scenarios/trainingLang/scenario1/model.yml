@@ -23,21 +23,21 @@ assets:
 
 associations:
 
-- NetworkHostAccess:
+- HostsInNetworks:
     hosts:
     - 0
     - 1
     networks:
     - 4
-- HostUsers:
+- UsersOnHosts:
     users:
     - 3
     hosts:
     - 0
-- HostData:
+- DataOnHosts:
     data:
     - 2
-    host:
+    hosts:
     - 0
 
 attackers:
