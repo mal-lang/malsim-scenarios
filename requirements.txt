@@ -1,0 +1,4 @@
+mal-toolbox==0.1.*
+mal-simulator==0.0.*
+matplotlib
+networkx
