@@ -1,15 +1,20 @@
 lang_file: ../../../langs/org.mal-lang.trainingLang-1.0.0.mar
-model_file: insider-threat-model.yml
+model_file: model.yml
 
 # Rewards for each attack step
 rewards:
   Host A:notPresent: 10
-  Sensitive Data:read: 100
+  Host B:notPresent: 10
+  Host A:access: 100
+  Host B:access: 100
+  Sensitive Data A:read: 200
+  Sensitive Data B:read: 200
 
 # Create attacker and entry points in resulting AttackGraph
 attacker_entry_points:
   'Attacker1':
-    - 'User:2:phishing'
+    - 'User:4:phishing'
+    - 'Network A:access'
 
 attacker_agent_class: 'BreadthFirstAttacker'
 defender_agent_class: 'KeyboardAgent'

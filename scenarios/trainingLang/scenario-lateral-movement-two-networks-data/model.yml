@@ -1,0 +1,84 @@
+assets:
+  0:
+    name: Host 0
+    type: Host
+  1:
+    name: Host 1
+    type: Host
+  2:
+    name: Data 0
+    type: Data
+  3:
+    name: Data 1
+    type: Data
+  4:
+    name: User 0
+    type: User
+  5:
+    name: User 1
+    type: User
+  6:
+    name: Network 0
+    type: Network
+  7:
+    name: Network 1
+    type: Network
+
+associations:
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 6
+    toNetworks:
+    - 7
+
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 7
+    toNetworks:
+    - 6
+
+- HostsInNetworks:
+    hosts:
+    - 0
+    networks:
+    - 6
+
+- HostsInNetworks:
+    hosts:
+    - 1
+    networks:
+    - 7
+
+- UsersOnHosts:
+    users:
+    - 4
+    - 5
+    hosts:
+    - 0
+
+- UsersOnHosts:
+    users:
+    - 5
+    - 4
+    hosts:
+    - 1
+
+- DataOnHosts:
+    data:
+    - 2
+    hosts:
+    - 0
+
+- DataOnHosts:
+    data:
+    - 3
+    hosts:
+    - 1
+
+metadata:
+  MAL-Toolbox Version: 0.1.6
+  info: Created manually.
+  langID: org.mal-lang.trainingLang
+  langVersion: 1.0.0
+  malVersion: 0.1.0-SNAPSHOT
+  name: Simple Example Model for trainingLang

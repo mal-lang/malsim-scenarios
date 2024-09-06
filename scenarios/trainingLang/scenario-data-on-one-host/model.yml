@@ -1,27 +1,15 @@
 assets:
   0:
-    defenses:
-      notPresent: 0.0
     name: Host A
     type: Host
   1:
-    defenses:
-      notPresent: 0.0
     name: Sensitive Data
     type: Data
   2:
     name: User:2
     type: User
-  3:
-    name: Network A
-    type: Network
 
 associations:
-  - HostsInNetworks:
-      hosts:
-      - 0
-      networks:
-      - 3
   - UsersOnHosts:
       users:
       - 2
@@ -39,4 +27,4 @@ metadata:
   langID: org.mal-lang.trainingLang
   langVersion: 1.0.0
   malVersion: 0.1.0-SNAPSHOT
-  name: multi-stage-phishing-model
+  name: insider-threat-model

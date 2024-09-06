@@ -1,77 +1,44 @@
 assets:
   0:
+    defenses:
+      notPresent: 0.0
     name: Host 0
     type: Host
   1:
+    defenses:
+      notPresent: 0.0
     name: Host 1
     type: Host
   2:
-    name: Data 0
+    defenses:
+      notPresent: 0.0
+    name: Data:2
     type: Data
   3:
-    name: Data 1
-    type: Data
+    name: User:3
+    type: User
   4:
-    name: User 0
-    type: User
-  5:
-    name: User 1
-    type: User
-  6:
-    name: Network 0
-    type: Network
-  7:
-    name: Network 1
+    name: Network:4
     type: Network
 
 associations:
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 6
-    toNetworks:
-    - 7
-
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 7
-    toNetworks:
-    - 6
 
 - HostsInNetworks:
     hosts:
     - 0
-    networks:
-    - 6
-
-- HostsInNetworks:
-    hosts:
     - 1
     networks:
-    - 7
-
-- UsersOnHosts:
-    users:
     - 4
-    hosts:
-    - 0
-
 - UsersOnHosts:
     users:
-    - 5
+    - 3
     hosts:
-    - 1
-
+    - 0
 - DataOnHosts:
     data:
     - 2
     hosts:
     - 0
-
-- DataOnHosts:
-    data:
-    - 3
-    hosts:
-    - 1
 
 metadata:
   MAL-Toolbox Version: 0.1.6

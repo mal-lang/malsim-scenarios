@@ -53,7 +53,7 @@ associations:
   - DataOnHosts:
       data:
       - 2
-      host:
+      hosts:
       - 0
   - DataOnHosts:
       data:

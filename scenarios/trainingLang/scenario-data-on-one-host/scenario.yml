@@ -3,15 +3,13 @@ model_file: model.yml
 
 # Rewards for each attack step
 rewards:
-  Host 0:notPresent: 10
-  Host 1:notPresent: 10
-  Data 0:notPresent: 10
-  Data 0:read: 100
+  Host A:notPresent: 10
+  Sensitive Data:read: 100
 
 # Create attacker and entry points in resulting AttackGraph
 attacker_entry_points:
   'Attacker1':
-    - 'User 0:phishing'
+    - 'User:2:phishing'
 
 attacker_agent_class: 'BreadthFirstAttacker'
 defender_agent_class: 'KeyboardAgent'
