@@ -1,5 +1,5 @@
 # malsim-scenarios
-A collection of scenarios to be run using the mal-simulator[1].
+A collection of scenarios to be run using the mal-simulator[1] which can be installed with pip.
 
 [1]https://github.com/mal-lang/mal-simulator
 
