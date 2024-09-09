@@ -6,60 +6,86 @@ assets:
     name: Host B
     type: Host
   2:
+    name: Host C
+    type: Host
+  3:
     name: Sensitive Data A
     type: Data
-  3:
+  4:
     name: Sensitive Data B
     type: Data
-  4:
-    name: User:4
-    type: User
   5:
+    name: Sensitive Data C
+    type: Data
+  6:
+    name: User A
+    type: User
+  7:
+    name: User B
+    type: User
+  8:
+    name: User C
+    type: User
+  9:
     name: Network A
     type: Network
-  6:
+  10:
     name: Network B
     type: Network
-  7:
-    name: User:7
-    type: User
-
+  11:
+    name: Network C
+    type: Network
 associations:
   - HostsInNetworks:
       hosts:
       - 0
       networks:
-      - 5
+      - 9
   - HostsInNetworks:
       hosts:
       - 1
       networks:
-      - 6
+      - 10
+  - HostsInNetworks:
+      hosts:
+      - 2
+      networks:
+      - 11
   - InterNetworkConnectivity:
       fromNetworks:
-      - 5
+      - 9
       toNetworks:
+      - 10
+  - InterNetworkConnectivity:
+      fromNetworks:
+      - 10
+      toNetworks:
+      - 11
+      - 9
+  - UsersOnHosts: # All users on all hosts
+      users:
       - 6
-  - UsersOnHosts:
-      users:
-      - 4
-      hosts:
-      - 0
-  - UsersOnHosts:
-      users:
       - 7
+      - 8
       hosts:
       - 0
-  - DataOnHosts:
-      data:
+      - 1
       - 2
-      hosts:
-      - 0
   - DataOnHosts:
       data:
       - 3
       hosts:
+      - 0
+  - DataOnHosts:
+      data:
+      - 4
+      hosts:
       - 1
+  - DataOnHosts:
+      data:
+      - 5
+      hosts:
+      - 2
 
 metadata:
   MAL-Toolbox Version: 0.1.6

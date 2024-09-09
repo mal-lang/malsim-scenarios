@@ -1,0 +1,157 @@
+{
+    "assets": {
+      "0": {
+        "name": "Host A",
+        "type": "Host"
+      },
+      "1": {
+        "name": "Host B",
+        "type": "Host"
+      },
+      "2": {
+        "name": "Host C",
+        "type": "Host"
+      },
+      "3": {
+        "name": "Sensitive Data A",
+        "type": "Data"
+      },
+      "4": {
+        "name": "Sensitive Data B",
+        "type": "Data"
+      },
+      "5": {
+        "name": "Sensitive Data C",
+        "type": "Data"
+      },
+      "6": {
+        "name": "User A",
+        "type": "User"
+      },
+      "7": {
+        "name": "User B",
+        "type": "User"
+      },
+      "8": {
+        "name": "User C",
+        "type": "User"
+      },
+      "9": {
+        "name": "Network A",
+        "type": "Network"
+      },
+      "10": {
+        "name": "Network B",
+        "type": "Network"
+      },
+      "11": {
+        "name": "Network C",
+        "type": "Network"
+      }
+    },
+    "associations": [
+      {
+        "HostsInNetworks": {
+          "hosts": [
+            0
+          ],
+          "networks": [
+            9
+          ]
+        }
+      },
+      {
+        "HostsInNetworks": {
+          "hosts": [
+            1
+          ],
+          "networks": [
+            10
+          ]
+        }
+      },
+      {
+        "HostsInNetworks": {
+          "hosts": [
+            2
+          ],
+          "networks": [
+            11
+          ]
+        }
+      },
+      {
+        "InterNetworkConnectivity": {
+          "fromNetworks": [
+            9
+          ],
+          "toNetworks": [
+            10
+          ]
+        }
+      },
+      {
+        "InterNetworkConnectivity": {
+          "fromNetworks": [
+            10
+          ],
+          "toNetworks": [
+            11,
+            9
+          ]
+        }
+      },
+      {
+        "UsersOnHosts": {
+          "users": [
+            6,
+            7,
+            8
+          ],
+          "hosts": [
+            0,
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "DataOnHosts": {
+          "data": [
+            3
+          ],
+          "hosts": [
+            0
+          ]
+        }
+      },
+      {
+        "DataOnHosts": {
+          "data": [
+            4
+          ],
+          "hosts": [
+            1
+          ]
+        }
+      },
+      {
+        "DataOnHosts": {
+          "data": [
+            5
+          ],
+          "hosts": [
+            2
+          ]
+        }
+      }
+    ],
+    "metadata": {
+      "MAL-Toolbox Version": "0.1.6",
+      "info": "Created manually",
+      "langID": "org.mal-lang.trainingLang",
+      "langVersion": "1.0.0",
+      "malVersion": "0.1.0-SNAPSHOT",
+      "name": "multi-network-model"
+    }
+  }
