@@ -1,0 +1,29 @@
+digraph G {
+"Host A:notPresent" [label="Host A:notPresent
+ reward=10", shape="box", color="blue", fillcolor="white", style="filled"]
+
+"Host A:authenticate" [label="Host A:authenticate", shape="box", color="red", fillcolor="white", style="filled"]
+"User:2:compromise" -> "Host A:authenticate" [style="solid"]
+"Host A:connect" [label="Host A:connect", shape="box", color="red", fillcolor="white", style="filled"]
+"Host A:notPresent" -> "Host A:connect" [style="dotted"]
+"Host A:access" [label="Host A:access", shape="box", color="red", fillcolor="white", style="filled"]
+"Host A:notPresent" -> "Host A:access" [style="dotted"]
+"Host A:authenticate" -> "Host A:access" [style="dotted"]
+"Host A:connect" -> "Host A:access" [style="dotted"]
+"Sensitive Data:notPresent" [label="Sensitive Data:notPresent", shape="box", color="blue", fillcolor="white", style="filled"]
+
+"Sensitive Data:read" [label="Sensitive Data:read
+ reward=100", shape="box", color="red", fillcolor="white", style="filled"]
+"Host A:access" -> "Sensitive Data:read" [style="dotted"]
+"Sensitive Data:notPresent" -> "Sensitive Data:read" [style="dotted"]
+"Sensitive Data:modify" [label="Sensitive Data:modify", shape="box", color="red", fillcolor="white", style="filled"]
+"Host A:access" -> "Sensitive Data:modify" [style="dotted"]
+"Sensitive Data:notPresent" -> "Sensitive Data:modify" [style="dotted"]
+"User:2:notPresent" [label="User:2:notPresent", shape="box", color="blue", fillcolor="white", style="filled"]
+
+"User:2:compromise" [label="User:2:compromise", shape="box", color="red", fillcolor="white", style="filled"]
+"User:2:notPresent" -> "User:2:compromise" [style="dotted"]
+"User:2:phishing" -> "User:2:compromise" [style="dotted"]
+"User:2:phishing" [label="User:2:phishing", shape="box", color="red", fillcolor="grey", style="filled"]
+
+}

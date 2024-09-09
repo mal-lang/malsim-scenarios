@@ -1,0 +1,46 @@
+digraph G {
+"Host 0:notPresent" [label="Host 0:notPresent
+ reward=2", shape="box", color="blue", fillcolor="white", style="filled"]
+
+"Host 0:authenticate" [label="Host 0:authenticate", shape="box", color="red", fillcolor="white", style="filled"]
+"User:3:compromise" -> "Host 0:authenticate" [style="solid"]
+"Host 0:connect" [label="Host 0:connect", shape="box", color="red", fillcolor="white", style="filled"]
+"Host 0:notPresent" -> "Host 0:connect" [style="dotted"]
+"Network:4:access" -> "Host 0:connect" [style="dotted"]
+"Host 0:access" [label="Host 0:access", shape="box", color="red", fillcolor="white", style="filled"]
+"Host 0:notPresent" -> "Host 0:access" [style="dotted"]
+"Host 0:authenticate" -> "Host 0:access" [style="dotted"]
+"Host 0:connect" -> "Host 0:access" [style="dotted"]
+"Host 1:notPresent" [label="Host 1:notPresent
+ reward=7", shape="box", color="blue", fillcolor="white", style="filled"]
+
+"Host 1:authenticate" [label="Host 1:authenticate", shape="box", color="red", fillcolor="white", style="filled"]
+
+"Host 1:connect" [label="Host 1:connect", shape="box", color="red", fillcolor="white", style="filled"]
+"Host 1:notPresent" -> "Host 1:connect" [style="dotted"]
+"Network:4:access" -> "Host 1:connect" [style="dotted"]
+"Host 1:access" [label="Host 1:access", shape="box", color="red", fillcolor="white", style="filled"]
+"Host 1:notPresent" -> "Host 1:access" [style="dotted"]
+"Host 1:authenticate" -> "Host 1:access" [style="dotted"]
+"Host 1:connect" -> "Host 1:access" [style="dotted"]
+"Data:2:notPresent" [label="Data:2:notPresent
+ reward=8", shape="box", color="blue", fillcolor="white", style="filled"]
+
+"Data:2:read" [label="Data:2:read
+ reward=100", shape="box", color="red", fillcolor="white", style="filled"]
+"Host 0:access" -> "Data:2:read" [style="dotted"]
+"Data:2:notPresent" -> "Data:2:read" [style="dotted"]
+"Data:2:modify" [label="Data:2:modify", shape="box", color="red", fillcolor="white", style="filled"]
+"Host 0:access" -> "Data:2:modify" [style="dotted"]
+"Data:2:notPresent" -> "Data:2:modify" [style="dotted"]
+"User:3:notPresent" [label="User:3:notPresent", shape="box", color="blue", fillcolor="white", style="filled"]
+
+"User:3:compromise" [label="User:3:compromise", shape="box", color="red", fillcolor="white", style="filled"]
+"User:3:notPresent" -> "User:3:compromise" [style="dotted"]
+"User:3:phishing" -> "User:3:compromise" [style="dotted"]
+"User:3:phishing" [label="User:3:phishing", shape="box", color="red", fillcolor="grey", style="filled"]
+
+"Network:4:access" [label="Network:4:access", shape="box", color="red", fillcolor="grey", style="filled"]
+"Host 0:access" -> "Network:4:access" [style="solid"]
+"Host 1:access" -> "Network:4:access" [style="solid"]
+}
