@@ -1,21 +1,12 @@
 digraph G {
-"Host:0:notPresent" [label="Host:0:notPresent
- reward=10", shape="box", color="blue", fillcolor="white", style="filled"]
-
-"Host:0:authenticate" [label="Host:0:authenticate", shape="box", color="red", fillcolor="white", style="filled"]
-"User:1:compromise" -> "Host:0:authenticate" [style="solid"]
-"Host:0:connect" [label="Host:0:connect", shape="box", color="red", fillcolor="white", style="filled"]
-"Host:0:notPresent" -> "Host:0:connect" [style="dotted"]
-"Host:0:access" [label="Host:0:access
- reward=100", shape="box", color="red", fillcolor="white", style="filled"]
-"Host:0:notPresent" -> "Host:0:access" [style="dotted"]
+"Host:0:notPresent" [label="Host:0:notPresent\n reward=10", shape="box", color="blue", fillcolor="white", style="filled"]
+"Host:0:authenticate" [label="Host:0:authenticate", shape="box", color="red", fillcolor="white", style="filled"]"User:1:compromise" -> "Host:0:authenticate" [style="solid"]
+"Host:0:connect" [label="Host:0:connect", shape="box", color="red", fillcolor="white", style="filled"]"Host:0:notPresent" -> "Host:0:connect" [style="dotted"]
+"Host:0:access" [label="Host:0:access\n reward=100", shape="box", color="red", fillcolor="white", style="filled"]"Host:0:notPresent" -> "Host:0:access" [style="dotted"]
 "Host:0:authenticate" -> "Host:0:access" [style="dotted"]
 "Host:0:connect" -> "Host:0:access" [style="dotted"]
 "User:1:notPresent" [label="User:1:notPresent", shape="box", color="blue", fillcolor="white", style="filled"]
-
-"User:1:compromise" [label="User:1:compromise", shape="box", color="red", fillcolor="white", style="filled"]
-"User:1:notPresent" -> "User:1:compromise" [style="dotted"]
+"User:1:compromise" [label="User:1:compromise", shape="box", color="red", fillcolor="white", style="filled"]"User:1:notPresent" -> "User:1:compromise" [style="dotted"]
 "User:1:phishing" -> "User:1:compromise" [style="dotted"]
 "User:1:phishing" [label="User:1:phishing", shape="box", color="red", fillcolor="grey", style="filled"]
-
 }

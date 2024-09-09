@@ -1,52 +1,30 @@
 digraph G {
-"Host A:notPresent" [label="Host A:notPresent
- reward=10", shape="box", color="blue", fillcolor="white", style="filled"]
-
-"Host A:authenticate" [label="Host A:authenticate
- reward=100", shape="box", color="red", fillcolor="white", style="filled"]
-"User:3:compromise" -> "Host A:authenticate" [style="solid"]
-"Host A:connect" [label="Host A:connect", shape="box", color="red", fillcolor="white", style="filled"]
-"Host A:notPresent" -> "Host A:connect" [style="dotted"]
+"Host A:notPresent" [label="Host A:notPresent\n reward=10", shape="box", color="blue", fillcolor="white", style="filled"]
+"Host A:authenticate" [label="Host A:authenticate\n reward=100", shape="box", color="red", fillcolor="white", style="filled"]"User:3:compromise" -> "Host A:authenticate" [style="solid"]
+"Host A:connect" [label="Host A:connect", shape="box", color="red", fillcolor="white", style="filled"]"Host A:notPresent" -> "Host A:connect" [style="dotted"]
 "Network A:access" -> "Host A:connect" [style="dotted"]
-"Host A:access" [label="Host A:access", shape="box", color="red", fillcolor="white", style="filled"]
-"Host A:notPresent" -> "Host A:access" [style="dotted"]
+"Host A:access" [label="Host A:access", shape="box", color="red", fillcolor="white", style="filled"]"Host A:notPresent" -> "Host A:access" [style="dotted"]
 "Host A:authenticate" -> "Host A:access" [style="dotted"]
 "Host A:connect" -> "Host A:access" [style="dotted"]
-"Host B:notPresent" [label="Host B:notPresent
- reward=10", shape="box", color="blue", fillcolor="white", style="filled"]
-
-"Host B:authenticate" [label="Host B:authenticate
- reward=100", shape="box", color="red", fillcolor="white", style="filled"]
-"User:3:compromise" -> "Host B:authenticate" [style="solid"]
-"Host B:connect" [label="Host B:connect", shape="box", color="red", fillcolor="white", style="filled"]
-"Host B:notPresent" -> "Host B:connect" [style="dotted"]
+"Host B:notPresent" [label="Host B:notPresent\n reward=10", shape="box", color="blue", fillcolor="white", style="filled"]
+"Host B:authenticate" [label="Host B:authenticate\n reward=100", shape="box", color="red", fillcolor="white", style="filled"]"User:3:compromise" -> "Host B:authenticate" [style="solid"]
+"Host B:connect" [label="Host B:connect", shape="box", color="red", fillcolor="white", style="filled"]"Host B:notPresent" -> "Host B:connect" [style="dotted"]
 "Network A:access" -> "Host B:connect" [style="dotted"]
-"Host B:access" [label="Host B:access", shape="box", color="red", fillcolor="white", style="filled"]
-"Host B:notPresent" -> "Host B:access" [style="dotted"]
+"Host B:access" [label="Host B:access", shape="box", color="red", fillcolor="white", style="filled"]"Host B:notPresent" -> "Host B:access" [style="dotted"]
 "Host B:authenticate" -> "Host B:access" [style="dotted"]
 "Host B:connect" -> "Host B:access" [style="dotted"]
-"Host C:notPresent" [label="Host C:notPresent
- reward=10", shape="box", color="blue", fillcolor="white", style="filled"]
-
-"Host C:authenticate" [label="Host C:authenticate
- reward=100", shape="box", color="red", fillcolor="white", style="filled"]
-
-"Host C:connect" [label="Host C:connect", shape="box", color="red", fillcolor="white", style="filled"]
-"Host C:notPresent" -> "Host C:connect" [style="dotted"]
+"Host C:notPresent" [label="Host C:notPresent\n reward=10", shape="box", color="blue", fillcolor="white", style="filled"]
+"Host C:authenticate" [label="Host C:authenticate\n reward=100", shape="box", color="red", fillcolor="white", style="filled"]
+"Host C:connect" [label="Host C:connect", shape="box", color="red", fillcolor="white", style="filled"]"Host C:notPresent" -> "Host C:connect" [style="dotted"]
 "Network A:access" -> "Host C:connect" [style="dotted"]
-"Host C:access" [label="Host C:access", shape="box", color="red", fillcolor="white", style="filled"]
-"Host C:notPresent" -> "Host C:access" [style="dotted"]
+"Host C:access" [label="Host C:access", shape="box", color="red", fillcolor="white", style="filled"]"Host C:notPresent" -> "Host C:access" [style="dotted"]
 "Host C:authenticate" -> "Host C:access" [style="dotted"]
 "Host C:connect" -> "Host C:access" [style="dotted"]
 "User:3:notPresent" [label="User:3:notPresent", shape="box", color="blue", fillcolor="white", style="filled"]
-
-"User:3:compromise" [label="User:3:compromise", shape="box", color="red", fillcolor="white", style="filled"]
-"User:3:notPresent" -> "User:3:compromise" [style="dotted"]
+"User:3:compromise" [label="User:3:compromise", shape="box", color="red", fillcolor="white", style="filled"]"User:3:notPresent" -> "User:3:compromise" [style="dotted"]
 "User:3:phishing" -> "User:3:compromise" [style="dotted"]
 "User:3:phishing" [label="User:3:phishing", shape="box", color="red", fillcolor="grey", style="filled"]
-
-"Network A:access" [label="Network A:access", shape="box", color="red", fillcolor="white", style="filled"]
-"Host A:access" -> "Network A:access" [style="solid"]
+"Network A:access" [label="Network A:access", shape="box", color="red", fillcolor="white", style="filled"]"Host A:access" -> "Network A:access" [style="solid"]
 "Host B:access" -> "Network A:access" [style="solid"]
 "Host C:access" -> "Network A:access" [style="solid"]
 }

@@ -4,7 +4,7 @@ from malsim.scenario import load_scenario
 
 def dot_entry(node_id, node_data) -> str:
     label = (
-        f'{node_id}\n reward={node_data["extras"]["reward"]}'
+        f'{node_id}\\n reward={node_data["extras"]["reward"]}'
         if "extras" in node_data
         else node_id
     )
@@ -33,7 +33,7 @@ def dot_edges(node_id, node_data) -> str:
 def dot_content(attack_steps: dict) -> str:
     return "\n".join(
         [
-            dot_entry(node_id, node_data) + "\n" + dot_edges(node_id, node_data)
+            dot_entry(node_id, node_data) + dot_edges(node_id, node_data)
             for node_id, node_data in attack_steps.items()
         ]
     )
