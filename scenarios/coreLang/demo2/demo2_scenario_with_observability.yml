@@ -1,4 +1,4 @@
-lang_file: org.mal-lang.coreLang-1.0.0.mar
+lang_file: ../../../langs/org.mal-lang.coreLang-1.0.0.mar
 model_file: 2024_11_01_15_15_generated_model.yml
 
 attacker_agent_class: 'BreadthFirstAttacker'
