@@ -1,0 +1,65 @@
+lang_file: ../../../langs/org.mal-lang.trainingLang-1.0.0.mar
+model_file: demo2_model.yml
+
+attacker_agent_class: 'BreadthFirstAttacker'
+defender_agent_class: 'KeyboardAgent'
+
+rewards:
+  ap01:access: 1000
+  ap01:notPresent: 3
+  ap02:access: 1000
+  ap02:notPresent: 3
+  ap03:access: 1000
+  ap03:notPresent: 3
+  ap04:access: 1000
+  ap04:notPresent: 3
+  ap05:access: 1000
+  ap05:notPresent: 3
+  ap06:access: 1000
+  ap06:notPresent: 3
+  ap07:access: 1000
+  ap07:notPresent: 3
+  ap08:access: 1000
+  ap08:notPresent: 3
+  ap09:access: 1000
+  ap09:notPresent: 3
+  ap10:access: 1000
+  ap10:notPresent: 3
+  ap11:access: 1000
+  ap11:notPresent: 3
+  ap12:access: 1000
+  ap12:notPresent: 3
+  ap13:access: 1000
+  ap13:notPresent: 3
+  ap14:access: 1000
+  ap14:notPresent: 3
+  ap15:access: 1000
+  ap15:notPresent: 3
+  ap16:access: 1000
+  ap16:notPresent: 3
+  ca:access: 1000
+  ca:notPresent: 4
+  dc:access: 1000
+  dc:notPresent: 3
+  files:access: 1000
+  files:notPresent: 3
+  flightlogs:access: 1000
+  flightlogs:notPresent: 5
+  timereporter:access: 1000
+  timereporter:notPresent: 5
+  weborder:access: 1000
+  weborder:notPresent: 2
+
+attacker_entry_points:
+  'TestAttacker':
+    - 'flightlogs:access'
+
+observable_steps:
+  by_asset_type:
+    Host:
+      - access
+      - notPresent
+actionable_steps:
+  by_asset_type:
+    Host:
+      - notPresent
