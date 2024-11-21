@@ -1,15 +1,4 @@
-# Ideal strategy:
-# Do nothing until attacker reaches Application:0, then shut it down.
-
-# Passive defender leads to reward: -8055
-
-# DFS defender leads to reward -32059
-
-# BFS defender leads to reward -31072
-
-# Defender running Application:0:notPresent
-# when attacker reached Application:0:useVulnerability
-# leads to reward: -43
+# Converged in gnn training
 
 lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.1.mar
 model_file: model.yml
@@ -28,6 +17,25 @@ observable_steps:
     Application:
       - fullAccess
       - notPresent
+      - networkConnect
+      - attemptUseVulnerability
+      - attemptModify
+      - successfulModify
+      - modify
+      - useVulnerability
+    ConnectionRule:
+      - attemptConnectToApplications
+      - connectToApplications
+      - restricted
+      - accessNetworks
+      - bypassRestricted
+    SoftwareVulnerability:
+      - impact
+      - modify
+      - attemptAbuse
+      - notPresent
+    Network:
+      - access
 
 actionable_steps:
   by_asset_type:
