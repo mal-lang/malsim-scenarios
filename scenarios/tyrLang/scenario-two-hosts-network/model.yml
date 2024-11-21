@@ -1,0 +1,83 @@
+assets:
+  0:
+    extras:
+      position:
+        x: -1791.0
+        y: -901.0
+    name: Application:0
+    type: Application
+  1:
+    extras:
+      position:
+        x: -1788.0
+        y: -1027.0
+    name: ConnectionRule:1
+    type: ConnectionRule
+  2:
+    extras:
+      position:
+        x: -1331.0
+        y: -1029.0
+    name: Network:2
+    type: Network
+  3:
+    extras:
+      position:
+        x: -1796.0
+        y: -788.0
+    name: SoftwareVulnerability:3
+    type: SoftwareVulnerability
+  4:
+    extras:
+      position:
+        x: -865.0
+        y: -1028.0
+    name: ConnectionRule:4
+    type: ConnectionRule
+  5:
+    extras:
+      position:
+        x: -863.0
+        y: -899.0
+    name: Application:5
+    type: Application
+associations:
+- ApplicationVulnerability:
+    application:
+    - 0
+    vulnerabilities:
+    - 3
+- ApplicationConnection:
+    appConnections:
+    - 1
+    applications:
+    - 0
+- NetworkConnection:
+    netConnections:
+    - 1
+    networks:
+    - 2
+- NetworkConnection:
+    netConnections:
+    - 4
+    networks:
+    - 2
+- ApplicationConnection:
+    appConnections:
+    - 4
+    applications:
+    - 5
+attackers:
+  6:
+    entry_points:
+      5:
+        attack_steps:
+        - fullAccess
+    name: Attacker:6
+metadata:
+  MAL-Toolbox Version: 0.1.10
+  info: Created by the mal-toolbox model python module.
+  langID: org.mal-lang.tyrLang
+  langVersion: 0.0.1
+  malVersion: 0.1.0-SNAPSHOT
+  name: model

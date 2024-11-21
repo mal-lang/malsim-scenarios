@@ -99,6 +99,7 @@ observable_steps:
     Application:
       - fullAccess
       - notPresent
+
 actionable_steps:
   by_asset_type:
     Application:

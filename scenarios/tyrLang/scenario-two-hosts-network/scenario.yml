@@ -1,0 +1,35 @@
+# Ideal strategy:
+# Do nothing until attacker reaches Application:0, then shut it down.
+
+# Waiting defender leads to reward: -8055
+
+# DFS defender leads to reward -32059
+
+# BFS defender leads to reward -31072
+
+# Defender running Application:0:notPresent
+# when attacker reached SoftwareVulnerability:3:attemptAbuse
+# leads to reward: -44
+
+lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.1.mar
+model_file: model.yml
+
+attacker_agent_class: 'DepthFirstAttacker'
+defender_agent_class: 'KeyboardAgent'
+
+rewards:
+  Application:0:notPresent: 1
+  Application:0:fullAccess: 1000
+  Application:5:notPresent: 1000
+  Application:5:fullAccess: 1
+
+observable_steps:
+  by_asset_type:
+    Application:
+      - fullAccess
+      - notPresent
+
+actionable_steps:
+  by_asset_type:
+    Application:
+      - notPresent
