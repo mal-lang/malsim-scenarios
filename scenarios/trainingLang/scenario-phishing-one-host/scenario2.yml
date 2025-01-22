@@ -9,9 +9,13 @@ rewards:
   User:1:notPresent: 20
 
 # Create attacker and entry points in resulting AttackGraph
-attacker_entry_points:
+agents:
   'Attacker1':
-    - 'User:1:phishing'
+    entry_points:
+      - 'User:1:phishing'
+    agent_class: BreadthFirstAttacker
+    type: attacker
 
-attacker_agent_class: 'BreadthFirstAttacker'
-defender_agent_class: 'KeyboardAgent'
+  'Defender1':
+    type: 'defender'
+    agent_class: 'KeyboardAgent'

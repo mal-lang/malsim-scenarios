@@ -14,10 +14,14 @@ rewards:
   Sensitive Data C:read: 300
 
 # Create attacker and entry points in resulting AttackGraph
-attacker_entry_points:
+agents:
   'Attacker1':
-    - 'User A:phishing'
-    - 'Network A:access'
+    entry_points:
+      - 'User A:phishing'
+      - 'Network A:access'
+    agent_class: BreadthFirstAttacker
+    type: attacker
 
-attacker_agent_class: 'BreadthFirstAttacker'
-defender_agent_class: 'KeyboardAgent'
+  'Defender1':
+    type: 'defender'
+    agent_class: 'KeyboardAgent'
