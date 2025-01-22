@@ -1,0 +1,358 @@
+assets:
+  0:
+    name: ap01
+    type: Host
+  1:
+    name: ap02
+    type: Host
+  2:
+    name: ap03
+    type: Host
+  3:
+    name: ap04
+    type: Host
+  4:
+    name: ap05
+    type: Host
+  5:
+    name: ap06
+    type: Host
+  6:
+    name: ap07
+    type: Host
+  7:
+    name: ap08
+    type: Host
+  8:
+    name: ap09
+    type: Host
+  9:
+    name: ap10
+    type: Host
+  10:
+    name: ap11
+    type: Host
+  11:
+    name: ap12
+    type: Host
+  12:
+    name: ap13
+    type: Host
+  13:
+    name: ap14
+    type: Host
+  14:
+    name: ap15
+    type: Host
+  15:
+    name: ap16
+    type: Host
+  16:
+    name: ca
+    type: Host
+  17:
+    name: db
+    type: Host
+  18:
+    name: dc
+    type: Host
+  19:
+    name: files
+    type: Host
+  20:
+    name: flightlogs
+    type: Host
+  21:
+    name: fw1
+    type: Host
+  22:
+    name: mail
+    type: Host
+  23:
+    name: mailrelay
+    type: Host
+  24:
+    name: payroll
+    type: Host
+  25:
+    name: snort-dmz
+    type: Host
+  26:
+    name: snort-ext
+    type: Host
+  27:
+    name: snort-hqclient
+    type: Host
+  28:
+    name: snort-srv
+    type: Host
+  29:
+    name: timereporter
+    type: Host
+  30:
+    name: weborder
+    type: Host
+  31:
+    name: 134.24.3.0/24
+    type: Network
+  32:
+    name: 134.24.4.0/24
+    type: Network
+  33:
+    name: 52.33.204.0/24
+    type: Network
+  34:
+    name: 134.24.2.0/24
+    type: Network
+  35:
+    name: 134.24.17.0/24
+    type: Network
+associations:
+- HostsInNetworks:
+    hosts:
+    - 0
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 1
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 2
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 3
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 4
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 5
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 6
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 7
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 8
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 9
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 10
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 11
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 12
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 13
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 14
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 15
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 16
+    networks:
+    - 32
+- HostsInNetworks:
+    hosts:
+    - 17
+    networks:
+    - 32
+- HostsInNetworks:
+    hosts:
+    - 18
+    networks:
+    - 32
+- HostsInNetworks:
+    hosts:
+    - 19
+    networks:
+    - 32
+- HostsInNetworks:
+    hosts:
+    - 20
+    networks:
+    - 32
+- HostsInNetworks:
+    hosts:
+    - 21
+    networks:
+    - 33
+- HostsInNetworks:
+    hosts:
+    - 21
+    networks:
+    - 34
+- HostsInNetworks:
+    hosts:
+    - 21
+    networks:
+    - 31
+- HostsInNetworks:
+    hosts:
+    - 21
+    networks:
+    - 32
+- HostsInNetworks:
+    hosts:
+    - 21
+    networks:
+    - 35
+- HostsInNetworks:
+    hosts:
+    - 22
+    networks:
+    - 32
+- HostsInNetworks:
+    hosts:
+    - 23
+    networks:
+    - 34
+- HostsInNetworks:
+    hosts:
+    - 24
+    networks:
+    - 34
+- HostsInNetworks:
+    hosts:
+    - 25
+    networks:
+    - 35
+- HostsInNetworks:
+    hosts:
+    - 26
+    networks:
+    - 35
+- HostsInNetworks:
+    hosts:
+    - 27
+    networks:
+    - 35
+- HostsInNetworks:
+    hosts:
+    - 28
+    networks:
+    - 35
+- HostsInNetworks:
+    hosts:
+    - 29
+    networks:
+    - 34
+- HostsInNetworks:
+    hosts:
+    - 30
+    networks:
+    - 34
+
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 31
+    - 34
+    toNetworks:
+    - 31
+    - 34
+    
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 31
+    toNetworks:
+    - 32
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 32
+    toNetworks:
+    - 31
+
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 34
+    toNetworks:
+    - 32
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 32
+    toNetworks:
+    - 34
+
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 34
+    toNetworks:
+    - 35
+
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 35
+    toNetworks:
+    - 34
+
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 31
+    toNetworks:
+    - 35
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 35
+    toNetworks:
+    - 31
+
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 32
+    toNetworks:
+    - 35
+- InterNetworkConnectivity:
+    fromNetworks:
+    - 35
+    toNetworks:
+    - 32
+
+attackers: {}
+metadata:
+  MAL-Toolbox Version: 0.1.10
+  info: Created by the mal-toolbox model python module.
+  langID: org.mal-lang.trainingLang
+  langVersion: 1.0.0
+  malVersion: 0.1.0-SNAPSHOT
+  name: Test Model
