@@ -9,11 +9,14 @@ rewards:
   Data 0:read: 100 # Little secret data
   Data 1:read: 500 # Very secret data
 
-# Create attacker and entry points in resulting AttackGraph
-attacker_entry_points:
+agents:
   'Attacker1':
-    - 'User 0:phishing'
-    - 'Network 0:access'
+    entry_points:
+      - 'User 0:phishing'
+      - 'Network 0:access'
+    agent_class: BreadthFirstAttacker
+    type: attacker
 
-attacker_agent_class: 'BreadthFirstAttacker'
-defender_agent_class: 'KeyboardAgent'
+  'Defender1':
+    type: 'defender'
+    agent_class: 'KeyboardAgent'

@@ -1,21 +1,7 @@
-# Ideal strategy:
-# Do nothing until attacker reaches Application:0, then shut it down.
-
-# Passive defender leads to reward: -8055
-
-# DFS defender leads to reward -32059
-
-# BFS defender leads to reward -31072
-
-# Defender running Application:0:notPresent
-# when attacker reached Application:0:useVulnerability
-# leads to reward: -43
+# Converged in gnn training
 
 lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.1.mar
 model_file: model.yml
-
-attacker_agent_class: 'DepthFirstAttacker'
-defender_agent_class: 'KeyboardAgent'
 
 rewards:
   Application:0:notPresent: 1
@@ -27,9 +13,25 @@ observable_steps:
   by_asset_type:
     Application:
       - fullAccess
-      - notPresent
+    ConnectionRule:
+      - accessNetworks
+    SoftwareVulnerability:
+      - modify
+    Network:
+      - access
 
 actionable_steps:
   by_asset_type:
     Application:
       - notPresent
+
+agents:
+  'Attacker1':
+    entry_points:
+      - 'Application:5:fullAccess'
+    agent_class: BreadthFirstAttacker
+    type: attacker
+
+  'Defender1':
+    type: 'defender'
+    agent_class: 'KeyboardAgent'

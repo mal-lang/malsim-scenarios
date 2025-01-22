@@ -6,10 +6,14 @@ rewards:
   Host:0:notPresent: 10
   Host:0:access: 100
 
-# Create attacker and entry points in resulting AttackGraph
-attacker_entry_points:
+# Creates attacker and entry points in resulting AttackGraph
+agents:
   'Attacker1':
-    - 'User:1:phishing'
+    entry_points:
+      - 'User:1:phishing'
+    agent_class: BreadthFirstAttacker
+    type: attacker
 
-attacker_agent_class: 'BreadthFirstAttacker'
-defender_agent_class: 'KeyboardAgent'
+  'Defender1':
+    type: 'defender'
+    agent_class: 'KeyboardAgent'
