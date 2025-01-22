@@ -1163,13 +1163,7 @@ associations:
     - 30
     vulnerabilities:
     - 140
-attackers:
-    300:
-        entry_points:
-          20:
-            attack_steps:
-            - fullAccess
-        name: TestAttacker
+
 metadata:
   MAL-Toolbox Version: 0.1.10
   info: Created by the mal-toolbox model python module.

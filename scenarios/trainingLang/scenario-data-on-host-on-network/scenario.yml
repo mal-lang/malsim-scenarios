@@ -9,10 +9,14 @@ rewards:
   Data:2:read: 100
 
 # Create attacker and entry points in resulting AttackGraph
-attacker_entry_points:
+agents:
   'Attacker1':
-    - 'User:3:phishing'
-    - 'Network:4:access'
+    type: attacker
+    entry_points:
+      - 'User:3:phishing'
+      - 'Network:4:access'
+    agent_class: BreadthFirstAttacker
 
-attacker_agent_class: 'BreadthFirstAttacker'
-defender_agent_class: 'KeyboardAgent'
+  'Defender1':
+    type: 'defender'
+    agent_class: 'KeyboardAgent'

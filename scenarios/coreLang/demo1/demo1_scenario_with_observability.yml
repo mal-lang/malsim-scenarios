@@ -1,9 +1,6 @@
 lang_file: ../../../langs/org.mal-lang.coreLang-1.0.0.mar
 model_file: demo1_model.json
 
-attacker_agent_class: 'BreadthFirstAttacker'
-defender_agent_class: 'KeyboardAgent'
-
 rewards:
   ca:read: 1
   ca:fullAccess: 5
@@ -58,7 +55,19 @@ rewards:
   hq06:deny: 3
   hq06:notPresent: 3
 
-observable_attack_steps:
+observable_steps:
   by_asset_type:
     Application:
       - fullAccess
+
+agents:
+  'Attacker1':
+    type: 'attacker'
+    agent_class: 'BreadthFirstAttacker'
+    entry_points:
+      - www:fullAccess
+
+
+  'Defender1':
+    type: 'defender'
+    agent_class: 'KeyboardAgent'
