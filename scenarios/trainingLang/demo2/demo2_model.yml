@@ -1,356 +1,293 @@
 assets:
   0:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap01
     type: Host
   1:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap02
     type: Host
   2:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap03
     type: Host
   3:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap04
     type: Host
   4:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap05
     type: Host
   5:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap06
     type: Host
   6:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap07
     type: Host
   7:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap08
     type: Host
   8:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap09
     type: Host
   9:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap10
     type: Host
   10:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap11
     type: Host
   11:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap12
     type: Host
   12:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap13
     type: Host
   13:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap14
     type: Host
   14:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap15
     type: Host
   15:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
     name: ap16
     type: Host
   16:
+    associated_assets:
+      networks:
+        32: 134.24.4.0/24
     name: ca
     type: Host
   17:
+    associated_assets:
+      networks:
+        32: 134.24.4.0/24
     name: db
     type: Host
   18:
+    associated_assets:
+      networks:
+        32: 134.24.4.0/24
     name: dc
     type: Host
   19:
+    associated_assets:
+      networks:
+        32: 134.24.4.0/24
     name: files
     type: Host
   20:
+    associated_assets:
+      networks:
+        32: 134.24.4.0/24
     name: flightlogs
     type: Host
   21:
+    associated_assets:
+      networks:
+        31: 134.24.3.0/24
+        32: 134.24.4.0/24
+        33: 52.33.204.0/24
+        34: 134.24.2.0/24
+        35: 134.24.17.0/24
     name: fw1
     type: Host
   22:
+    associated_assets:
+      networks:
+        32: 134.24.4.0/24
     name: mail
     type: Host
   23:
+    associated_assets:
+      networks:
+        34: 134.24.2.0/24
     name: mailrelay
     type: Host
   24:
+    associated_assets:
+      networks:
+        34: 134.24.2.0/24
     name: payroll
     type: Host
   25:
+    associated_assets:
+      networks:
+        35: 134.24.17.0/24
     name: snort-dmz
     type: Host
   26:
+    associated_assets:
+      networks:
+        35: 134.24.17.0/24
     name: snort-ext
     type: Host
   27:
+    associated_assets:
+      networks:
+        35: 134.24.17.0/24
     name: snort-hqclient
     type: Host
   28:
+    associated_assets:
+      networks:
+        35: 134.24.17.0/24
     name: snort-srv
     type: Host
   29:
+    associated_assets:
+      networks:
+        34: 134.24.2.0/24
     name: timereporter
     type: Host
   30:
+    associated_assets:
+      networks:
+        34: 134.24.2.0/24
     name: weborder
     type: Host
   31:
+    associated_assets:
+      fromNetworks:
+        31: 134.24.3.0/24
+        32: 134.24.4.0/24
+        34: 134.24.2.0/24
+        35: 134.24.17.0/24
+      hosts:
+        0: ap01
+        1: ap02
+        2: ap03
+        3: ap04
+        4: ap05
+        5: ap06
+        6: ap07
+        7: ap08
+        8: ap09
+        9: ap10
+        10: ap11
+        11: ap12
+        12: ap13
+        13: ap14
+        14: ap15
+        15: ap16
+        21: fw1
+      toNetworks:
+        31: 134.24.3.0/24
+        32: 134.24.4.0/24
+        34: 134.24.2.0/24
+        35: 134.24.17.0/24
     name: 134.24.3.0/24
     type: Network
   32:
+    associated_assets:
+      fromNetworks:
+        31: 134.24.3.0/24
+        34: 134.24.2.0/24
+        35: 134.24.17.0/24
+      hosts:
+        16: ca
+        17: db
+        18: dc
+        19: files
+        20: flightlogs
+        21: fw1
+        22: mail
+      toNetworks:
+        31: 134.24.3.0/24
+        34: 134.24.2.0/24
+        35: 134.24.17.0/24
     name: 134.24.4.0/24
     type: Network
   33:
+    associated_assets:
+      hosts:
+        21: fw1
     name: 52.33.204.0/24
     type: Network
   34:
+    associated_assets:
+      fromNetworks:
+        31: 134.24.3.0/24
+        32: 134.24.4.0/24
+        34: 134.24.2.0/24
+        35: 134.24.17.0/24
+      hosts:
+        21: fw1
+        23: mailrelay
+        24: payroll
+        29: timereporter
+        30: weborder
+      toNetworks:
+        31: 134.24.3.0/24
+        32: 134.24.4.0/24
+        34: 134.24.2.0/24
+        35: 134.24.17.0/24
     name: 134.24.2.0/24
     type: Network
   35:
+    associated_assets:
+      fromNetworks:
+        31: 134.24.3.0/24
+        32: 134.24.4.0/24
+        34: 134.24.2.0/24
+      hosts:
+        21: fw1
+        25: snort-dmz
+        26: snort-ext
+        27: snort-hqclient
+        28: snort-srv
+      toNetworks:
+        31: 134.24.3.0/24
+        32: 134.24.4.0/24
+        34: 134.24.2.0/24
     name: 134.24.17.0/24
     type: Network
-associations:
-- HostsInNetworks:
-    hosts:
-    - 0
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 1
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 2
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 3
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 4
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 5
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 6
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 7
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 8
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 9
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 10
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 11
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 12
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 13
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 14
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 15
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 16
-    networks:
-    - 32
-- HostsInNetworks:
-    hosts:
-    - 17
-    networks:
-    - 32
-- HostsInNetworks:
-    hosts:
-    - 18
-    networks:
-    - 32
-- HostsInNetworks:
-    hosts:
-    - 19
-    networks:
-    - 32
-- HostsInNetworks:
-    hosts:
-    - 20
-    networks:
-    - 32
-- HostsInNetworks:
-    hosts:
-    - 21
-    networks:
-    - 33
-- HostsInNetworks:
-    hosts:
-    - 21
-    networks:
-    - 34
-- HostsInNetworks:
-    hosts:
-    - 21
-    networks:
-    - 31
-- HostsInNetworks:
-    hosts:
-    - 21
-    networks:
-    - 32
-- HostsInNetworks:
-    hosts:
-    - 21
-    networks:
-    - 35
-- HostsInNetworks:
-    hosts:
-    - 22
-    networks:
-    - 32
-- HostsInNetworks:
-    hosts:
-    - 23
-    networks:
-    - 34
-- HostsInNetworks:
-    hosts:
-    - 24
-    networks:
-    - 34
-- HostsInNetworks:
-    hosts:
-    - 25
-    networks:
-    - 35
-- HostsInNetworks:
-    hosts:
-    - 26
-    networks:
-    - 35
-- HostsInNetworks:
-    hosts:
-    - 27
-    networks:
-    - 35
-- HostsInNetworks:
-    hosts:
-    - 28
-    networks:
-    - 35
-- HostsInNetworks:
-    hosts:
-    - 29
-    networks:
-    - 34
-- HostsInNetworks:
-    hosts:
-    - 30
-    networks:
-    - 34
-
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 31
-    - 34
-    toNetworks:
-    - 31
-    - 34
-    
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 31
-    toNetworks:
-    - 32
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 32
-    toNetworks:
-    - 31
-
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 34
-    toNetworks:
-    - 32
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 32
-    toNetworks:
-    - 34
-
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 34
-    toNetworks:
-    - 35
-
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 35
-    toNetworks:
-    - 34
-
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 31
-    toNetworks:
-    - 35
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 35
-    toNetworks:
-    - 31
-
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 32
-    toNetworks:
-    - 35
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 35
-    toNetworks:
-    - 32
-
 attackers: {}
 metadata:
-  MAL-Toolbox Version: 0.1.10
+  MAL-Toolbox Version: 0.3.6
   info: Created by the mal-toolbox model python module.
   langID: org.mal-lang.trainingLang
   langVersion: 1.0.0

@@ -1,38 +1,45 @@
 assets:
   0:
+    associated_assets:
+      networks:
+        4: Network A
+      users:
+        3: User:3
     name: Host A
     type: Host
   1:
+    associated_assets:
+      networks:
+        4: Network A
+      users:
+        3: User:3
     name: Host B
     type: Host
   2:
+    associated_assets:
+      networks:
+        4: Network A
     name: Host C
     type: Host
   3:
+    associated_assets:
+      hosts:
+        0: Host A
+        1: Host B
     name: User:3
     type: User
   4:
+    associated_assets:
+      hosts:
+        0: Host A
+        1: Host B
+        2: Host C
     name: Network A
     type: Network
-
-associations:
-  - HostsInNetworks:
-      hosts:
-      - 0
-      - 1
-      - 2
-      networks:
-      - 4
-  - UsersOnHosts:
-      users:
-      - 3
-      hosts:
-      - 0
-      - 1
-
+attackers: {}
 metadata:
-  MAL-Toolbox Version: 0.1.6
-  info: Created manually
+  MAL-Toolbox Version: 0.3.6
+  info: Created by the mal-toolbox model python module.
   langID: org.mal-lang.trainingLang
   langVersion: 1.0.0
   malVersion: 0.1.0-SNAPSHOT

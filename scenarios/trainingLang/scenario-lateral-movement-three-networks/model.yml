@@ -1,95 +1,115 @@
 assets:
   0:
+    associated_assets:
+      data:
+        3: Sensitive Data A
+      networks:
+        9: Network A
+      users:
+        6: User A
+        7: User B
+        8: User C
     name: Host A
     type: Host
   1:
+    associated_assets:
+      data:
+        4: Sensitive Data B
+      networks:
+        10: Network B
+      users:
+        6: User A
+        7: User B
+        8: User C
     name: Host B
     type: Host
   2:
+    associated_assets:
+      data:
+        5: Sensitive Data C
+      networks:
+        11: Network C
+      users:
+        6: User A
+        7: User B
+        8: User C
     name: Host C
     type: Host
   3:
+    associated_assets:
+      hosts:
+        0: Host A
     name: Sensitive Data A
     type: Data
   4:
+    associated_assets:
+      hosts:
+        1: Host B
     name: Sensitive Data B
     type: Data
   5:
+    associated_assets:
+      hosts:
+        2: Host C
     name: Sensitive Data C
     type: Data
   6:
+    associated_assets:
+      hosts:
+        0: Host A
+        1: Host B
+        2: Host C
     name: User A
     type: User
   7:
+    associated_assets:
+      hosts:
+        0: Host A
+        1: Host B
+        2: Host C
     name: User B
     type: User
   8:
+    associated_assets:
+      hosts:
+        0: Host A
+        1: Host B
+        2: Host C
     name: User C
     type: User
   9:
+    associated_assets:
+      fromNetworks:
+        10: Network B
+      hosts:
+        0: Host A
+      toNetworks:
+        10: Network B
     name: Network A
     type: Network
   10:
+    associated_assets:
+      fromNetworks:
+        9: Network A
+      hosts:
+        1: Host B
+      toNetworks:
+        9: Network A
+        11: Network C
     name: Network B
     type: Network
   11:
+    associated_assets:
+      fromNetworks:
+        10: Network B
+      hosts:
+        2: Host C
     name: Network C
     type: Network
-associations:
-  - HostsInNetworks:
-      hosts:
-      - 0
-      networks:
-      - 9
-  - HostsInNetworks:
-      hosts:
-      - 1
-      networks:
-      - 10
-  - HostsInNetworks:
-      hosts:
-      - 2
-      networks:
-      - 11
-  - InterNetworkConnectivity:
-      fromNetworks:
-      - 9
-      toNetworks:
-      - 10
-  - InterNetworkConnectivity:
-      fromNetworks:
-      - 10
-      toNetworks:
-      - 11
-      - 9
-  - UsersOnHosts: # All users on all hosts
-      users:
-      - 6
-      - 7
-      - 8
-      hosts:
-      - 0
-      - 1
-      - 2
-  - DataOnHosts:
-      data:
-      - 3
-      hosts:
-      - 0
-  - DataOnHosts:
-      data:
-      - 4
-      hosts:
-      - 1
-  - DataOnHosts:
-      data:
-      - 5
-      hosts:
-      - 2
-
+attackers: {}
 metadata:
-  MAL-Toolbox Version: 0.1.6
-  info: Created manually
+  MAL-Toolbox Version: 0.3.6
+  info: Created by the mal-toolbox model python module.
   langID: org.mal-lang.trainingLang
   langVersion: 1.0.0
   malVersion: 0.1.0-SNAPSHOT

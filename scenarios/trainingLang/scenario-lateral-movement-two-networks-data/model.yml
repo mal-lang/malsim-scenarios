@@ -1,83 +1,76 @@
 assets:
   0:
+    associated_assets:
+      data:
+        2: Data 0
+      networks:
+        6: Network 0
+      users:
+        4: User 0
+        5: User 1
     name: Host 0
     type: Host
   1:
+    associated_assets:
+      data:
+        3: Data 1
+      networks:
+        7: Network 1
+      users:
+        4: User 0
+        5: User 1
     name: Host 1
     type: Host
   2:
+    associated_assets:
+      hosts:
+        0: Host 0
     name: Data 0
     type: Data
   3:
+    associated_assets:
+      hosts:
+        1: Host 1
     name: Data 1
     type: Data
   4:
+    associated_assets:
+      hosts:
+        0: Host 0
+        1: Host 1
     name: User 0
     type: User
   5:
+    associated_assets:
+      hosts:
+        0: Host 0
+        1: Host 1
     name: User 1
     type: User
   6:
+    associated_assets:
+      fromNetworks:
+        7: Network 1
+      hosts:
+        0: Host 0
+      toNetworks:
+        7: Network 1
     name: Network 0
     type: Network
   7:
+    associated_assets:
+      fromNetworks:
+        6: Network 0
+      hosts:
+        1: Host 1
+      toNetworks:
+        6: Network 0
     name: Network 1
     type: Network
-
-associations:
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 6
-    toNetworks:
-    - 7
-
-- InterNetworkConnectivity:
-    fromNetworks:
-    - 7
-    toNetworks:
-    - 6
-
-- HostsInNetworks:
-    hosts:
-    - 0
-    networks:
-    - 6
-
-- HostsInNetworks:
-    hosts:
-    - 1
-    networks:
-    - 7
-
-- UsersOnHosts:
-    users:
-    - 4
-    - 5
-    hosts:
-    - 0
-
-- UsersOnHosts:
-    users:
-    - 5
-    - 4
-    hosts:
-    - 1
-
-- DataOnHosts:
-    data:
-    - 2
-    hosts:
-    - 0
-
-- DataOnHosts:
-    data:
-    - 3
-    hosts:
-    - 1
-
+attackers: {}
 metadata:
-  MAL-Toolbox Version: 0.1.6
-  info: Created manually.
+  MAL-Toolbox Version: 0.3.6
+  info: Created by the mal-toolbox model python module.
   langID: org.mal-lang.trainingLang
   langVersion: 1.0.0
   malVersion: 0.1.0-SNAPSHOT

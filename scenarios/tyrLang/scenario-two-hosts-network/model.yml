@@ -1,5 +1,10 @@
 assets:
   0:
+    associated_assets:
+      appConnections:
+        1: ConnectionRule:1
+      vulnerabilities:
+        3: SoftwareVulnerability:3
     extras:
       position:
         x: -1791.0
@@ -7,6 +12,11 @@ assets:
     name: Application:0
     type: Application
   1:
+    associated_assets:
+      applications:
+        0: Application:0
+      networks:
+        2: Network:2
     extras:
       position:
         x: -1788.0
@@ -14,6 +24,10 @@ assets:
     name: ConnectionRule:1
     type: ConnectionRule
   2:
+    associated_assets:
+      netConnections:
+        1: ConnectionRule:1
+        4: ConnectionRule:4
     extras:
       position:
         x: -1331.0
@@ -21,6 +35,9 @@ assets:
     name: Network:2
     type: Network
   3:
+    associated_assets:
+      application:
+        0: Application:0
     extras:
       position:
         x: -1796.0
@@ -28,6 +45,11 @@ assets:
     name: SoftwareVulnerability:3
     type: SoftwareVulnerability
   4:
+    associated_assets:
+      applications:
+        5: Application:5
+      networks:
+        2: Network:2
     extras:
       position:
         x: -865.0
@@ -35,47 +57,25 @@ assets:
     name: ConnectionRule:4
     type: ConnectionRule
   5:
+    associated_assets:
+      appConnections:
+        4: ConnectionRule:4
     extras:
       position:
         x: -863.0
         y: -899.0
     name: Application:5
     type: Application
-associations:
-- ApplicationVulnerability:
-    application:
-    - 0
-    vulnerabilities:
-    - 3
-- ApplicationConnection:
-    appConnections:
-    - 1
-    applications:
-    - 0
-- NetworkConnection:
-    netConnections:
-    - 1
-    networks:
-    - 2
-- NetworkConnection:
-    netConnections:
-    - 4
-    networks:
-    - 2
-- ApplicationConnection:
-    appConnections:
-    - 4
-    applications:
-    - 5
 attackers:
   6:
     entry_points:
-      5:
+      Application:5:
+        asset_id: 5
         attack_steps:
         - fullAccess
     name: Attacker:6
 metadata:
-  MAL-Toolbox Version: 0.1.10
+  MAL-Toolbox Version: 0.3.6
   info: Created by the mal-toolbox model python module.
   langID: org.mal-lang.tyrLang
   langVersion: 0.0.1

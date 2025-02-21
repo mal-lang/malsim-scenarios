@@ -1,29 +1,28 @@
 assets:
   0:
+    associated_assets:
+      data:
+        1: Sensitive Data
+      users:
+        2: User:2
     name: Host A
     type: Host
   1:
+    associated_assets:
+      hosts:
+        0: Host A
     name: Sensitive Data
     type: Data
   2:
+    associated_assets:
+      hosts:
+        0: Host A
     name: User:2
     type: User
-
-associations:
-  - UsersOnHosts:
-      users:
-      - 2
-      hosts:
-      - 0
-  - DataOnHosts:
-      data:
-      - 1
-      hosts:
-      - 0
-
+attackers: {}
 metadata:
-  MAL-Toolbox Version: 0.1.6
-  info: Created manually
+  MAL-Toolbox Version: 0.3.6
+  info: Created by the mal-toolbox model python module.
   langID: org.mal-lang.trainingLang
   langVersion: 1.0.0
   malVersion: 0.1.0-SNAPSHOT

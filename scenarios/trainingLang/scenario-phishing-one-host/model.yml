@@ -1,21 +1,20 @@
 assets:
   0:
+    associated_assets:
+      users:
+        1: User:1
     name: Host:0
     type: Host
   1:
+    associated_assets:
+      hosts:
+        0: Host:0
     name: User:1
     type: User
-
-associations:
-- UsersOnHosts:
-    hosts:
-    - 0
-    users:
-    - 1
-
+attackers: {}
 metadata:
-  MAL-Toolbox Version: 0.1.6
-  info: Created manually
+  MAL-Toolbox Version: 0.3.6
+  info: Created by the mal-toolbox model python module.
   langID: org.mal-lang.trainingLang
   langVersion: 1.0.0
   malVersion: 0.1.0-SNAPSHOT
