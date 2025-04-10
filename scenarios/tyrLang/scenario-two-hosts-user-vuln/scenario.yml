@@ -8,6 +8,26 @@ rewards:
   App_A:notPresent: 7
   App_B:notPresent: 7
 
+actionable_steps:
+  by_asset_name:
+    App_A_User:
+      - notPresent
+    CR_A_to_B:
+      - restricted
+    App_A_User:
+      - notPresent
+
+observable_steps:
+  by_asset_name:
+    App_A_User:
+      - notPresent
+    App_A:
+      - fullAccess
+    App_B:
+      - fullAccess
+    CR_A_to_B:
+      - restricted
+
 agents:
   EvilAttacker:
     type: attacker
