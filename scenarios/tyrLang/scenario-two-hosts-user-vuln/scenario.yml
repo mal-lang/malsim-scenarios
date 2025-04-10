@@ -1,0 +1,19 @@
+# Converged in gnn training
+
+lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.4.mar
+model_file: model.yml
+
+rewards:
+  App_A:fullAccess: 1000
+
+agents:
+
+  EvilAttacker:
+    type: attacker
+    agent_class: 'DepthFirstAttacker'
+    entry_points:
+      - App_B:fullAccess
+
+  PassiveDefender:
+    type: defender
+    agent_class: 'PassiveAgent'

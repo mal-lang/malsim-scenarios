@@ -1,0 +1,76 @@
+assets:
+  0:
+    associated_assets:
+      appConnections:
+        4: CR_A_to_B
+      executionPrivIAMs:
+        11: App_A_User
+      vulnerabilities:
+        14: App_A_Vuln
+    extras:
+      position:
+        x: -1129.0
+        y: -481.0
+    name: App_A
+    type: Application
+  1:
+    associated_assets:
+      appConnections:
+        4: CR_A_to_B
+    extras:
+      position:
+        x: -175.5
+        y: -489.0
+    name: App_B
+    type: Application
+  4:
+    associated_assets:
+      applications:
+        0: App_A
+        1: App_B
+    extras:
+      position:
+        x: -639.0
+        y: -492.0
+    name: CR_A_to_B
+    type: ConnectionRule
+  11:
+    associated_assets:
+      credentials:
+        13: App_A_User_Creds
+      execPrivApps:
+        0: App_A
+    extras:
+      position:
+        x: -904.5
+        y: -294.0
+    name: App_A_User
+    type: Identity
+  13:
+    associated_assets:
+      identities:
+        11: App_A_User
+    extras:
+      position:
+        x: -904.5
+        y: -144.0
+    name: App_A_User_Creds
+    type: Credentials
+  14:
+    associated_assets:
+      application:
+        0: App_A
+    extras:
+      position:
+        x: -1272.0
+        y: -298.5
+    name: App_A_Vuln
+    type: SoftwareVulnerability
+
+metadata:
+  MAL-Toolbox Version: 0.3.9
+  info: Created by the mal-toolbox model python module.
+  langID: org.mal-lang.tyrLang
+  langVersion: 0.0.4
+  malVersion: 0.1.0-SNAPSHOT
+  name: model
