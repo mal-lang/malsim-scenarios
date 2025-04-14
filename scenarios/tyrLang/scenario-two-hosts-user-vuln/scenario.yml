@@ -8,25 +8,24 @@ rewards:
   App_A:notPresent: 7
   App_B:notPresent: 7
 
-actionable_steps:
-  by_asset_name:
-    App_A_User:
-      - notPresent
-    CR_A_to_B:
-      - restricted
-    App_A_User:
-      - notPresent
+# actionable_steps:
+#   by_asset_type:
+#     Application:
+#       - notPresent
+#     ConnectionRule:
+#       - restricted
+#     Identity:
+#       - notPresent
 
 observable_steps:
-  by_asset_name:
-    App_A_User:
+  by_asset_type:
+    Application:
       - notPresent
-    App_A:
       - fullAccess
-    App_B:
-      - fullAccess
-    CR_A_to_B:
+    ConnectionRule:
       - restricted
+    Identity:
+      - notPresent
 
 agents:
   EvilAttacker:
@@ -37,4 +36,4 @@ agents:
 
   PassiveDefender:
     type: defender
-    agent_class: 'PassiveAgent'
+    agent_class: 'DefendFutureCompromisedDefender'
