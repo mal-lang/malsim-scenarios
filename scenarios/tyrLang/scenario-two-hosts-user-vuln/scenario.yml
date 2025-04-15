@@ -22,10 +22,15 @@ observable_steps:
     Application:
       - notPresent
       - fullAccess
+      - networkConnect
     ConnectionRule:
       - restricted
+      - attemptConnectToApplications
+      - attemptAccessNetworks
     Identity:
       - notPresent
+    Credentials:
+      - attemptGuessCredentials
 
 agents:
   EvilAttacker:
