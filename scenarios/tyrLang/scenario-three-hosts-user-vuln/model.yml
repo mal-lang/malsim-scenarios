@@ -1,0 +1,123 @@
+assets:
+  0:
+    associated_assets:
+      appConnections:
+        4: CR_A_BC
+    extras:
+      position:
+        x: -600.0
+        y: -435.0
+    name: App_A
+    type: Application
+  1:
+    associated_assets:
+      appConnections:
+        4: CR_A_BC
+        5: CR_BC_D
+      vulnerabilities:
+        9: App_B_SWVuln
+    extras:
+      position:
+        x: 180.0
+        y: -570.0
+    name: App_B
+    type: Application
+  2:
+    associated_assets:
+      appConnections:
+        4: CR_A_BC
+        5: CR_BC_D
+      executionPrivIAMs:
+        7: App_C_Identity
+    extras:
+      position:
+        x: 193.5
+        y: -288.0
+    name: App_C
+    type: Application
+  3:
+    associated_assets:
+      appConnections:
+        5: CR_BC_D
+      vulnerabilities:
+        6: App_D_SWVuln
+    extras:
+      position:
+        x: 868.5
+        y: -463.5
+    name: App_D
+    type: Application
+  4:
+    associated_assets:
+      applications:
+        0: App_A
+        1: App_B
+        2: App_C
+    extras:
+      position:
+        x: -159.0
+        y: -435.0
+    name: CR_A_BC
+    type: ConnectionRule
+  5:
+    associated_assets:
+      applications:
+        1: App_B
+        2: App_C
+        3: App_D
+    extras:
+      position:
+        x: 482.625
+        y: -455.625
+    name: CR_BC_D
+    type: ConnectionRule
+  6:
+    associated_assets:
+      application:
+        3: App_D
+    extras:
+      position:
+        x: 865.5
+        y: -628.5
+    name: App_D_SWVuln
+    type: SoftwareVulnerability
+  7:
+    associated_assets:
+      credentials:
+        8: App_C_Creds
+      execPrivApps:
+        2: App_C
+    extras:
+      position:
+        x: 192.0
+        y: -106.5
+    name: App_C_Identity
+    type: Identity
+  8:
+    associated_assets:
+      identities:
+        7: App_C_Identity
+    extras:
+      position:
+        x: 195.0
+        y: 63.0
+    name: App_C_Creds
+    type: Credentials
+  9:
+    associated_assets:
+      application:
+        1: App_B
+    extras:
+      position:
+        x: 180.0
+        y: -730.5
+    name: App_B_SWVuln
+    type: SoftwareVulnerability
+attackers: {}
+metadata:
+  MAL-Toolbox Version: 0.3.9
+  info: Created by the mal-toolbox model python module.
+  langID: org.mal-lang.tyrLang
+  langVersion: 0.0.5
+  malVersion: 0.1.0-SNAPSHOT
+  name: model
