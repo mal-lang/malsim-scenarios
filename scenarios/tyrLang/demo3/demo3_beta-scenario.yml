@@ -136,11 +136,11 @@ rewards:
   CR flightlogs-134.24.4.0/24:restricted: 5.4
   Admin Exec Identity - flightlogs:notPresent: 5.2
   fw1:notPresent: 10000.7
-  CR fw1-52.33.204.0/24:restricted: 10000.4
-  CR fw1-134.24.2.0/24:restricted: 10000.4
-  CR fw1-134.24.17.0/24:restricted: 10000.4
   CR fw1-134.24.4.0/24:restricted: 10000.4
+  CR fw1-134.24.17.0/24:restricted: 10000.4
   CR fw1-134.24.3.0/24:restricted: 10000.4
+  CR fw1-134.24.2.0/24:restricted: 10000.4
+  CR fw1-52.33.204.0/24:restricted: 10000.4
   Admin Exec Identity - fw1:notPresent: 10000.2
   mail:notPresent: 0.7
   CR mail-134.24.4.0/24:restricted: 0.4
@@ -155,7 +155,6 @@ rewards:
   CR ntp-134.24.4.0/24:restricted: 0.4
   Admin Exec Identity - ntp:notPresent: 0.2
   payroll:notPresent: 0.7
-  CR payroll - dc:restricted: 4.4
   CR payroll-134.24.2.0/24:restricted: 0.4
   Admin Exec Identity - payroll:notPresent: 0.2
   print:notPresent: 0.7
