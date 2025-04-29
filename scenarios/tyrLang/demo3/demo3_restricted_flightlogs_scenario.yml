@@ -113,6 +113,7 @@ rewards:
   ap16:notPresent: 3.7
   CR ap16-134.24.3.0/24:restricted: 3.4
   Admin Exec Identity - ap16:notPresent: 3.2
+  CR 134.24.4.0/24 Internal:restricted: 5.4
   ca:notPresent: 4.7
   CR ca-134.24.4.0/24:restricted: 4.4
   Admin Exec Identity - ca:notPresent: 4.2
@@ -126,7 +127,6 @@ rewards:
   CR files-134.24.4.0/24:restricted: 4.4
   Admin Exec Identity - files:notPresent: 4.2
   flightlogs:notPresent: 5.7
-  CR flightlogs-134.24.4.0/24:restricted: 5.4
   Admin Exec Identity - flightlogs:notPresent: 5.2
   mail:notPresent: 0.7
   CR mail-134.24.4.0/24:restricted: 0.4
