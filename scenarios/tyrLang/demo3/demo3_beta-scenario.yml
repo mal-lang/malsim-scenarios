@@ -133,7 +133,6 @@ rewards:
   CR files-134.24.4.0/24:restricted: 4.4
   Admin Exec Identity - files:notPresent: 4.2
   flightlogs:notPresent: 5.7
-  CR flightlogs-134.24.4.0/24:restricted: 5.4
   Admin Exec Identity - flightlogs:notPresent: 5.2
   fw1:notPresent: 10000.7
   CR fw1-134.24.4.0/24:restricted: 10000.4
