@@ -567,6 +567,9 @@ assets:
     type: Application
   29:
     associated_assets:
+      interNetConnections:
+        61: CR 134.24.3.0/24 - 134.24.2.0/24
+        62: CR 134.24.3.0/24 - 134.24.4.0/24
       netConnections:
         30: CR ap01-134.24.3.0/24
         31: CR ap02-134.24.3.0/24
@@ -584,8 +587,6 @@ assets:
         43: CR ap14-134.24.3.0/24
         44: CR ap15-134.24.3.0/24
         45: CR ap16-134.24.3.0/24
-        61: CR 134.24.3.0/24 - 134.24.2.0/24
-        62: CR 134.24.3.0/24 - 134.24.4.0/24
     name: 134.24.3.0/24
     type: Network
   30:
@@ -718,6 +719,9 @@ assets:
     type: ConnectionRule
   46:
     associated_assets:
+      interNetConnections:
+        62: CR 134.24.3.0/24 - 134.24.4.0/24
+        63: CR 134.24.4.0/24 - 134.24.2.0/24
       netConnections:
         47: CR ca-134.24.4.0/24
         48: CR db-134.24.4.0/24
@@ -726,8 +730,6 @@ assets:
         52: CR mail-134.24.4.0/24
         56: CR ntp-134.24.4.0/24
         58: CR print-134.24.4.0/24
-        62: CR 134.24.3.0/24 - 134.24.4.0/24
-        63: CR 134.24.4.0/24 - 134.24.2.0/24
     name: 134.24.4.0/24
     type: Network
   47:
@@ -772,14 +774,15 @@ assets:
     type: ConnectionRule
   53:
     associated_assets:
+      interNetConnections:
+        61: CR 134.24.3.0/24 - 134.24.2.0/24
+        63: CR 134.24.4.0/24 - 134.24.2.0/24
       netConnections:
         54: CR mailrelay-134.24.2.0/24
         55: CR ns-134.24.2.0/24
         57: CR payroll-134.24.2.0/24
         59: CR timereporter-134.24.2.0/24
         60: CR weborder-134.24.2.0/24
-        61: CR 134.24.3.0/24 - 134.24.2.0/24
-        63: CR 134.24.4.0/24 - 134.24.2.0/24
     name: 134.24.2.0/24
     type: Network
   54:
@@ -840,25 +843,25 @@ assets:
     type: ConnectionRule
   61:
     associated_assets:
-      networks:
+      interNetworks:
         29: 134.24.3.0/24
         53: 134.24.2.0/24
     name: CR 134.24.3.0/24 - 134.24.2.0/24
-    type: ConnectionRule
+    type: InternetworkConnectionRule
   62:
     associated_assets:
-      networks:
+      interNetworks:
         29: 134.24.3.0/24
         46: 134.24.4.0/24
     name: CR 134.24.3.0/24 - 134.24.4.0/24
-    type: ConnectionRule
+    type: InternetworkConnectionRule
   63:
     associated_assets:
-      networks:
+      interNetworks:
         46: 134.24.4.0/24
         53: 134.24.2.0/24
     name: CR 134.24.4.0/24 - 134.24.2.0/24
-    type: ConnectionRule
+    type: InternetworkConnectionRule
   64:
     associated_assets:
       credentials:
@@ -1457,6 +1460,6 @@ metadata:
   MAL-Toolbox Version: 0.3.11
   info: Created by the mal-toolbox model python module.
   langID: org.mal-lang.tyrLang
-  langVersion: 0.0.5
+  langVersion: 0.0.6
   malVersion: 0.1.0-SNAPSHOT
   name: Demo Model
