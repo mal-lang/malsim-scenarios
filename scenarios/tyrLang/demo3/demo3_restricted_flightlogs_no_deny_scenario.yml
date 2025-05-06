@@ -123,10 +123,10 @@ rewards:
   ntp:notPresent: 0.7
   CR ntp-134.24.4.0/24:restricted: 0.4
   Admin Exec Identity - ntp:notPresent: 0.2
-  payroll:notPresent: 0.7
+  payroll:notPresent: 2.7
   CR payroll-134.24.2.0/24:restricted: 2.4
   Admin Exec Identity - payroll:notPresent: 2.2
-  print:notPresent: 2.7
+  print:notPresent: 0.7
   CR print-134.24.4.0/24:restricted: 0.4
   Admin Exec Identity - print:notPresent: 0.2
   timereporter:notPresent: 5.7
