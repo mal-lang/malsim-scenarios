@@ -1,4 +1,4 @@
-lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.5.mar
+lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.6.mar
 model_file: demo3_restricted_flightlogs_model.yml
 
 rewards:
@@ -135,9 +135,6 @@ rewards:
   weborder:notPresent: 2.7
   CR weborder-134.24.2.0/24:restricted: 2.4
   Admin Exec Identity - weborder:notPresent: 2.2
-  CR 134.24.3.0/24 - 134.24.2.0/24:restricted: 10000.0
-  CR 134.24.3.0/24 - 134.24.4.0/24:restricted: 10000.0
-  CR 134.24.4.0/24 - 134.24.2.0/24:restricted: 10000.0
 
 observable_steps:
   by_asset_type:
