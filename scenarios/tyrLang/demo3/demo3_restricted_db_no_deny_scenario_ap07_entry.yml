@@ -1,4 +1,4 @@
-lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.6.mar
+lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.7.mar
 model_file: demo3_restricted_db_model.yml
 
 rewards:
