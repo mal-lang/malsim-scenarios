@@ -1,0 +1,227 @@
+assets:
+  0:
+    associated_assets:
+      appConnections:
+        4: CrApp2NetA
+      vulnerabilities:
+        6: App2SWVuln
+    extras:
+      position:
+        x: -472.0
+        y: -272.0
+    name: App2
+    type: Application
+  1:
+    associated_assets:
+      appConnections:
+        5: CRApp4NetB
+      executionPrivIAMs:
+        7: App4Identity
+    extras:
+      position:
+        x: 248.0
+        y: -273.0
+    name: App4
+    type: Application
+  2:
+    associated_assets:
+      netConnections:
+        4: CrApp2NetA
+        10: CRNetANetB
+        13: CrApp1NetA
+        20: CREntrypointNetA
+    extras:
+      position:
+        x: -470.0
+        y: -533.0
+    name: NetworkA
+    type: Network
+  3:
+    associated_assets:
+      netConnections:
+        5: CRApp4NetB
+        10: CRNetANetB
+        18: CRApp3NetB
+    extras:
+      position:
+        x: 244.0
+        y: -527.0
+    name: NetworkB
+    type: Network
+  4:
+    associated_assets:
+      applications:
+        0: App2
+      networks:
+        2: NetworkA
+    extras:
+      position:
+        x: -473.0
+        y: -388.0
+    name: CrApp2NetA
+    type: ConnectionRule
+  5:
+    associated_assets:
+      applications:
+        1: App4
+      networks:
+        3: NetworkB
+    extras:
+      position:
+        x: 247.0
+        y: -399.0
+    name: CRApp4NetB
+    type: ConnectionRule
+  6:
+    associated_assets:
+      application:
+        0: App2
+    extras:
+      position:
+        x: -474.0
+        y: -145.0
+    name: App2SWVuln
+    type: SoftwareVulnerability
+  7:
+    associated_assets:
+      credentials:
+        8: App4Creds
+      execPrivApps:
+        1: App4
+    extras:
+      position:
+        x: 251.0
+        y: -154.0
+    name: App4Identity
+    type: Identity
+  8:
+    associated_assets:
+      identities:
+        7: App4Identity
+    extras:
+      position:
+        x: 254.0
+        y: -29.0
+    name: App4Creds
+    type: Credentials
+  10:
+    associated_assets:
+      networks:
+        2: NetworkA
+        3: NetworkB
+    extras:
+      position:
+        x: -157.0
+        y: -685.0
+    name: CRNetANetB
+    type: ConnectionRule
+  12:
+    associated_assets:
+      appConnections:
+        18: CRApp3NetB
+      vulnerabilities:
+        17: App3SWVuln
+    extras:
+      position:
+        x: -19.0
+        y: -274.0
+    name: App3
+    type: Application
+  13:
+    associated_assets:
+      applications:
+        14: App1
+      networks:
+        2: NetworkA
+    extras:
+      position:
+        x: -766.0
+        y: -390.0
+    name: CrApp1NetA
+    type: ConnectionRule
+  14:
+    associated_assets:
+      appConnections:
+        13: CrApp1NetA
+      executionPrivIAMs:
+        15: App1Identity
+    extras:
+      position:
+        x: -770.0
+        y: -273.0
+    name: App1
+    type: Application
+  15:
+    associated_assets:
+      credentials:
+        16: App1Creds
+      execPrivApps:
+        14: App1
+    extras:
+      position:
+        x: -779.0
+        y: -148.0
+    name: App1Identity
+    type: Identity
+  16:
+    associated_assets:
+      identities:
+        15: App1Identity
+    extras:
+      position:
+        x: -782.0
+        y: -43.0
+    name: App1Creds
+    type: Credentials
+  17:
+    associated_assets:
+      application:
+        12: App3
+    extras:
+      position:
+        x: -15.0
+        y: -153.0
+    name: App3SWVuln
+    type: SoftwareVulnerability
+  18:
+    associated_assets:
+      applications:
+        12: App3
+      networks:
+        3: NetworkB
+    extras:
+      position:
+        x: -21.0
+        y: -400.0
+    name: CRApp3NetB
+    type: ConnectionRule
+  19:
+    associated_assets:
+      appConnections:
+        20: CREntrypointNetA
+    extras:
+      position:
+        x: -1055.0
+        y: -283.0
+    name: Entrypoint
+    type: Application
+  20:
+    associated_assets:
+      applications:
+        19: Entrypoint
+      networks:
+        2: NetworkA
+    extras:
+      position:
+        x: -1053.0
+        y: -393.0
+    name: CREntrypointNetA
+    type: ConnectionRule
+attackers: {}
+metadata:
+  MAL-Toolbox Version: 0.3.9
+  info: Created by the mal-toolbox model python module.
+  langID: org.mal-lang.tyrLang
+  langVersion: 0.0.6
+  malVersion: 0.1.0-SNAPSHOT
+  name: model
