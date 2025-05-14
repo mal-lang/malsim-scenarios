@@ -1,4 +1,4 @@
-lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.7.mar
+lang_file: ../../../../langs/org.mal-lang.tyrLang-0.0.7.mar
 model_file: demo3_restricted_db_model.yml
 
 rewards:
@@ -158,7 +158,7 @@ agents:
   'Attacker1':
     type: attacker
     entry_points:
-      - 'ns:fullAccess'
+      - 'ca:fullAccess'
     agent_class: BreadthFirstAttacker
 
   'Defender1':
