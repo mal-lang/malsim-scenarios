@@ -2,7 +2,7 @@ assets:
   0:
     associated_assets:
       appConnections:
-        4: CrApp2NetA
+        4: CRApp2NetA
       vulnerabilities:
         6: App2SWVuln
     extras:
@@ -26,9 +26,9 @@ assets:
   2:
     associated_assets:
       netConnections:
-        4: CrApp2NetA
+        4: CRApp2NetA
         10: CRNetANetB
-        13: CrApp1NetA
+        13: CRApp1NetA
         20: CREntrypointNetA
     extras:
       position:
@@ -58,7 +58,7 @@ assets:
       position:
         x: -473.0
         y: -388.0
-    name: CrApp2NetA
+    name: CRApp2NetA
     type: ConnectionRule
   5:
     associated_assets:
@@ -137,12 +137,12 @@ assets:
       position:
         x: -766.0
         y: -390.0
-    name: CrApp1NetA
+    name: CRApp1NetA
     type: ConnectionRule
   14:
     associated_assets:
       appConnections:
-        13: CrApp1NetA
+        13: CRApp1NetA
       executionPrivIAMs:
         15: App1Identity
     extras:
