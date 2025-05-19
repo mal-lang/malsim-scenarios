@@ -25,9 +25,10 @@ assets:
     type: Application
   2:
     associated_assets:
+      interNetConnections:
+        21: CRNetANetB
       netConnections:
         4: CRApp2NetA
-        10: CRNetANetB
         13: CRApp1NetA
         20: CREntrypointNetA
     extras:
@@ -38,9 +39,10 @@ assets:
     type: Network
   3:
     associated_assets:
+      interNetConnections:
+        21: CRNetANetB
       netConnections:
         5: CRApp4NetB
-        10: CRNetANetB
         18: CRApp3NetB
     extras:
       position:
@@ -104,17 +106,6 @@ assets:
         y: -29.0
     name: App4Creds
     type: Credentials
-  10:
-    associated_assets:
-      networks:
-        2: NetworkA
-        3: NetworkB
-    extras:
-      position:
-        x: -157.0
-        y: -685.0
-    name: CRNetANetB
-    type: ConnectionRule
   12:
     associated_assets:
       appConnections:
@@ -136,7 +127,7 @@ assets:
     extras:
       position:
         x: -766.0
-        y: -390.0
+        y: -380.0
     name: CRApp1NetA
     type: ConnectionRule
   14:
@@ -217,11 +208,22 @@ assets:
         y: -393.0
     name: CREntrypointNetA
     type: ConnectionRule
+  21:
+    associated_assets:
+      interNetworks:
+        2: NetworkA
+        3: NetworkB
+    extras:
+      position:
+        x: -128.0
+        y: -848.0
+    name: CRNetANetB
+    type: InternetworkConnectionRule
 attackers: {}
 metadata:
   MAL-Toolbox Version: 0.3.9
   info: Created by the mal-toolbox model python module.
   langID: org.mal-lang.tyrLang
-  langVersion: 0.0.6
+  langVersion: 0.0.7
   malVersion: 0.1.0-SNAPSHOT
   name: model
