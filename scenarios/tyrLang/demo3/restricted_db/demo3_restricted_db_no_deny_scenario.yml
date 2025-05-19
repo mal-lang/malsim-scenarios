@@ -85,8 +85,8 @@ rewards:
   ca:read: 1
   ca:fullAccess: 5
   ca:notPresent: 5.7
-  CR 134.24.4.0/24 Internal:restricted: 5.4
   CR ca-134.24.4.0/24:restricted: 5.4
+  CR 134.24.4.0/24 Internal:restricted: 5.4
   Admin Exec Identity - ca:notPresent: 5.2
   db:read: 0.0
   db:fullAccess: 0.0
@@ -112,16 +112,16 @@ rewards:
   mailrelay:notPresent: 3.7
   CR mailrelay-134.24.2.0/24:restricted: 3.4
   Admin Exec Identity - mailrelay:notPresent: 3.2
-  ns:read: 0.0
-  ns:fullAccess: 0.0
-  ns:notPresent: 0.7
-  CR ns-134.24.2.0/24:restricted: 0.4
-  Admin Exec Identity - ns:notPresent: 0.2
-  ntp:read: 0.0
-  ntp:fullAccess: 0.0
-  ntp:notPresent: 0.7
-  CR ntp-134.24.4.0/24:restricted: 0.4
-  Admin Exec Identity - ntp:notPresent: 0.2
+  ns:read: 2
+  ns:fullAccess: 5
+  ns:notPresent: 5.7
+  CR ns-134.24.2.0/24:restricted: 5.4
+  Admin Exec Identity - ns:notPresent: 5.2
+  ntp:read: 1
+  ntp:fullAccess: 5
+  ntp:notPresent: 4.7
+  CR ntp-134.24.4.0/24:restricted: 4.4
+  Admin Exec Identity - ntp:notPresent: 4.2
   payroll:read: 2
   payroll:fullAccess: 5
   payroll:notPresent: 5.7
