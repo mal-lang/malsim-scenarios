@@ -1,0 +1,56 @@
+lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.7.mar
+model_file: model.yml
+
+rewards:
+  App2:read: 2
+  App2:fullAccess: 2
+  App2:notPresent: 4.7
+  CRApp2NetA:restricted: 4.4
+  App4:read: 2
+  App4:fullAccess: 5
+  App4:notPresent: 5.7
+  CRApp4NetB:restricted: 5.4
+  App4Identity:notPresent: 5.2
+  App3:read: 1
+  App3:fullAccess: 4
+  App3:notPresent: 2.7
+  CRApp3NetB:restricted: 2.4
+  App1:read: 1
+  App1:fullAccess: 5
+  App1:notPresent: 4.7
+  CRApp1NetA:restricted: 4.4
+  App1Identity:notPresent: 4.2
+  Entrypoint:notPresent: 30.7
+  CREntrypointNetA:restricted: 30.4
+
+observable_steps:
+  by_asset_type:
+    ConnectionRule:
+      - attemptConnectToApplications
+      - attemptAccessNetworks
+    Application:
+      - fullAccess
+      - notPresent
+      - networkConnect
+    Credentials:
+      - attemptGuessCredentials
+
+actionable_steps:
+  by_asset_type:
+    Application:
+      - notPresent
+    ConnectionRule:
+      - restricted
+    Identity:
+      - notPresent
+
+agents:
+  'Attacker1':
+    type: attacker
+    entry_points:
+      - 'Entrypoint:fullAccess'
+    agent_class: BreadthFirstAttacker
+
+  'Defender1':
+    type: 'defender'
+    agent_class: 'DefendFutureCompromisedDefender'

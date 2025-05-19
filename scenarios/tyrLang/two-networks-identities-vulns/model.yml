@@ -6,6 +6,11 @@ assets:
       vulnerabilities:
         6: App2SWVuln
     extras:
+      agent_id: 2
+      availability: 4
+      confidentiality: 2
+      integrity: 2
+      os_host_id: App2
       position:
         x: -472.0
         y: -272.0
@@ -18,6 +23,11 @@ assets:
       executionPrivIAMs:
         7: App4Identity
     extras:
+      agent_id: 4
+      availability: 5
+      confidentiality: 2
+      integrity: 5
+      os_host_id: App4
       position:
         x: 248.0
         y: -273.0
@@ -113,6 +123,11 @@ assets:
       vulnerabilities:
         17: App3SWVuln
     extras:
+      agent_id: 3
+      availability: 2
+      confidentiality: 1
+      integrity: 4
+      os_host_id: App3
       position:
         x: -19.0
         y: -274.0
@@ -137,6 +152,11 @@ assets:
       executionPrivIAMs:
         15: App1Identity
     extras:
+      agent_id: 1
+      availability: 4
+      confidentiality: 1
+      integrity: 5
+      os_host_id: App1
       position:
         x: -770.0
         y: -273.0
@@ -191,6 +211,9 @@ assets:
       appConnections:
         20: CREntrypointNetA
     extras:
+      availability: 30
+      confidentiality: 0
+      integrity: 0
       position:
         x: -1055.0
         y: -283.0
@@ -221,7 +244,7 @@ assets:
     type: InternetworkConnectionRule
 attackers: {}
 metadata:
-  MAL-Toolbox Version: 0.3.9
+  MAL-Toolbox Version: 0.3.11
   info: Created by the mal-toolbox model python module.
   langID: org.mal-lang.tyrLang
   langVersion: 0.0.7
