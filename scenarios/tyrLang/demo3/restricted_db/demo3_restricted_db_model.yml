@@ -9,11 +9,11 @@ assets:
         90: SW Vuln - ap01
     extras:
       agent_id: 019
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.11/24
+      - 134.24.3.11
       os_host_id: ap01
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -29,11 +29,11 @@ assets:
         91: SW Vuln - ap02
     extras:
       agent_id: '013'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.12/24
+      - 134.24.3.12
       os_host_id: ap02
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -49,11 +49,11 @@ assets:
         92: SW Vuln - ap03
     extras:
       agent_id: '012'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.13/24
+      - 134.24.3.13
       os_host_id: ap03
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -69,11 +69,11 @@ assets:
         93: SW Vuln - ap04
     extras:
       agent_id: '017'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 5
       interfaces:
-      - 134.24.3.14/24
+      - 134.24.3.14
       os_host_id: ap04
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -89,11 +89,11 @@ assets:
         94: SW Vuln - ap05
     extras:
       agent_id: '006'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.15/24
+      - 134.24.3.15
       os_host_id: ap05
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -109,11 +109,11 @@ assets:
         95: SW Vuln - ap06
     extras:
       agent_id: '007'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.16/24
+      - 134.24.3.16
       os_host_id: ap06
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -129,11 +129,11 @@ assets:
         96: SW Vuln - ap07
     extras:
       agent_id: '020'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.21/24
+      - 134.24.3.21
       os_host_id: ap07
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -149,11 +149,11 @@ assets:
         97: SW Vuln - ap08
     extras:
       agent_id: '005'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.22/24
+      - 134.24.3.22
       os_host_id: ap08
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -169,11 +169,11 @@ assets:
         98: SW Vuln - ap09
     extras:
       agent_id: 008
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.23/24
+      - 134.24.3.23
       os_host_id: ap09
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -189,11 +189,11 @@ assets:
         99: SW Vuln - ap10
     extras:
       agent_id: '004'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.24/24
+      - 134.24.3.24
       os_host_id: ap10
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -209,11 +209,11 @@ assets:
         100: SW Vuln - ap11
     extras:
       agent_id: '003'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.25/24
+      - 134.24.3.25
       os_host_id: ap11
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -229,11 +229,11 @@ assets:
         101: SW Vuln - ap12
     extras:
       agent_id: '021'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.26/24
+      - 134.24.3.26
       os_host_id: ap12
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -249,11 +249,11 @@ assets:
         102: SW Vuln - ap13
     extras:
       agent_id: '011'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 5
       interfaces:
-      - 134.24.3.27/24
+      - 134.24.3.27
       os_host_id: ap13
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -269,11 +269,11 @@ assets:
         103: SW Vuln - ap14
     extras:
       agent_id: '010'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.28/24
+      - 134.24.3.28
       os_host_id: ap14
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -289,11 +289,11 @@ assets:
         104: SW Vuln - ap15
     extras:
       agent_id: '015'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.29/24
+      - 134.24.3.29
       os_host_id: ap15
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -309,11 +309,11 @@ assets:
         105: SW Vuln - ap16
     extras:
       agent_id: '014'
-      availability: 3
+      availability: 5
       confidentiality: 2
-      integrity: 4
+      integrity: 3
       interfaces:
-      - 134.24.3.30/24
+      - 134.24.3.30
       os_host_id: ap16
       os_name: Microsoft Windows 10 Pro
       os_platform: windows
@@ -330,11 +330,11 @@ assets:
         106: SW Vuln - ca
     extras:
       agent_id: '001'
-      availability: 4
+      availability: 5
       confidentiality: 1
       integrity: 5
       interfaces:
-      - 134.24.4.44/24
+      - 134.24.4.44
       os_host_id: ca
       os_name: Microsoft Windows Server 2016 Standard
       os_platform: windows
@@ -351,7 +351,7 @@ assets:
     extras:
       agent_id: 009
       interfaces:
-      - 134.24.4.13/24
+      - 134.24.4.13
       os_host_id: db
       os_name: Microsoft Windows Server 2019 Standard
       os_platform: windows
@@ -368,11 +368,11 @@ assets:
         108: SW Vuln - dc
     extras:
       agent_id: '034'
-      availability: 4
-      confidentiality: 1
-      integrity: 3
+      availability: 5
+      confidentiality: 2
+      integrity: 5
       interfaces:
-      - 134.24.4.5/24
+      - 134.24.4.5
       os_host_id: dc
       os_name: Microsoft Windows Server 2019 Standard
       os_platform: windows
@@ -393,7 +393,7 @@ assets:
       confidentiality: 2
       integrity: 2
       interfaces:
-      - 134.24.4.12/24
+      - 134.24.4.12
       os_host_id: files
       os_name: Microsoft Windows Server 2019 Standard
       os_platform: windows
@@ -410,8 +410,11 @@ assets:
         110: SW Vuln - mail
     extras:
       agent_id: '032'
+      availability: 3
+      confidentiality: 3
+      integrity: 4
       interfaces:
-      - 134.24.4.16/24
+      - 134.24.4.16
       os_host_id: mail
       os_name: Microsoft Windows Server 2016 Standard
       os_platform: windows
@@ -427,8 +430,11 @@ assets:
         111: SW Vuln - mailrelay
     extras:
       agent_id: '016'
+      availability: 3
+      confidentiality: 3
+      integrity: 4
       interfaces:
-      - 134.24.2.16/24
+      - 134.24.2.16
       os_host_id: mailrelay
       os_name: Microsoft Windows Server 2016 Standard
       os_platform: windows
@@ -444,8 +450,11 @@ assets:
         112: SW Vuln - ns
     extras:
       agent_id: '027'
+      availability: 5
+      confidentiality: 2
+      integrity: 5
       interfaces:
-      - 134.24.2.15/24
+      - 134.24.2.15
       os_host_id: ns
       os_name: Ubuntu
       os_platform: ubuntu
@@ -462,8 +471,11 @@ assets:
         113: SW Vuln - ntp
     extras:
       agent_id: '022'
+      availability: 4
+      confidentiality: 1
+      integrity: 5
       interfaces:
-      - 134.24.4.21/24
+      - 134.24.4.21
       os_host_id: ntp
       os_name: Ubuntu
       os_platform: ubuntu
@@ -479,8 +491,11 @@ assets:
         114: SW Vuln - payroll
     extras:
       agent_id: 018
+      availability: 5
+      confidentiality: 2
+      integrity: 5
       interfaces:
-      - 134.24.2.10/24
+      - 134.24.2.10
       os_host_id: payroll
       os_name: Microsoft Windows 10 Enterprise
       os_platform: windows
@@ -498,7 +513,7 @@ assets:
     extras:
       agent_id: '023'
       interfaces:
-      - 134.24.4.11/24
+      - 134.24.4.11
       os_host_id: print
       os_name: Ubuntu
       os_platform: ubuntu
@@ -514,11 +529,11 @@ assets:
         116: SW Vuln - timereporter
     extras:
       agent_id: '026'
-      availability: 5
+      availability: 4
       confidentiality: 1
-      integrity: 3
+      integrity: 5
       interfaces:
-      - 134.24.2.13/24
+      - 134.24.2.13
       os_host_id: timereporter
       os_name: Ubuntu
       os_platform: ubuntu
@@ -538,7 +553,7 @@ assets:
       confidentiality: 1
       integrity: 4
       interfaces:
-      - 134.24.2.14/24
+      - 134.24.2.14
       os_host_id: weborder
       os_name: Microsoft Windows Server 2019 Standard
       os_platform: windows
