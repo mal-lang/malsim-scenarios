@@ -139,13 +139,13 @@ rewards:
     Admin Exec Identity - ca:
       notPresent: 5.0
     db:
-      read: 0.0
-      fullAccess: 0.0
-      notPresent: 0.0
+      read: 2.0
+      fullAccess: 5.0
+      notPresent: 5.0
     CR db-134.24.4.0/24:
-      restricted: 0.0
+      restricted: 5.0
     Admin Exec Identity - db:
-      notPresent: 0.0
+      notPresent: 5.0
     dc:
       read: 2
       fullAccess: 5
