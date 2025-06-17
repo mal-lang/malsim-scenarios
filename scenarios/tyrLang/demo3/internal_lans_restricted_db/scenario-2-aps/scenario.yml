@@ -1,0 +1,99 @@
+lang_file: ../../../../../langs/org.mal-lang.tyrLang-0.0.8.mar
+model_file: model.yml
+rewards:
+  ap01:read: 2
+  ap01:fullAccess: 3
+  ap01:notPresent: 5.0
+  CR ap01-134.24.3.0/24:restricted: 5.0
+  Admin Exec Identity - ap01:notPresent: 5.0
+  ap02:read: 2
+  ap02:fullAccess: 3
+  ap02:notPresent: 5.0
+  CR ap02-134.24.3.0/24:restricted: 5.0
+  Admin Exec Identity - ap02:notPresent: 5.0
+  ca:read: 1
+  ca:fullAccess: 5
+  ca:notPresent: 5.0
+  CR ca-134.24.4.0/24:restricted: 5.0
+  Admin Exec Identity - ca:notPresent: 5.0
+  db:read: 2.0
+  db:fullAccess: 5.0
+  db:notPresent: 5.0
+  CR db-134.24.4.0/24:restricted: 5.0
+  Admin Exec Identity - db:notPresent: 5.0
+  dc:read: 2
+  dc:fullAccess: 5
+  dc:notPresent: 5.0
+  CR dc-134.24.4.0/24:restricted: 5.0
+  Admin Exec Identity - dc:notPresent: 5.0
+  files:read: 2
+  files:fullAccess: 2
+  files:notPresent: 4.0
+  CR files-134.24.4.0/24:restricted: 4.0
+  Admin Exec Identity - files:notPresent: 4.0
+  mail:read: 3
+  mail:fullAccess: 4
+  mail:notPresent: 3.0
+  CR mail-134.24.4.0/24:restricted: 3.0
+  Admin Exec Identity - mail:notPresent: 3.0
+  mailrelay:read: 3
+  mailrelay:fullAccess: 4
+  mailrelay:notPresent: 3.0
+  CR mailrelay-134.24.2.0/24:restricted: 3.0
+  Admin Exec Identity - mailrelay:notPresent: 3.0
+  ns:read: 2
+  ns:fullAccess: 5
+  ns:notPresent: 5.0
+  CR ns-134.24.2.0/24:restricted: 5.0
+  Admin Exec Identity - ns:notPresent: 5.0
+  ntp:read: 1
+  ntp:fullAccess: 5
+  ntp:notPresent: 4.0
+  CR ntp-134.24.4.0/24:restricted: 4.0
+  Admin Exec Identity - ntp:notPresent: 4.0
+  payroll:read: 2
+  payroll:fullAccess: 5
+  payroll:notPresent: 5.0
+  CR payroll-134.24.2.0/24:restricted: 5.0
+  Admin Exec Identity - payroll:notPresent: 5.0
+  print:read: 0.0
+  print:fullAccess: 0.0
+  print:notPresent: 1.0
+  CR print-134.24.4.0/24:restricted: 1.0
+  Admin Exec Identity - print:notPresent: 1.0
+  timereporter:read: 1
+  timereporter:fullAccess: 5
+  timereporter:notPresent: 4.0
+  CR timereporter-134.24.2.0/24:restricted: 4.0
+  Admin Exec Identity - timereporter:notPresent: 4.0
+  weborder:read: 1
+  weborder:fullAccess: 4
+  weborder:notPresent: 2.0
+  CR weborder-134.24.2.0/24:restricted: 2.0
+  Admin Exec Identity - weborder:notPresent: 2.0
+observable_steps:
+  by_asset_type:
+    ConnectionRule:
+    - attemptConnectToApplications
+    - attemptAccessNetworks
+    Application:
+    - fullAccess
+    - notPresent
+    - networkConnect
+    Credentials:
+    - attemptGuessCredentials
+actionable_steps:
+  by_asset_type:
+    Application:
+    - notPresent
+    ConnectionRule:
+    - restricted
+agents:
+  Attacker1:
+    type: attacker
+    entry_points:
+    - db:fullAccess
+    agent_class: BreadthFirstAttacker
+  Defender1:
+    type: defender
+    agent_class: DefendFutureCompromisedDefender

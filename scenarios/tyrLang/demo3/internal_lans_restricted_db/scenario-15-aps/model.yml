@@ -1,0 +1,1762 @@
+assets:
+  0:
+    associated_assets:
+      appConnections:
+        29: CR ap01-134.24.3.0/24
+      executionPrivIAMs:
+        62: Admin Exec Identity - ap01
+      vulnerabilities:
+        90: SW Vuln - ap01
+    extras:
+      agent_id: 019
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.11
+      os_host_id: ap01
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap01
+    type: Application
+  1:
+    associated_assets:
+      appConnections:
+        30: CR ap02-134.24.3.0/24
+      executionPrivIAMs:
+        63: Admin Exec Identity - ap02
+      vulnerabilities:
+        91: SW Vuln - ap02
+    extras:
+      agent_id: '013'
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.12
+      os_host_id: ap02
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap02
+    type: Application
+  2:
+    associated_assets:
+      appConnections:
+        31: CR ap03-134.24.3.0/24
+      executionPrivIAMs:
+        64: Admin Exec Identity - ap03
+      vulnerabilities:
+        92: SW Vuln - ap03
+    extras:
+      agent_id: '012'
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.13
+      os_host_id: ap03
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap03
+    type: Application
+  3:
+    associated_assets:
+      appConnections:
+        32: CR ap04-134.24.3.0/24
+      executionPrivIAMs:
+        65: Admin Exec Identity - ap04
+      vulnerabilities:
+        93: SW Vuln - ap04
+    extras:
+      agent_id: '017'
+      availability: 5
+      confidentiality: 2
+      integrity: 5
+      interfaces:
+      - 134.24.3.14
+      os_host_id: ap04
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap04
+    type: Application
+  4:
+    associated_assets:
+      appConnections:
+        33: CR ap05-134.24.3.0/24
+      executionPrivIAMs:
+        66: Admin Exec Identity - ap05
+      vulnerabilities:
+        94: SW Vuln - ap05
+    extras:
+      agent_id: '006'
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.15
+      os_host_id: ap05
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap05
+    type: Application
+  5:
+    associated_assets:
+      appConnections:
+        34: CR ap06-134.24.3.0/24
+      executionPrivIAMs:
+        67: Admin Exec Identity - ap06
+      vulnerabilities:
+        95: SW Vuln - ap06
+    extras:
+      agent_id: '007'
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.16
+      os_host_id: ap06
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap06
+    type: Application
+  6:
+    associated_assets:
+      appConnections:
+        35: CR ap07-134.24.3.0/24
+      executionPrivIAMs:
+        68: Admin Exec Identity - ap07
+      vulnerabilities:
+        96: SW Vuln - ap07
+    extras:
+      agent_id: '020'
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.21
+      os_host_id: ap07
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap07
+    type: Application
+  7:
+    associated_assets:
+      appConnections:
+        36: CR ap08-134.24.3.0/24
+      executionPrivIAMs:
+        69: Admin Exec Identity - ap08
+      vulnerabilities:
+        97: SW Vuln - ap08
+    extras:
+      agent_id: '005'
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.22
+      os_host_id: ap08
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap08
+    type: Application
+  8:
+    associated_assets:
+      appConnections:
+        37: CR ap09-134.24.3.0/24
+      executionPrivIAMs:
+        70: Admin Exec Identity - ap09
+      vulnerabilities:
+        98: SW Vuln - ap09
+    extras:
+      agent_id: 008
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.23
+      os_host_id: ap09
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap09
+    type: Application
+  9:
+    associated_assets:
+      appConnections:
+        38: CR ap10-134.24.3.0/24
+      executionPrivIAMs:
+        71: Admin Exec Identity - ap10
+      vulnerabilities:
+        99: SW Vuln - ap10
+    extras:
+      agent_id: '004'
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.24
+      os_host_id: ap10
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap10
+    type: Application
+  10:
+    associated_assets:
+      appConnections:
+        39: CR ap11-134.24.3.0/24
+      executionPrivIAMs:
+        72: Admin Exec Identity - ap11
+      vulnerabilities:
+        100: SW Vuln - ap11
+    extras:
+      agent_id: '003'
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.25
+      os_host_id: ap11
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap11
+    type: Application
+  11:
+    associated_assets:
+      appConnections:
+        40: CR ap12-134.24.3.0/24
+      executionPrivIAMs:
+        73: Admin Exec Identity - ap12
+      vulnerabilities:
+        101: SW Vuln - ap12
+    extras:
+      agent_id: '021'
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.26
+      os_host_id: ap12
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap12
+    type: Application
+  12:
+    associated_assets:
+      appConnections:
+        41: CR ap13-134.24.3.0/24
+      executionPrivIAMs:
+        74: Admin Exec Identity - ap13
+      vulnerabilities:
+        102: SW Vuln - ap13
+    extras:
+      agent_id: '011'
+      availability: 5
+      confidentiality: 2
+      integrity: 5
+      interfaces:
+      - 134.24.3.27
+      os_host_id: ap13
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap13
+    type: Application
+  13:
+    associated_assets:
+      appConnections:
+        42: CR ap14-134.24.3.0/24
+      executionPrivIAMs:
+        75: Admin Exec Identity - ap14
+      vulnerabilities:
+        103: SW Vuln - ap14
+    extras:
+      agent_id: '010'
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.28
+      os_host_id: ap14
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap14
+    type: Application
+  14:
+    associated_assets:
+      appConnections:
+        43: CR ap15-134.24.3.0/24
+      executionPrivIAMs:
+        76: Admin Exec Identity - ap15
+      vulnerabilities:
+        104: SW Vuln - ap15
+    extras:
+      agent_id: '015'
+      availability: 5
+      confidentiality: 2
+      integrity: 3
+      interfaces:
+      - 134.24.3.29
+      os_host_id: ap15
+      os_name: Microsoft Windows 10 Pro
+      os_platform: windows
+    name: ap15
+    type: Application
+  16:
+    associated_assets:
+      appConnections:
+        46: CR ca-134.24.4.0/24
+      executionPrivIAMs:
+        78: Admin Exec Identity - ca
+      interAppConnections:
+        148: CR 134.24.4.0/24 Internal
+      vulnerabilities:
+        106: SW Vuln - ca
+    extras:
+      agent_id: '001'
+      availability: 5
+      confidentiality: 1
+      integrity: 5
+      interfaces:
+      - 134.24.4.44
+      os_host_id: ca
+      os_name: Microsoft Windows Server 2016 Standard
+      os_platform: windows
+    name: ca
+    type: Application
+  17:
+    associated_assets:
+      appConnections:
+        47: CR db-134.24.4.0/24
+      executionPrivIAMs:
+        79: Admin Exec Identity - db
+      interAppConnections:
+        148: CR 134.24.4.0/24 Internal
+      vulnerabilities:
+        107: SW Vuln - db
+    extras:
+      agent_id: 009
+      interfaces:
+      - 134.24.4.13
+      os_host_id: db
+      os_name: Microsoft Windows Server 2019 Standard
+      os_platform: windows
+    name: db
+    type: Application
+  18:
+    associated_assets:
+      appConnections:
+        48: CR dc-134.24.4.0/24
+      executionPrivIAMs:
+        80: Admin Exec Identity - dc
+      interAppConnections:
+        148: CR 134.24.4.0/24 Internal
+      vulnerabilities:
+        108: SW Vuln - dc
+    extras:
+      agent_id: '034'
+      availability: 5
+      confidentiality: 2
+      integrity: 5
+      interfaces:
+      - 134.24.4.5
+      os_host_id: dc
+      os_name: Microsoft Windows Server 2019 Standard
+      os_platform: windows
+    name: dc
+    type: Application
+  19:
+    associated_assets:
+      appConnections:
+        49: CR files-134.24.4.0/24
+      executionPrivIAMs:
+        81: Admin Exec Identity - files
+      interAppConnections:
+        148: CR 134.24.4.0/24 Internal
+      vulnerabilities:
+        109: SW Vuln - files
+    extras:
+      agent_id: '033'
+      availability: 4
+      confidentiality: 2
+      integrity: 2
+      interfaces:
+      - 134.24.4.12
+      os_host_id: files
+      os_name: Microsoft Windows Server 2019 Standard
+      os_platform: windows
+    name: files
+    type: Application
+  20:
+    associated_assets:
+      appConnections:
+        50: CR mail-134.24.4.0/24
+      executionPrivIAMs:
+        82: Admin Exec Identity - mail
+      interAppConnections:
+        148: CR 134.24.4.0/24 Internal
+      vulnerabilities:
+        110: SW Vuln - mail
+    extras:
+      agent_id: '032'
+      availability: 3
+      confidentiality: 3
+      integrity: 4
+      interfaces:
+      - 134.24.4.16
+      os_host_id: mail
+      os_name: Microsoft Windows Server 2016 Standard
+      os_platform: windows
+    name: mail
+    type: Application
+  21:
+    associated_assets:
+      appConnections:
+        52: CR mailrelay-134.24.2.0/24
+      executionPrivIAMs:
+        83: Admin Exec Identity - mailrelay
+      interAppConnections:
+        146: CR 134.24.2.0/24 Internal
+      vulnerabilities:
+        111: SW Vuln - mailrelay
+    extras:
+      agent_id: '016'
+      availability: 3
+      confidentiality: 3
+      integrity: 4
+      interfaces:
+      - 134.24.2.16
+      os_host_id: mailrelay
+      os_name: Microsoft Windows Server 2016 Standard
+      os_platform: windows
+    name: mailrelay
+    type: Application
+  22:
+    associated_assets:
+      appConnections:
+        53: CR ns-134.24.2.0/24
+      executionPrivIAMs:
+        84: Admin Exec Identity - ns
+      interAppConnections:
+        146: CR 134.24.2.0/24 Internal
+      vulnerabilities:
+        112: SW Vuln - ns
+    extras:
+      agent_id: '027'
+      availability: 5
+      confidentiality: 2
+      integrity: 5
+      interfaces:
+      - 134.24.2.15
+      os_host_id: ns
+      os_name: Ubuntu
+      os_platform: ubuntu
+    name: ns
+    type: Application
+  23:
+    associated_assets:
+      appConnections:
+        54: CR ntp-134.24.4.0/24
+      executionPrivIAMs:
+        85: Admin Exec Identity - ntp
+      interAppConnections:
+        148: CR 134.24.4.0/24 Internal
+      vulnerabilities:
+        113: SW Vuln - ntp
+    extras:
+      agent_id: '022'
+      availability: 4
+      confidentiality: 1
+      integrity: 5
+      interfaces:
+      - 134.24.4.21
+      os_host_id: ntp
+      os_name: Ubuntu
+      os_platform: ubuntu
+    name: ntp
+    type: Application
+  24:
+    associated_assets:
+      appConnections:
+        55: CR payroll-134.24.2.0/24
+      executionPrivIAMs:
+        86: Admin Exec Identity - payroll
+      interAppConnections:
+        146: CR 134.24.2.0/24 Internal
+      vulnerabilities:
+        114: SW Vuln - payroll
+    extras:
+      agent_id: 018
+      availability: 5
+      confidentiality: 2
+      integrity: 5
+      interfaces:
+      - 134.24.2.10
+      os_host_id: payroll
+      os_name: Microsoft Windows 10 Enterprise
+      os_platform: windows
+    name: payroll
+    type: Application
+  25:
+    associated_assets:
+      appConnections:
+        56: CR print-134.24.4.0/24
+      executionPrivIAMs:
+        87: Admin Exec Identity - print
+      interAppConnections:
+        148: CR 134.24.4.0/24 Internal
+      vulnerabilities:
+        115: SW Vuln - print
+    extras:
+      agent_id: '023'
+      availability: 1
+      confidentiality: 3
+      integrity: 4
+      interfaces:
+      - 134.24.4.11
+      os_host_id: print
+      os_name: Ubuntu
+      os_platform: ubuntu
+    name: print
+    type: Application
+  26:
+    associated_assets:
+      appConnections:
+        57: CR timereporter-134.24.2.0/24
+      executionPrivIAMs:
+        88: Admin Exec Identity - timereporter
+      interAppConnections:
+        146: CR 134.24.2.0/24 Internal
+      vulnerabilities:
+        116: SW Vuln - timereporter
+    extras:
+      agent_id: '026'
+      availability: 4
+      confidentiality: 1
+      integrity: 5
+      interfaces:
+      - 134.24.2.13
+      os_host_id: timereporter
+      os_name: Ubuntu
+      os_platform: ubuntu
+    name: timereporter
+    type: Application
+  27:
+    associated_assets:
+      appConnections:
+        58: CR weborder-134.24.2.0/24
+      executionPrivIAMs:
+        89: Admin Exec Identity - weborder
+      interAppConnections:
+        146: CR 134.24.2.0/24 Internal
+      vulnerabilities:
+        117: SW Vuln - weborder
+    extras:
+      agent_id: '002'
+      availability: 2
+      confidentiality: 1
+      integrity: 4
+      interfaces:
+      - 134.24.2.14
+      os_host_id: weborder
+      os_name: Microsoft Windows Server 2019 Standard
+      os_platform: windows
+    name: weborder
+    type: Application
+  28:
+    associated_assets:
+      interNetConnections:
+        59: CR 134.24.3.0/24 - 134.24.2.0/24
+        60: CR 134.24.3.0/24 - 134.24.4.0/24
+      netConnections:
+        29: CR ap01-134.24.3.0/24
+        30: CR ap02-134.24.3.0/24
+        31: CR ap03-134.24.3.0/24
+        32: CR ap04-134.24.3.0/24
+        33: CR ap05-134.24.3.0/24
+        34: CR ap06-134.24.3.0/24
+        35: CR ap07-134.24.3.0/24
+        36: CR ap08-134.24.3.0/24
+        37: CR ap09-134.24.3.0/24
+        38: CR ap10-134.24.3.0/24
+        39: CR ap11-134.24.3.0/24
+        40: CR ap12-134.24.3.0/24
+        41: CR ap13-134.24.3.0/24
+        42: CR ap14-134.24.3.0/24
+        43: CR ap15-134.24.3.0/24
+    name: 134.24.3.0/24
+    type: Network
+  29:
+    associated_assets:
+      applications:
+        0: ap01
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - 019
+    name: CR ap01-134.24.3.0/24
+    type: ConnectionRule
+  30:
+    associated_assets:
+      applications:
+        1: ap02
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '013'
+    name: CR ap02-134.24.3.0/24
+    type: ConnectionRule
+  31:
+    associated_assets:
+      applications:
+        2: ap03
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '012'
+    name: CR ap03-134.24.3.0/24
+    type: ConnectionRule
+  32:
+    associated_assets:
+      applications:
+        3: ap04
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '017'
+    name: CR ap04-134.24.3.0/24
+    type: ConnectionRule
+  33:
+    associated_assets:
+      applications:
+        4: ap05
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '006'
+    name: CR ap05-134.24.3.0/24
+    type: ConnectionRule
+  34:
+    associated_assets:
+      applications:
+        5: ap06
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '007'
+    name: CR ap06-134.24.3.0/24
+    type: ConnectionRule
+  35:
+    associated_assets:
+      applications:
+        6: ap07
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '020'
+    name: CR ap07-134.24.3.0/24
+    type: ConnectionRule
+  36:
+    associated_assets:
+      applications:
+        7: ap08
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '005'
+    name: CR ap08-134.24.3.0/24
+    type: ConnectionRule
+  37:
+    associated_assets:
+      applications:
+        8: ap09
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - 008
+    name: CR ap09-134.24.3.0/24
+    type: ConnectionRule
+  38:
+    associated_assets:
+      applications:
+        9: ap10
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '004'
+    name: CR ap10-134.24.3.0/24
+    type: ConnectionRule
+  39:
+    associated_assets:
+      applications:
+        10: ap11
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '003'
+    name: CR ap11-134.24.3.0/24
+    type: ConnectionRule
+  40:
+    associated_assets:
+      applications:
+        11: ap12
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '021'
+    name: CR ap12-134.24.3.0/24
+    type: ConnectionRule
+  41:
+    associated_assets:
+      applications:
+        12: ap13
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '011'
+    name: CR ap13-134.24.3.0/24
+    type: ConnectionRule
+  42:
+    associated_assets:
+      applications:
+        13: ap14
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '010'
+    name: CR ap14-134.24.3.0/24
+    type: ConnectionRule
+  43:
+    associated_assets:
+      applications:
+        14: ap15
+      networks:
+        28: 134.24.3.0/24
+    extras:
+      agent_ids:
+      - '015'
+    name: CR ap15-134.24.3.0/24
+    type: ConnectionRule
+  45:
+    associated_assets:
+      interNetConnections:
+        60: CR 134.24.3.0/24 - 134.24.4.0/24
+        61: CR 134.24.4.0/24 - 134.24.2.0/24
+      netConnections:
+        46: CR ca-134.24.4.0/24
+        47: CR db-134.24.4.0/24
+        48: CR dc-134.24.4.0/24
+        49: CR files-134.24.4.0/24
+        50: CR mail-134.24.4.0/24
+        54: CR ntp-134.24.4.0/24
+        56: CR print-134.24.4.0/24
+    name: 134.24.4.0/24
+    type: Network
+  46:
+    associated_assets:
+      applications:
+        16: ca
+      networks:
+        45: 134.24.4.0/24
+    extras:
+      agent_ids:
+      - '001'
+    name: CR ca-134.24.4.0/24
+    type: ConnectionRule
+  47:
+    associated_assets:
+      applications:
+        17: db
+      networks:
+        45: 134.24.4.0/24
+    defenses:
+      restricted: 1.0
+    extras:
+      agent_ids:
+      - 009
+    name: CR db-134.24.4.0/24
+    type: ConnectionRule
+  48:
+    associated_assets:
+      applications:
+        18: dc
+      networks:
+        45: 134.24.4.0/24
+    extras:
+      agent_ids:
+      - '034'
+    name: CR dc-134.24.4.0/24
+    type: ConnectionRule
+  49:
+    associated_assets:
+      applications:
+        19: files
+      networks:
+        45: 134.24.4.0/24
+    extras:
+      agent_ids:
+      - '033'
+    name: CR files-134.24.4.0/24
+    type: ConnectionRule
+  50:
+    associated_assets:
+      applications:
+        20: mail
+      networks:
+        45: 134.24.4.0/24
+    extras:
+      agent_ids:
+      - '032'
+    name: CR mail-134.24.4.0/24
+    type: ConnectionRule
+  51:
+    associated_assets:
+      interNetConnections:
+        59: CR 134.24.3.0/24 - 134.24.2.0/24
+        61: CR 134.24.4.0/24 - 134.24.2.0/24
+      netConnections:
+        52: CR mailrelay-134.24.2.0/24
+        53: CR ns-134.24.2.0/24
+        55: CR payroll-134.24.2.0/24
+        57: CR timereporter-134.24.2.0/24
+        58: CR weborder-134.24.2.0/24
+    name: 134.24.2.0/24
+    type: Network
+  52:
+    associated_assets:
+      applications:
+        21: mailrelay
+      networks:
+        51: 134.24.2.0/24
+    extras:
+      agent_ids:
+      - '016'
+    name: CR mailrelay-134.24.2.0/24
+    type: ConnectionRule
+  53:
+    associated_assets:
+      applications:
+        22: ns
+      networks:
+        51: 134.24.2.0/24
+    extras:
+      agent_ids:
+      - '027'
+    name: CR ns-134.24.2.0/24
+    type: ConnectionRule
+  54:
+    associated_assets:
+      applications:
+        23: ntp
+      networks:
+        45: 134.24.4.0/24
+    extras:
+      agent_ids:
+      - '022'
+    name: CR ntp-134.24.4.0/24
+    type: ConnectionRule
+  55:
+    associated_assets:
+      applications:
+        24: payroll
+      networks:
+        51: 134.24.2.0/24
+    extras:
+      agent_ids:
+      - 018
+    name: CR payroll-134.24.2.0/24
+    type: ConnectionRule
+  56:
+    associated_assets:
+      applications:
+        25: print
+      networks:
+        45: 134.24.4.0/24
+    extras:
+      agent_ids:
+      - '023'
+    name: CR print-134.24.4.0/24
+    type: ConnectionRule
+  57:
+    associated_assets:
+      applications:
+        26: timereporter
+      networks:
+        51: 134.24.2.0/24
+    extras:
+      agent_ids:
+      - '026'
+    name: CR timereporter-134.24.2.0/24
+    type: ConnectionRule
+  58:
+    associated_assets:
+      applications:
+        27: weborder
+      networks:
+        51: 134.24.2.0/24
+    extras:
+      agent_ids:
+      - '002'
+    name: CR weborder-134.24.2.0/24
+    type: ConnectionRule
+  59:
+    associated_assets:
+      interNetworks:
+        28: 134.24.3.0/24
+        51: 134.24.2.0/24
+    name: CR 134.24.3.0/24 - 134.24.2.0/24
+    type: InternetworkConnectionRule
+  60:
+    associated_assets:
+      interNetworks:
+        28: 134.24.3.0/24
+        45: 134.24.4.0/24
+    name: CR 134.24.3.0/24 - 134.24.4.0/24
+    type: InternetworkConnectionRule
+  61:
+    associated_assets:
+      interNetworks:
+        45: 134.24.4.0/24
+        51: 134.24.2.0/24
+    name: CR 134.24.4.0/24 - 134.24.2.0/24
+    type: InternetworkConnectionRule
+  62:
+    associated_assets:
+      credentials:
+        118: Credentials - Admin Exec Identity - ap01
+      execPrivApps:
+        0: ap01
+    extras:
+      agent_id: 019
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap01
+    type: Identity
+  63:
+    associated_assets:
+      credentials:
+        119: Credentials - Admin Exec Identity - ap02
+      execPrivApps:
+        1: ap02
+    extras:
+      agent_id: '013'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap02
+    type: Identity
+  64:
+    associated_assets:
+      credentials:
+        120: Credentials - Admin Exec Identity - ap03
+      execPrivApps:
+        2: ap03
+    extras:
+      agent_id: '012'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap03
+    type: Identity
+  65:
+    associated_assets:
+      credentials:
+        121: Credentials - Admin Exec Identity - ap04
+      execPrivApps:
+        3: ap04
+    extras:
+      agent_id: '017'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap04
+    type: Identity
+  66:
+    associated_assets:
+      credentials:
+        122: Credentials - Admin Exec Identity - ap05
+      execPrivApps:
+        4: ap05
+    extras:
+      agent_id: '006'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap05
+    type: Identity
+  67:
+    associated_assets:
+      credentials:
+        123: Credentials - Admin Exec Identity - ap06
+      execPrivApps:
+        5: ap06
+    extras:
+      agent_id: '007'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap06
+    type: Identity
+  68:
+    associated_assets:
+      credentials:
+        124: Credentials - Admin Exec Identity - ap07
+      execPrivApps:
+        6: ap07
+    extras:
+      agent_id: '020'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap07
+    type: Identity
+  69:
+    associated_assets:
+      credentials:
+        125: Credentials - Admin Exec Identity - ap08
+      execPrivApps:
+        7: ap08
+    extras:
+      agent_id: '005'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap08
+    type: Identity
+  70:
+    associated_assets:
+      credentials:
+        126: Credentials - Admin Exec Identity - ap09
+      execPrivApps:
+        8: ap09
+    extras:
+      agent_id: 008
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap09
+    type: Identity
+  71:
+    associated_assets:
+      credentials:
+        127: Credentials - Admin Exec Identity - ap10
+      execPrivApps:
+        9: ap10
+    extras:
+      agent_id: '004'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap10
+    type: Identity
+  72:
+    associated_assets:
+      credentials:
+        128: Credentials - Admin Exec Identity - ap11
+      execPrivApps:
+        10: ap11
+    extras:
+      agent_id: '003'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap11
+    type: Identity
+  73:
+    associated_assets:
+      credentials:
+        129: Credentials - Admin Exec Identity - ap12
+      execPrivApps:
+        11: ap12
+    extras:
+      agent_id: '021'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap12
+    type: Identity
+  74:
+    associated_assets:
+      credentials:
+        130: Credentials - Admin Exec Identity - ap13
+      execPrivApps:
+        12: ap13
+    extras:
+      agent_id: '011'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap13
+    type: Identity
+  75:
+    associated_assets:
+      credentials:
+        131: Credentials - Admin Exec Identity - ap14
+      execPrivApps:
+        13: ap14
+    extras:
+      agent_id: '010'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap14
+    type: Identity
+  76:
+    associated_assets:
+      credentials:
+        132: Credentials - Admin Exec Identity - ap15
+      execPrivApps:
+        14: ap15
+    extras:
+      agent_id: '015'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ap15
+    type: Identity
+  78:
+    associated_assets:
+      credentials:
+        134: Credentials - Admin Exec Identity - ca
+      execPrivApps:
+        16: ca
+    extras:
+      agent_id: '001'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ca
+    type: Identity
+  79:
+    associated_assets:
+      credentials:
+        135: Credentials - Admin Exec Identity - db
+      execPrivApps:
+        17: db
+    extras:
+      agent_id: 009
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - db
+    type: Identity
+  80:
+    associated_assets:
+      credentials:
+        136: Credentials - Admin Exec Identity - dc
+      execPrivApps:
+        18: dc
+    extras:
+      agent_id: '034'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - dc
+    type: Identity
+  81:
+    associated_assets:
+      credentials:
+        137: Credentials - Admin Exec Identity - files
+      execPrivApps:
+        19: files
+    extras:
+      agent_id: '033'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - files
+    type: Identity
+  82:
+    associated_assets:
+      credentials:
+        138: Credentials - Admin Exec Identity - mail
+      execPrivApps:
+        20: mail
+    extras:
+      agent_id: '032'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - mail
+    type: Identity
+  83:
+    associated_assets:
+      credentials:
+        139: Credentials - Admin Exec Identity - mailrelay
+      execPrivApps:
+        21: mailrelay
+    extras:
+      agent_id: '016'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - mailrelay
+    type: Identity
+  84:
+    associated_assets:
+      credentials:
+        140: Credentials - Admin Exec Identity - ns
+      execPrivApps:
+        22: ns
+    extras:
+      agent_id: '027'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ns
+    type: Identity
+  85:
+    associated_assets:
+      credentials:
+        141: Credentials - Admin Exec Identity - ntp
+      execPrivApps:
+        23: ntp
+    extras:
+      agent_id: '022'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - ntp
+    type: Identity
+  86:
+    associated_assets:
+      credentials:
+        142: Credentials - Admin Exec Identity - payroll
+      execPrivApps:
+        24: payroll
+    extras:
+      agent_id: 018
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - payroll
+    type: Identity
+  87:
+    associated_assets:
+      credentials:
+        143: Credentials - Admin Exec Identity - print
+      execPrivApps:
+        25: print
+    extras:
+      agent_id: '023'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - print
+    type: Identity
+  88:
+    associated_assets:
+      credentials:
+        144: Credentials - Admin Exec Identity - timereporter
+      execPrivApps:
+        26: timereporter
+    extras:
+      agent_id: '026'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - timereporter
+    type: Identity
+  89:
+    associated_assets:
+      credentials:
+        145: Credentials - Admin Exec Identity - weborder
+      execPrivApps:
+        27: weborder
+    extras:
+      agent_id: '002'
+      users:
+      - Administrator
+      - administrator
+      - astlar
+      - localadmin
+    name: Admin Exec Identity - weborder
+    type: Identity
+  90:
+    associated_assets:
+      application:
+        0: ap01
+    name: SW Vuln - ap01
+    type: SoftwareVulnerability
+  91:
+    associated_assets:
+      application:
+        1: ap02
+    name: SW Vuln - ap02
+    type: SoftwareVulnerability
+  92:
+    associated_assets:
+      application:
+        2: ap03
+    name: SW Vuln - ap03
+    type: SoftwareVulnerability
+  93:
+    associated_assets:
+      application:
+        3: ap04
+    name: SW Vuln - ap04
+    type: SoftwareVulnerability
+  94:
+    associated_assets:
+      application:
+        4: ap05
+    name: SW Vuln - ap05
+    type: SoftwareVulnerability
+  95:
+    associated_assets:
+      application:
+        5: ap06
+    name: SW Vuln - ap06
+    type: SoftwareVulnerability
+  96:
+    associated_assets:
+      application:
+        6: ap07
+    name: SW Vuln - ap07
+    type: SoftwareVulnerability
+  97:
+    associated_assets:
+      application:
+        7: ap08
+    name: SW Vuln - ap08
+    type: SoftwareVulnerability
+  98:
+    associated_assets:
+      application:
+        8: ap09
+    name: SW Vuln - ap09
+    type: SoftwareVulnerability
+  99:
+    associated_assets:
+      application:
+        9: ap10
+    name: SW Vuln - ap10
+    type: SoftwareVulnerability
+  100:
+    associated_assets:
+      application:
+        10: ap11
+    name: SW Vuln - ap11
+    type: SoftwareVulnerability
+  101:
+    associated_assets:
+      application:
+        11: ap12
+    name: SW Vuln - ap12
+    type: SoftwareVulnerability
+  102:
+    associated_assets:
+      application:
+        12: ap13
+    name: SW Vuln - ap13
+    type: SoftwareVulnerability
+  103:
+    associated_assets:
+      application:
+        13: ap14
+    name: SW Vuln - ap14
+    type: SoftwareVulnerability
+  104:
+    associated_assets:
+      application:
+        14: ap15
+    name: SW Vuln - ap15
+    type: SoftwareVulnerability
+  106:
+    associated_assets:
+      application:
+        16: ca
+    name: SW Vuln - ca
+    type: SoftwareVulnerability
+  107:
+    associated_assets:
+      application:
+        17: db
+    name: SW Vuln - db
+    type: SoftwareVulnerability
+  108:
+    associated_assets:
+      application:
+        18: dc
+    name: SW Vuln - dc
+    type: SoftwareVulnerability
+  109:
+    associated_assets:
+      application:
+        19: files
+    name: SW Vuln - files
+    type: SoftwareVulnerability
+  110:
+    associated_assets:
+      application:
+        20: mail
+    name: SW Vuln - mail
+    type: SoftwareVulnerability
+  111:
+    associated_assets:
+      application:
+        21: mailrelay
+    name: SW Vuln - mailrelay
+    type: SoftwareVulnerability
+  112:
+    associated_assets:
+      application:
+        22: ns
+    name: SW Vuln - ns
+    type: SoftwareVulnerability
+  113:
+    associated_assets:
+      application:
+        23: ntp
+    name: SW Vuln - ntp
+    type: SoftwareVulnerability
+  114:
+    associated_assets:
+      application:
+        24: payroll
+    name: SW Vuln - payroll
+    type: SoftwareVulnerability
+  115:
+    associated_assets:
+      application:
+        25: print
+    name: SW Vuln - print
+    type: SoftwareVulnerability
+  116:
+    associated_assets:
+      application:
+        26: timereporter
+    name: SW Vuln - timereporter
+    type: SoftwareVulnerability
+  117:
+    associated_assets:
+      application:
+        27: weborder
+    name: SW Vuln - weborder
+    type: SoftwareVulnerability
+  118:
+    associated_assets:
+      identities:
+        62: Admin Exec Identity - ap01
+    extras:
+      agent_id: 019
+    name: Credentials - Admin Exec Identity - ap01
+    type: Credentials
+  119:
+    associated_assets:
+      identities:
+        63: Admin Exec Identity - ap02
+    extras:
+      agent_id: '013'
+    name: Credentials - Admin Exec Identity - ap02
+    type: Credentials
+  120:
+    associated_assets:
+      identities:
+        64: Admin Exec Identity - ap03
+    extras:
+      agent_id: '012'
+    name: Credentials - Admin Exec Identity - ap03
+    type: Credentials
+  121:
+    associated_assets:
+      identities:
+        65: Admin Exec Identity - ap04
+    extras:
+      agent_id: '017'
+    name: Credentials - Admin Exec Identity - ap04
+    type: Credentials
+  122:
+    associated_assets:
+      identities:
+        66: Admin Exec Identity - ap05
+    extras:
+      agent_id: '006'
+    name: Credentials - Admin Exec Identity - ap05
+    type: Credentials
+  123:
+    associated_assets:
+      identities:
+        67: Admin Exec Identity - ap06
+    extras:
+      agent_id: '007'
+    name: Credentials - Admin Exec Identity - ap06
+    type: Credentials
+  124:
+    associated_assets:
+      identities:
+        68: Admin Exec Identity - ap07
+    extras:
+      agent_id: '020'
+    name: Credentials - Admin Exec Identity - ap07
+    type: Credentials
+  125:
+    associated_assets:
+      identities:
+        69: Admin Exec Identity - ap08
+    extras:
+      agent_id: '005'
+    name: Credentials - Admin Exec Identity - ap08
+    type: Credentials
+  126:
+    associated_assets:
+      identities:
+        70: Admin Exec Identity - ap09
+    extras:
+      agent_id: 008
+    name: Credentials - Admin Exec Identity - ap09
+    type: Credentials
+  127:
+    associated_assets:
+      identities:
+        71: Admin Exec Identity - ap10
+    extras:
+      agent_id: '004'
+    name: Credentials - Admin Exec Identity - ap10
+    type: Credentials
+  128:
+    associated_assets:
+      identities:
+        72: Admin Exec Identity - ap11
+    extras:
+      agent_id: '003'
+    name: Credentials - Admin Exec Identity - ap11
+    type: Credentials
+  129:
+    associated_assets:
+      identities:
+        73: Admin Exec Identity - ap12
+    extras:
+      agent_id: '021'
+    name: Credentials - Admin Exec Identity - ap12
+    type: Credentials
+  130:
+    associated_assets:
+      identities:
+        74: Admin Exec Identity - ap13
+    extras:
+      agent_id: '011'
+    name: Credentials - Admin Exec Identity - ap13
+    type: Credentials
+  131:
+    associated_assets:
+      identities:
+        75: Admin Exec Identity - ap14
+    extras:
+      agent_id: '010'
+    name: Credentials - Admin Exec Identity - ap14
+    type: Credentials
+  132:
+    associated_assets:
+      identities:
+        76: Admin Exec Identity - ap15
+    extras:
+      agent_id: '015'
+    name: Credentials - Admin Exec Identity - ap15
+    type: Credentials
+  134:
+    associated_assets:
+      identities:
+        78: Admin Exec Identity - ca
+    extras:
+      agent_id: '001'
+    name: Credentials - Admin Exec Identity - ca
+    type: Credentials
+  135:
+    associated_assets:
+      identities:
+        79: Admin Exec Identity - db
+    extras:
+      agent_id: 009
+    name: Credentials - Admin Exec Identity - db
+    type: Credentials
+  136:
+    associated_assets:
+      identities:
+        80: Admin Exec Identity - dc
+    extras:
+      agent_id: '034'
+    name: Credentials - Admin Exec Identity - dc
+    type: Credentials
+  137:
+    associated_assets:
+      identities:
+        81: Admin Exec Identity - files
+    extras:
+      agent_id: '033'
+    name: Credentials - Admin Exec Identity - files
+    type: Credentials
+  138:
+    associated_assets:
+      identities:
+        82: Admin Exec Identity - mail
+    extras:
+      agent_id: '032'
+    name: Credentials - Admin Exec Identity - mail
+    type: Credentials
+  139:
+    associated_assets:
+      identities:
+        83: Admin Exec Identity - mailrelay
+    extras:
+      agent_id: '016'
+    name: Credentials - Admin Exec Identity - mailrelay
+    type: Credentials
+  140:
+    associated_assets:
+      identities:
+        84: Admin Exec Identity - ns
+    extras:
+      agent_id: '027'
+    name: Credentials - Admin Exec Identity - ns
+    type: Credentials
+  141:
+    associated_assets:
+      identities:
+        85: Admin Exec Identity - ntp
+    extras:
+      agent_id: '022'
+    name: Credentials - Admin Exec Identity - ntp
+    type: Credentials
+  142:
+    associated_assets:
+      identities:
+        86: Admin Exec Identity - payroll
+    extras:
+      agent_id: 018
+    name: Credentials - Admin Exec Identity - payroll
+    type: Credentials
+  143:
+    associated_assets:
+      identities:
+        87: Admin Exec Identity - print
+    extras:
+      agent_id: '023'
+    name: Credentials - Admin Exec Identity - print
+    type: Credentials
+  144:
+    associated_assets:
+      identities:
+        88: Admin Exec Identity - timereporter
+    extras:
+      agent_id: '026'
+    name: Credentials - Admin Exec Identity - timereporter
+    type: Credentials
+  145:
+    associated_assets:
+      identities:
+        89: Admin Exec Identity - weborder
+    extras:
+      agent_id: '002'
+    name: Credentials - Admin Exec Identity - weborder
+    type: Credentials
+  146:
+    associated_assets:
+      interApps:
+        21: mailrelay
+        22: ns
+        24: payroll
+        26: timereporter
+        27: weborder
+    extras:
+      agent_ids:
+      - '016'
+      - '027'
+      - 018
+      - '026'
+      - '002'
+    name: CR 134.24.2.0/24 Internal
+    type: InterappConnectionRule
+  148:
+    associated_assets:
+      interApps:
+        16: ca
+        17: db
+        18: dc
+        19: files
+        20: mail
+        23: ntp
+        25: print
+    extras:
+      agent_ids:
+      - '001'
+      - 009
+      - '034'
+      - '033'
+      - '032'
+      - '022'
+      - '023'
+    name: CR 134.24.4.0/24 Internal
+    type: InterappConnectionRule
+attackers: {}
+metadata:
+  MAL-Toolbox Version: 0.3.11
+  info: Created by the mal-toolbox model python module.
+  langID: org.mal-lang.tyrLang
+  langVersion: 0.0.8
+  malVersion: 0.1.0-SNAPSHOT
+  name: Demo Model
