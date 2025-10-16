@@ -1752,7 +1752,7 @@ assets:
       - '023'
     name: CR 134.24.4.0/24 Internal
     type: InterappConnectionRule
-attackers: {}
+
 metadata:
   MAL-Toolbox Version: 0.3.11
   info: Created by the mal-toolbox model python module.
