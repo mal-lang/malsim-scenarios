@@ -3,64 +3,64 @@ model_file: model.yml
 rewards:
   by_asset_name:
     ap01:
-      read: 2
-      fullAccess: 3
+      read: 2.0
+      fullAccess: 3.0
       notPresent: 5.0
     CR ap01-134.24.3.0/24:
       restricted: 5.0
     Admin Exec Identity - ap01:
       notPresent: 5.0
     ap02:
-      read: 2
-      fullAccess: 3
+      read: 2.0
+      fullAccess: 3.0
       notPresent: 5.0
     CR ap02-134.24.3.0/24:
       restricted: 5.0
     Admin Exec Identity - ap02:
       notPresent: 5.0
     ap03:
-      read: 2
-      fullAccess: 3
+      read: 2.0
+      fullAccess: 3.0
       notPresent: 5.0
     CR ap03-134.24.3.0/24:
       restricted: 5.0
     Admin Exec Identity - ap03:
       notPresent: 5.0
     ap04:
-      read: 2
-      fullAccess: 5
+      read: 2.0
+      fullAccess: 5.0
       notPresent: 5.0
     CR ap04-134.24.3.0/24:
       restricted: 5.0
     Admin Exec Identity - ap04:
       notPresent: 5.0
     ap05:
-      read: 2
-      fullAccess: 3
+      read: 2.0
+      fullAccess: 3.0
       notPresent: 5.0
     CR ap05-134.24.3.0/24:
       restricted: 5.0
     Admin Exec Identity - ap05:
       notPresent: 5.0
     ap06:
-      read: 2
-      fullAccess: 3
+      read: 2.0
+      fullAccess: 3.0
       notPresent: 5.0
     CR ap06-134.24.3.0/24:
       restricted: 5.0
     Admin Exec Identity - ap06:
       notPresent: 5.0
     ap07:
-      read: 2
-      fullAccess: 3
+      read: 2.0
+      fullAccess: 3.0
       notPresent: 5.0
     CR ap07-134.24.3.0/24:
       restricted: 5.0
     Admin Exec Identity - ap07:
       notPresent: 5.0
     ca:
-      read: 1
-      fullAccess: 5
+      read: 1.0
+      fullAccess: 5.0
       notPresent: 5.0
     CR ca-134.24.4.0/24:
       restricted: 5.0
@@ -73,56 +73,56 @@ rewards:
     Admin Exec Identity - db:
       notPresent: 5.0
     dc:
-      read: 2
-      fullAccess: 5
+      read: 2.0
+      fullAccess: 5.0
       notPresent: 5.0
     CR dc-134.24.4.0/24:
       restricted: 5.0
     Admin Exec Identity - dc:
       notPresent: 5.0
     files:
-      read: 2
-      fullAccess: 2
+      read: 2.0
+      fullAccess: 2.0
       notPresent: 4.0
     CR files-134.24.4.0/24:
       restricted: 4.0
     Admin Exec Identity - files:
       notPresent: 4.0
     mail:
-      read: 3
-      fullAccess: 4
+      read: 3.0
+      fullAccess: 4.0
       notPresent: 3.0
     CR mail-134.24.4.0/24:
       restricted: 3.0
     Admin Exec Identity - mail:
       notPresent: 3.0
     mailrelay:
-      read: 3
-      fullAccess: 4
+      read: 3.0
+      fullAccess: 4.0
       notPresent: 3.0
     CR mailrelay-134.24.2.0/24:
       restricted: 3.0
     Admin Exec Identity - mailrelay:
       notPresent: 3.0
     ns:
-      read: 2
-      fullAccess: 5
+      read: 2.0
+      fullAccess: 5.0
       notPresent: 5.0
     CR ns-134.24.2.0/24:
       restricted: 5.0
     Admin Exec Identity - ns:
       notPresent: 5.0
     ntp:
-      read: 1
-      fullAccess: 5
+      read: 1.0
+      fullAccess: 5.0
       notPresent: 4.0
     CR ntp-134.24.4.0/24:
       restricted: 4.0
     Admin Exec Identity - ntp:
       notPresent: 4.0
     payroll:
-      read: 2
-      fullAccess: 5
+      read: 2.0
+      fullAccess: 5.0
       notPresent: 5.0
     CR payroll-134.24.2.0/24:
       restricted: 5.0
@@ -137,16 +137,16 @@ rewards:
     Admin Exec Identity - print:
       notPresent: 1.0
     timereporter:
-      read: 1
-      fullAccess: 5
+      read: 1.0
+      fullAccess: 5.0
       notPresent: 4.0
     CR timereporter-134.24.2.0/24:
       restricted: 4.0
     Admin Exec Identity - timereporter:
       notPresent: 4.0
     weborder:
-      read: 1
-      fullAccess: 4
+      read: 1.0
+      fullAccess: 4.0
       notPresent: 2.0
     CR weborder-134.24.2.0/24:
       restricted: 2.0
