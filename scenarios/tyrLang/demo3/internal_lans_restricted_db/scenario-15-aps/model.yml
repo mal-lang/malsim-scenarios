@@ -11,7 +11,7 @@ assets:
       agent_id: 019
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.11
       os_host_id: ap01
@@ -31,7 +31,7 @@ assets:
       agent_id: '013'
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.12
       os_host_id: ap02
@@ -51,7 +51,7 @@ assets:
       agent_id: '012'
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.13
       os_host_id: ap03
@@ -91,7 +91,7 @@ assets:
       agent_id: '006'
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.15
       os_host_id: ap05
@@ -111,7 +111,7 @@ assets:
       agent_id: '007'
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.16
       os_host_id: ap06
@@ -131,7 +131,7 @@ assets:
       agent_id: '020'
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.21
       os_host_id: ap07
@@ -151,7 +151,7 @@ assets:
       agent_id: '005'
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.22
       os_host_id: ap08
@@ -171,7 +171,7 @@ assets:
       agent_id: 008
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.23
       os_host_id: ap09
@@ -191,7 +191,7 @@ assets:
       agent_id: '004'
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.24
       os_host_id: ap10
@@ -211,7 +211,7 @@ assets:
       agent_id: '003'
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.25
       os_host_id: ap11
@@ -231,7 +231,7 @@ assets:
       agent_id: '021'
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.26
       os_host_id: ap12
@@ -271,7 +271,7 @@ assets:
       agent_id: '010'
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.28
       os_host_id: ap14
@@ -291,7 +291,7 @@ assets:
       agent_id: '015'
       availability: 5
       confidentiality: 2
-      integrity: 3
+      integrity: 5
       interfaces:
       - 134.24.3.29
       os_host_id: ap15
@@ -333,6 +333,9 @@ assets:
         107: SW Vuln - db
     extras:
       agent_id: 009
+      availability: 5
+      confidentiality: 2
+      integrity: 5
       interfaces:
       - 134.24.4.13
       os_host_id: db
@@ -506,7 +509,7 @@ assets:
         115: SW Vuln - print
     extras:
       agent_id: '023'
-      availability: 1
+      availability: 3
       confidentiality: 3
       integrity: 4
       interfaces:
