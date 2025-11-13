@@ -10,3 +10,8 @@ dependencies = [
     "matplotlib>=3.10.7",
     "networkx>=3.5",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.4",
+]
