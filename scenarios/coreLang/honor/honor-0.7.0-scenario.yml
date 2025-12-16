@@ -1,0 +1,20 @@
+lang_file: ../../../langs/org.mal-lang.coreLang-0.7.0.mar
+model_file: Model-0.7.0-27sep.yml
+
+agents:
+  Attacker1:
+    type: 'attacker'
+    agent_class: 'RandomAgent'
+    entry_points:
+    - User:attemptSocialEngineering
+  Attacker2:
+    type: 'attacker'
+    agent_class: 'RandomAgent'
+    entry_points:
+    - Application:fullAccess
+    - Application:attemptReverseReach
+  Attacker3:
+    type: 'attacker'
+    agent_class: 'RandomAgent'
+    entry_points:
+    - SM Hardware:physicalAccess

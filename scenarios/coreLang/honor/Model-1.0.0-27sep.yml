@@ -1,0 +1,2313 @@
+assets:
+  -9089467634319081467:
+    associated_assets:
+      applications:
+        -7951899973500451269: HMI:-7951899973500451269
+        630599287284321073: RoutingFirewall:630599287284321073
+        1655487620951591539: Flexibility Execution
+      netConnections:
+        5284237359521220281: ConnectionRule:5284237359521220281
+        6160499563261742524: ConnectionRule:6160499563261742524
+      transitData:
+        -6833518683587786599: Internal DB:-6833518683587786599
+    name: Core Zone LAN
+    type: Network
+  -9064098434173484476:
+    associated_assets:
+      application:
+        -1219191878300317907: RoutingFirewall:-1219191878300317907
+    name: SoftwareVulnerability:-9064098434173484476
+    type: SoftwareVulnerability
+  -9033956709002227818:
+    associated_assets:
+      containerData:
+        -6307008247164809928: Enc Keys Data:-6307008247164809928
+      encryptedData:
+        4369827036366654398: Flexibility Data:4369827036366654398
+    name: Encryption Keys
+    type: Credentials
+  -9026544996769906227:
+    associated_assets:
+      application:
+        5731145546840820397: Forecasting Engine
+    name: SoftwareVulnerability:-9026544996769906227
+    type: SoftwareVulnerability
+  -8429802322263979991:
+    associated_assets:
+      application:
+        -2889968223457820481: RoutingFirewall
+    name: SoftwareVulnerability:-8429802322263979991
+    type: SoftwareVulnerability
+  -8128032257805497896:
+    associated_assets:
+      application:
+        -3726203282743803897: Office Station
+    name: SoftwareVulnerability:-8128032257805497896
+    type: SoftwareVulnerability
+  -8103987138566928689:
+    associated_assets:
+      sysExecutedApps:
+        5185958517877591920: EV
+    name: Hardware:-8103987138566928689
+    type: Hardware
+  -7990077015743772938:
+    associated_assets:
+      hostHardware:
+        7263467691339827543: Hardware:7263467691339827543
+      networks:
+        2853168851534234089: Office LAN
+      protectorIDPSs:
+        5297210351268283906: IDPS:5297210351268283906
+      vulnerabilities:
+        5703378694891258195: SoftwareVulnerability:5703378694891258195
+    name: Smart Phone:-7990077015743772938
+    type: Application
+  -7951899973500451269:
+    associated_assets:
+      networks:
+        -9089467634319081467: Core Zone LAN
+      protectorIDPSs:
+        226926412673467811: IDPS:226926412673467811
+      vulnerabilities:
+        8250211997815033318: SoftwareVulnerability:8250211997815033318
+    name: HMI:-7951899973500451269
+    type: Application
+  -7874009323116212661:
+    associated_assets:
+      application:
+        630599287284321073: RoutingFirewall:630599287284321073
+    name: SoftwareVulnerability:-7874009323116212661
+    type: SoftwareVulnerability
+  -7283750711606031546:
+    associated_assets:
+      networks:
+        -3777266917100335457: Head End LAN
+        8103222226739678984: Internet:8103222226739678984
+      routingFirewalls:
+        -2889968223457820481: RoutingFirewall
+    name: ConnectionRule:-7283750711606031546
+    type: ConnectionRule
+  -7061920610062218447:
+    associated_assets:
+      application:
+        4609041281564954080: Office App:4609041281564954080
+    name: SoftwareVulnerability:-7061920610062218447
+    type: SoftwareVulnerability
+  -6833518683587786599:
+    associated_assets:
+      transitNetwork:
+        -9089467634319081467: Core Zone LAN
+    name: Internal DB:-6833518683587786599
+    type: Data
+  -6537745890440361712:
+    associated_assets:
+      lowPrivApps:
+        6307075106216496016: SM Application
+      users:
+        2220090544218393038: User:2220090544218393038
+    name: Identity:-6537745890440361712
+    type: Identity
+  -6307008247164809928:
+    associated_assets:
+      containingApp:
+        -6033484870431257593: FlexCom Agent
+        4383758825046034724: Data Acquisitions Server
+      information:
+        -9033956709002227818: Encryption Keys
+    name: Enc Keys Data:-6307008247164809928
+    type: Data
+  -6033484870431257593:
+    associated_assets:
+      appSoftProduct:
+        9289055741320983: SoftwareProduct
+      containedData:
+        -6307008247164809928: Enc Keys Data:-6307008247164809928
+      hostHardware:
+        -1741136435957773271: Hardware
+      sentData:
+        50952803218571521: Data:50952803218571521
+        4369827036366654398: Flexibility Data:4369827036366654398
+    name: FlexCom Agent
+    type: Application
+  -6018209343056098774:
+    associated_assets:
+      hardware:
+        3462987087913438036: SM Hardware
+    name: HardwareVulnerability:-6018209343056098774
+    type: HardwareVulnerability
+  -5551238465842164351:
+    associated_assets:
+      application:
+        6307075106216496016: SM Application
+    name: SoftwareVulnerability:-5551238465842164351
+    type: SoftwareVulnerability
+  -5007517114276036027:
+    associated_assets:
+      application:
+        1655487620951591539: Flexibility Execution
+    name: SoftwareVulnerability:-5007517114276036027
+    type: SoftwareVulnerability
+  -4921966004899526197:
+    associated_assets:
+      protectedApps:
+        4383758825046034724: Data Acquisitions Server
+        4968758791644596546: Web Server
+    name: IDPS
+    type: IDPS
+  -4843381891044259938:
+    associated_assets:
+      execPrivApps:
+        4383758825046034724: Data Acquisitions Server
+        4968758791644596546: Web Server
+    name: Identity:-4843381891044259938
+    type: Identity
+  -3777266917100335457:
+    associated_assets:
+      applications:
+        -1219191878300317907: RoutingFirewall:-1219191878300317907
+        4383758825046034724: Data Acquisitions Server
+        4968758791644596546: Web Server
+      netConnections:
+        -7283750711606031546: ConnectionRule:-7283750711606031546
+        -5710554851359565: ConnectionRule:-5710554851359565
+        5816124483917771: ConnectionRule:5816124483917771
+      transitData:
+        4369827036366654398: Flexibility Data:4369827036366654398
+    name: Head End LAN
+    type: Network
+  -3726203282743803897:
+    associated_assets:
+      networks:
+        2853168851534234089: Office LAN
+      protectorIDPSs:
+        5297210351268283906: IDPS:5297210351268283906
+      vulnerabilities:
+        -8128032257805497896: SoftwareVulnerability:-8128032257805497896
+    name: Office Station
+    type: Application
+  -3485356908833650528:
+    associated_assets:
+      application:
+        5439473563977401412: Flex Asset Mgmt
+    name: SoftwareVulnerability:-3485356908833650528
+    type: SoftwareVulnerability
+  -2889968223457820481:
+    associated_assets:
+      connectionRules:
+        -7283750711606031546: ConnectionRule:-7283750711606031546
+        5816124483917771: ConnectionRule:5816124483917771
+      networks:
+        8103222226739678984: Internet:8103222226739678984
+      vulnerabilities:
+        -8429802322263979991: SoftwareVulnerability:-8429802322263979991
+    name: RoutingFirewall
+    type: RoutingFirewall
+  -2427437992612770923:
+    associated_assets:
+      networks:
+        6422000877406470711: Home LAN
+        8103222226739678984: Internet:8103222226739678984
+    name: ConnectionRule:-2427437992612770923
+    type: ConnectionRule
+  -1741136435957773271:
+    associated_assets:
+      sysExecutedApps:
+        -6033484870431257593: FlexCom Agent
+    name: Hardware
+    type: Hardware
+  -1219191878300317907:
+    associated_assets:
+      connectionRules:
+        -5710554851359565: ConnectionRule:-5710554851359565
+      networks:
+        -3777266917100335457: Head End LAN
+      vulnerabilities:
+        -9064098434173484476: SoftwareVulnerability:-9064098434173484476
+    name: RoutingFirewall:-1219191878300317907
+    type: RoutingFirewall
+  -9927256164015983:
+    associated_assets:
+      networks:
+        -6777259446796164: BRP Office LAN
+        -5632143023612311: BRP Core Zone LAN
+      routingFirewalls:
+        998645070887503: RoutingFirewall:998645070887503
+    name: ConnectionRule:-9927256164015983
+    type: ConnectionRule
+  -9726397073303892:
+    associated_assets:
+      networks:
+        8570477488903583: SCADA Core LAN
+    name: Time Server
+    type: Application
+  -9570412575104082:
+    associated_assets:
+      networks:
+        2585621109670201: Process LAN
+    name: ICCP Server
+    type: Application
+  -9526882671881760:
+    associated_assets:
+      networks:
+        -5632143023612311: BRP Core Zone LAN
+        7958326016036668: BRP Oper Plan LAN
+      routingFirewalls:
+        -3679067691953713: RoutingFirewall:-3679067691953713
+    name: ConnectionRule:-9526882671881760
+    type: ConnectionRule
+  -9429960881847685:
+    associated_assets:
+      application:
+        262052771218230: RoutingFirewall:262052771218230
+    name: SoftwareVulnerability:-9429960881847685
+    type: SoftwareVulnerability
+  -9420322571499164:
+    associated_assets:
+      hostHardware:
+        688486541237038: Hardware:688486541237038
+      networks:
+        -89612217021576: Primary Substation LAN
+    name: Workstation:-9420322571499164
+    type: Application
+  -9263438396079499:
+    associated_assets:
+      sysExecutedApps:
+        -1651829060724692: Smart Phone
+      vulnerabilities:
+        6388810805106014: HardwareVulnerability:6388810805106014
+    name: Hardware:-9263438396079499
+    type: Hardware
+  -9231861957391459:
+    associated_assets:
+      application:
+        7622638448884612: Meter Data Concentrator
+    name: SoftwareVulnerability:-9231861957391459
+    type: SoftwareVulnerability
+  -9222184248081367:
+    associated_assets:
+      application:
+        9380764310104335: Historian
+    name: SoftwareVulnerability:-9222184248081367
+    type: SoftwareVulnerability
+  -9201389203262567:
+    associated_assets:
+      application:
+        -768347189573278: RoutingFirewall:-768347189573278
+    name: SoftwareVulnerability:-9201389203262567
+    type: SoftwareVulnerability
+  -8887258883554356:
+    associated_assets:
+      application:
+        2742411526104658: Portfolio schedule
+    name: SoftwareVulnerability:-8887258883554356
+    type: SoftwareVulnerability
+  -8870229874954749:
+    associated_assets:
+      networks:
+        92452836070160: Energy Supplier Network
+      receivedData:
+        -1835803994576097: Process Data:-1835803994576097
+      sentData:
+        -1835803994576097: Process Data:-1835803994576097
+      vulnerabilities:
+        -8100796021179442: SoftwareVulnerability
+    name: DER RTU
+    type: Application
+  -8868204523084910:
+    associated_assets:
+      applications:
+        -2478515727543736: Service Provider
+    name: Internet:-8868204523084910
+    type: Network
+  -8703606173499623:
+    associated_assets:
+      senderApp:
+        3973517088726031: Update Server
+      transitNetwork:
+        589653745852670: Engineering LAN
+    name: RTU Software Data
+    type: Data
+  -8604982296243443:
+    associated_assets:
+      containerData:
+        -1698024297820307: Data:-1698024297820307
+      identities:
+        2910590799718682: Identity
+      requiredFactors:
+        7169517639031100: Auth Token
+    name: Credentials
+    type: Credentials
+  -8454099160783938:
+    associated_assets:
+      applications:
+        -1602674236137938: Vendor File Transfer
+      networks:
+        589653745852670: Engineering LAN
+        8103222226739678984: Internet:8103222226739678984
+    name: ConnectionRule:-8454099160783938
+    type: ConnectionRule
+  -8443094682552890:
+    associated_assets:
+      networks:
+        8570477488903583: SCADA Core LAN
+      receivedData:
+        -2265848216488244: Process Data
+      sentData:
+        -2265848216488244: Process Data
+    name: SCADA Server
+    type: Application
+  -8256539496874961:
+    associated_assets:
+      applications:
+        -7654322841029335: BRP FlexCom Agent
+      netConnections:
+        34831888698443: ConnectionRule:34831888698443
+        6828937191462768: ConnectionRule:6828937191462768
+      transitData:
+        -608306527710144: FlexRequests
+    name: BRP Head End LAN
+    type: Network
+  -8174541001566079:
+    associated_assets:
+      senderApp:
+        6106541789838796: Forecasting Server
+      transitNetwork:
+        8482151560692704: Operational Planning LAN
+    name: Flex Forecasts
+    type: Data
+  -8100796021179442:
+    associated_assets:
+      application:
+        -8870229874954749: DER RTU
+    name: SoftwareVulnerability
+    type: SoftwareVulnerability
+  -7954441963410487:
+    associated_assets:
+      application:
+        5430278858885866: Office Station:5430278858885866
+    name: SoftwareVulnerability:-7954441963410487
+    type: SoftwareVulnerability
+  -7707594694914807:
+    associated_assets:
+      application:
+        1277369061992223: Price Determination Module
+    name: SoftwareVulnerability:-7707594694914807
+    type: SoftwareVulnerability
+  -7654322841029335:
+    associated_assets:
+      networks:
+        -8256539496874961: BRP Head End LAN
+      protectorIDPSs:
+        -1448821287844939: IDPS:-1448821287844939
+      receivedData:
+        -608306527710144: FlexRequests
+      sentData:
+        -608306527710144: FlexRequests
+      vulnerabilities:
+        4125264733710762: SoftwareVulnerability:4125264733710762
+    name: BRP FlexCom Agent
+    type: Application
+  -7220188551736673:
+    associated_assets:
+      application:
+        -6772814032133054: Office Station:-6772814032133054
+    name: SoftwareVulnerability:-7220188551736673
+    type: SoftwareVulnerability
+  -6852300144031777:
+    associated_assets:
+      connectionRules:
+        9391517259115448: ConnectionRule:9391517259115448
+      networks:
+        8103222226739678984: Internet:8103222226739678984
+      vulnerabilities:
+        3198300969780794: SoftwareVulnerability:3198300969780794
+    name: RoutingFirewall:-6852300144031777
+    type: RoutingFirewall
+  -6777259446796164:
+    associated_assets:
+      applications:
+        -1651829060724692: Smart Phone
+        5430278858885866: Office Station:5430278858885866
+      netConnections:
+        -9927256164015983: ConnectionRule:-9927256164015983
+    name: BRP Office LAN
+    type: Network
+  -6772814032133054:
+    associated_assets:
+      networks:
+        -5947040935928612: FMO Office LAN
+      protectorIDPSs:
+        -1809447059000080: IDPS:-1809447059000080
+      vulnerabilities:
+        -7220188551736673: SoftwareVulnerability:-7220188551736673
+    name: Office Station:-6772814032133054
+    type: Application
+  -6583342418988168:
+    associated_assets:
+      networks:
+        2057421012633155: FMO Market Zone LAN
+      vulnerabilities:
+        -4871623963086631: SoftwareVulnerability:-4871623963086631
+    name: Flexibility Matching System
+    type: Application
+  -6257796774946495:
+    associated_assets:
+      hostHardware:
+        4092801834149548: Sensors
+      networks:
+        92452836070160: Energy Supplier Network
+        5953117495399963: PL-C/LoRaWAN
+      vulnerabilities:
+        -3024345207527303: SoftwareVulnerability:-3024345207527303
+    name: Kwh Meter
+    type: Application
+  -6246090016378105:
+    associated_assets:
+      sysExecutedApps:
+        -1598234313036799: IED
+    name: Actuators/Sensors:-6246090016378105
+    type: Hardware
+  -6110539041029400:
+    associated_assets:
+      networks:
+        -5632143023612311: BRP Core Zone LAN
+      protectorIDPSs:
+        3719593162493644: IDPS:3719593162493644
+      vulnerabilities:
+        9277621535281875: SoftwareVulnerability:9277621535281875
+    name: Realtime Portfolio Optimization
+    type: Application
+  -6008496273910131:
+    associated_assets:
+      applications:
+        -3285172476539339: Office Apps
+        3181260853393134: RoutingFirewall:3181260853393134
+        7480460796777191: Office Station:7480460796777191
+        9052466880055915: Smart Phone:9052466880055915
+      netConnections:
+        3263352402278627: ConnectionRule:3263352402278627
+        9355702465203396: ConnectionRule:9355702465203396
+    name: DSO Office Zone LAN
+    type: Network
+  -5947040935928612:
+    associated_assets:
+      applications:
+        -6772814032133054: Office Station:-6772814032133054
+        5342943235266378: Smart Phone:5342943235266378
+      netConnections:
+        8148353667981430: ConnectionRule:8148353667981430
+    name: FMO Office LAN
+    type: Network
+  -5788304309433211:
+    associated_assets:
+      appConnections:
+        7070505967061204: ConnectionRule:7070505967061204
+      networks:
+        852119815715827: Secondary Substation LAN
+      receivedData:
+        2482232589996571: Process Data:2482232589996571
+      sentData:
+        2482232589996571: Process Data:2482232589996571
+      vulnerabilities:
+        9957005809635669: SoftwareVulnerability:9957005809635669
+    name: Secondary RTU
+    type: Application
+  -5760878004633065:
+    associated_assets:
+      applications:
+        1007211369537407: Mail Server
+      netConnections:
+        -3570956494551298: ConnectionRule:-3570956494551298
+        3263352402278627: ConnectionRule:3263352402278627
+    name: Public DMZ LAN
+    type: Network
+  -5710554851359565:
+    associated_assets:
+      networks:
+        -3777266917100335457: Head End LAN
+        100898871897509330: Oper Plan LAN
+      routingFirewalls:
+        -1219191878300317907: RoutingFirewall:-1219191878300317907
+    name: ConnectionRule:-5710554851359565
+    type: ConnectionRule
+  -5697593150595895:
+    associated_assets:
+      networks:
+        8570477488903583: SCADA Core LAN
+      receivedData:
+        6722153441855174: SCADA Maintenance Data
+    name: Data Engineering
+    type: Application
+  -5641493601814029:
+    associated_assets:
+      receiverApp:
+        235004733180216: Primary RTU
+      senderApp:
+        235004733180216: Primary RTU
+      transitNetwork:
+        -89612217021576: Primary Substation LAN
+    name: Process Data:-5641493601814029
+    type: Data
+  -5632143023612311:
+    associated_assets:
+      applications:
+        -6110539041029400: Realtime Portfolio Optimization
+        -1614407497478242: HMI
+      netConnections:
+        -9927256164015983: ConnectionRule:-9927256164015983
+        -9526882671881760: ConnectionRule:-9526882671881760
+      transitData:
+        9109623079652680: Internal DB:9109623079652680
+    name: BRP Core Zone LAN
+    type: Network
+  -5265064215969554:
+    associated_assets:
+      application:
+        4467712106477498: Web Server:4467712106477498
+    name: SoftwareVulnerability:-5265064215969554
+    type: SoftwareVulnerability
+  -5208319683485633:
+    associated_assets:
+      networks:
+        842722045290389: SCADA DMZ LAN
+      receivedData:
+        -654610958363945: Load Forecasts
+      sentData:
+        -3765117887143931: Flex Requests/Offers
+    name: File Transfer Server
+    type: Application
+  -5114234845171896:
+    associated_assets:
+      hostHardware:
+        -1086921567772944: Actuators/Sensors
+      networks:
+        -89612217021576: Primary Substation LAN
+    name: IED:-5114234845171896
+    type: Application
+  -5068457617138734:
+    associated_assets:
+      application:
+        -4261889968587799: Office App
+    name: SoftwareVulnerability:-5068457617138734
+    type: SoftwareVulnerability
+  -4915816806183320:
+    associated_assets:
+      connectionRules:
+        -4510095452626393: ConnectionRule:-4510095452626393
+      vulnerabilities:
+        9556865855020373: SoftwareVulnerability:9556865855020373
+    name: RoutingFirewall:-4915816806183320
+    type: RoutingFirewall
+  -4871623963086631:
+    associated_assets:
+      application:
+        -6583342418988168: Flexibility Matching System
+    name: SoftwareVulnerability:-4871623963086631
+    type: SoftwareVulnerability
+  -4607108148504890:
+    associated_assets:
+      connectionRules:
+        3263352402278627: ConnectionRule:3263352402278627
+      vulnerabilities:
+        1887782432075816: SoftwareVulnerability:1887782432075816
+    name: RoutingFirewall:-4607108148504890
+    type: RoutingFirewall
+  -4510095452626393:
+    associated_assets:
+      networks:
+        842722045290389: SCADA DMZ LAN
+        8482151560692704: Operational Planning LAN
+      routingFirewalls:
+        -4915816806183320: RoutingFirewall:-4915816806183320
+    name: ConnectionRule:-4510095452626393
+    type: ConnectionRule
+  -4410636419458807:
+    associated_assets:
+      application:
+        235004733180216: Primary RTU
+    name: SoftwareVulnerability:-4410636419458807
+    type: SoftwareVulnerability
+  -4261889968587799:
+    associated_assets:
+      protectorIDPSs:
+        -3026791298869886: IDPS:-3026791298869886
+      vulnerabilities:
+        -5068457617138734: SoftwareVulnerability:-5068457617138734
+    name: Office App
+    type: Application
+  -4164682094857140:
+    associated_assets:
+      application:
+        -1460321502591787: RoutingFirewall:-1460321502591787
+    name: SoftwareVulnerability:-4164682094857140
+    type: SoftwareVulnerability
+  -3765117887143931:
+    associated_assets:
+      senderApp:
+        -5208319683485633: File Transfer Server
+      transitNetwork:
+        842722045290389: SCADA DMZ LAN
+    name: Flex Requests/Offers
+    type: Data
+  -3679067691953713:
+    associated_assets:
+      connectionRules:
+        -9526882671881760: ConnectionRule:-9526882671881760
+      vulnerabilities:
+        -1821958052354523: SoftwareVulnerability:-1821958052354523
+    name: RoutingFirewall:-3679067691953713
+    type: RoutingFirewall
+  -3678605937240693:
+    associated_assets:
+      networks:
+        92452836070160: Energy Supplier Network
+        4810538876074176: GPRS, LTE, Powerline
+    name: ConnectionRule:-3678605937240693
+    type: ConnectionRule
+  -3570956494551298:
+    associated_assets:
+      networks:
+        -5760878004633065: Public DMZ LAN
+        842722045290389: SCADA DMZ LAN
+        8103222226739678984: Internet:8103222226739678984
+      routingFirewalls:
+        18356053579920: RoutingFirewall:18356053579920
+    name: ConnectionRule:-3570956494551298
+    type: ConnectionRule
+  -3540500933244485:
+    associated_assets:
+      containingApp:
+        -1941676407479674: FlexCom Agent:-1941676407479674
+      information:
+        6208161549452362: Encryption Keys:6208161549452362
+    name: Enc Keys Data
+    type: Data
+  -3450560489492182:
+    associated_assets:
+      networks:
+        2585621109670201: Process LAN
+        8570477488903583: SCADA Core LAN
+    name: ConnectionRule:-3450560489492182
+    type: ConnectionRule
+  -3366264564692756:
+    associated_assets:
+      application:
+        -1941676407479674: FlexCom Agent:-1941676407479674
+    name: SoftwareVulnerability:-3366264564692756
+    type: SoftwareVulnerability
+  -3285172476539339:
+    associated_assets:
+      lowPrivAppIAMs:
+        -2231451135029790: Identity:-2231451135029790
+      networks:
+        -6008496273910131: DSO Office Zone LAN
+    name: Office Apps
+    type: Application
+  -3259964177640920:
+    associated_assets:
+      application:
+        -1651829060724692: Smart Phone
+    name: SoftwareVulnerability:-3259964177640920
+    type: SoftwareVulnerability
+  -3208148400870044:
+    associated_assets:
+      sysExecutedApps:
+        5342943235266378: Smart Phone:5342943235266378
+      vulnerabilities:
+        -1582287148599162: HardwareVulnerability
+    name: Hardware:-3208148400870044
+    type: Hardware
+  -3200821104842049:
+    associated_assets:
+      receiverApp:
+        6106541789838796: Forecasting Server
+      transitNetwork:
+        8482151560692704: Operational Planning LAN
+    name: Historic/Process Data
+    type: Data
+  -3173617957834005:
+    associated_assets:
+      networks:
+        8570477488903583: SCADA Core LAN
+    name: DE HMI
+    type: Application
+  -3026791298869886:
+    associated_assets:
+      protectedApps:
+        -4261889968587799: Office App
+        -1651829060724692: Smart Phone
+        5430278858885866: Office Station:5430278858885866
+    name: IDPS:-3026791298869886
+    type: IDPS
+  -3024345207527303:
+    associated_assets:
+      application:
+        -6257796774946495: Kwh Meter
+    name: SoftwareVulnerability:-3024345207527303
+    type: SoftwareVulnerability
+  -2947838551911668:
+    associated_assets:
+      applications:
+        9469868328120727: RoutingFirewall:9469868328120727
+      networks:
+        589653745852670: Engineering LAN
+        2585621109670201: Process LAN
+    name: ConnectionRule:-2947838551911668
+    type: ConnectionRule
+  -2872127310678765:
+    associated_assets:
+      sysExecutedApps:
+        7480460796777191: Office Station:7480460796777191
+    name: Hardware:-2872127310678765
+    type: Hardware
+  -2777251403626038:
+    associated_assets:
+      networks:
+        5953117495399963: PL-C/LoRaWAN
+        6422000877406470711: Home LAN
+      routingFirewalls:
+        2197678936095523: RoutingFirewall:2197678936095523
+    name: ConnectionRule:-2777251403626038
+    type: ConnectionRule
+  -2508623130213907:
+    associated_assets:
+      networks:
+        2585621109670201: Process LAN
+        4810538876074176: GPRS, LTE, Powerline
+    name: ConnectionRule:-2508623130213907
+    type: ConnectionRule
+  -2478515727543736:
+    associated_assets:
+      networks:
+        -8868204523084910: Internet:-8868204523084910
+    name: Service Provider
+    type: Application
+  -2438924479952409:
+    associated_assets:
+      application:
+        9487955995225705: RoutingFirewall:9487955995225705
+    name: SoftwareVulnerability:-2438924479952409
+    type: SoftwareVulnerability
+  -2400249741287715:
+    associated_assets:
+      application:
+        2525952632573563: RoutingFirewall:2525952632573563
+    name: SoftwareVulnerability:-2400249741287715
+    type: SoftwareVulnerability
+  -2382528859003320:
+    associated_assets:
+      applications:
+        235004733180216: Primary RTU
+      networks:
+        -517954142080466: Fiber
+      routingFirewalls:
+        -768347189573278: RoutingFirewall:-768347189573278
+    name: ConnectionRule:-2382528859003320
+    type: ConnectionRule
+  -2367908803236308:
+    associated_assets:
+      transitNetwork:
+        2057421012633155: FMO Market Zone LAN
+    name: Internal DB
+    type: Data
+  -2363489135797891:
+    associated_assets:
+      application:
+        793427202612141: RoutingFirewall:793427202612141
+    name: SoftwareVulnerability:-2363489135797891
+    type: SoftwareVulnerability
+  -2265848216488244:
+    associated_assets:
+      receiverApp:
+        -8443094682552890: SCADA Server
+      senderApp:
+        -8443094682552890: SCADA Server
+      transitNetwork:
+        8570477488903583: SCADA Core LAN
+    name: Process Data
+    type: Data
+  -2231451135029790:
+    associated_assets:
+      lowPrivApps:
+        -3285172476539339: Office Apps
+      users:
+        -1820286248866682: User
+    name: Identity:-2231451135029790
+    type: Identity
+  -2228290333757852:
+    associated_assets:
+      senderApp:
+        7503654769598865: Element Manager
+      transitNetwork:
+        589653745852670: Engineering LAN
+    name: RTU Maintenance Data
+    type: Data
+  -1986726213113300:
+    associated_assets:
+      application:
+        7450651581530868: HMI:7450651581530868
+    name: SoftwareVulnerability:-1986726213113300
+    type: SoftwareVulnerability
+  -1941676407479674:
+    associated_assets:
+      containedData:
+        -3540500933244485: Enc Keys Data
+      executionPrivIAMs:
+        5953117939489696: Identity:5953117939489696
+      networks:
+        600668792933650: FMO Head End LAN
+      protectorIDPSs:
+        2988778213196154: IDPS:2988778213196154
+      receivedData:
+        499832317506584: Flexibility Data
+      sentData:
+        499832317506584: Flexibility Data
+      vulnerabilities:
+        -3366264564692756: SoftwareVulnerability:-3366264564692756
+    name: FlexCom Agent:-1941676407479674
+    type: Application
+  -1835803994576097:
+    associated_assets:
+      receiverApp:
+        -8870229874954749: DER RTU
+      senderApp:
+        -8870229874954749: DER RTU
+      transitNetwork:
+        4810538876074176: GPRS, LTE, Powerline
+    name: Process Data:-1835803994576097
+    type: Data
+  -1821958052354523:
+    associated_assets:
+      application:
+        -3679067691953713: RoutingFirewall:-3679067691953713
+    name: SoftwareVulnerability:-1821958052354523
+    type: SoftwareVulnerability
+  -1820286248866682:
+    associated_assets:
+      userIds:
+        -2231451135029790: Identity:-2231451135029790
+    name: User
+    type: User
+  -1809447059000080:
+    associated_assets:
+      protectedApps:
+        -6772814032133054: Office Station:-6772814032133054
+        5342943235266378: Smart Phone:5342943235266378
+        8422929894975537: Office App:8422929894975537
+    name: IDPS:-1809447059000080
+    type: IDPS
+  -1730398452712399:
+    associated_assets:
+      sysExecutedApps:
+        9052466880055915: Smart Phone:9052466880055915
+    name: Hardware:-1730398452712399
+    type: Hardware
+  -1698024297820307:
+    associated_assets:
+      information:
+        -8604982296243443: Credentials
+    name: Data:-1698024297820307
+    type: Data
+  -1651829060724692:
+    associated_assets:
+      hostHardware:
+        -9263438396079499: Hardware:-9263438396079499
+      networks:
+        -6777259446796164: BRP Office LAN
+      protectorIDPSs:
+        -3026791298869886: IDPS:-3026791298869886
+      vulnerabilities:
+        -3259964177640920: SoftwareVulnerability:-3259964177640920
+    name: Smart Phone
+    type: Application
+  -1614407497478242:
+    associated_assets:
+      networks:
+        -5632143023612311: BRP Core Zone LAN
+      protectorIDPSs:
+        3719593162493644: IDPS:3719593162493644
+      vulnerabilities:
+        6281989515139199: SoftwareVulnerability:6281989515139199
+    name: HMI
+    type: Application
+  -1602674236137938:
+    associated_assets:
+      appConnections:
+        -8454099160783938: ConnectionRule:-8454099160783938
+      sentData:
+        -587186372942762: Data
+        7202093728647641: Data:7202093728647641
+    name: Vendor File Transfer
+    type: Application
+  -1598234313036799:
+    associated_assets:
+      hostHardware:
+        -6246090016378105: Actuators/Sensors:-6246090016378105
+      networks:
+        852119815715827: Secondary Substation LAN
+    name: IED
+    type: Application
+  -1582287148599162:
+    associated_assets:
+      hardware:
+        -3208148400870044: Hardware:-3208148400870044
+    name: HardwareVulnerability
+    type: HardwareVulnerability
+  -1462954905398273:
+    associated_assets:
+      networks:
+        589653745852670: Engineering LAN
+      vulnerabilities:
+        7763915806193668: SoftwareVulnerability:7763915806193668
+    name: Office Station:-1462954905398273
+    type: Application
+  -1460321502591787:
+    associated_assets:
+      connectionRules:
+        1578926065051984: ConnectionRule
+      networks:
+        842722045290389: SCADA DMZ LAN
+      vulnerabilities:
+        -4164682094857140: SoftwareVulnerability:-4164682094857140
+    name: RoutingFirewall:-1460321502591787
+    type: RoutingFirewall
+  -1448821287844939:
+    associated_assets:
+      protectedApps:
+        -7654322841029335: BRP FlexCom Agent
+    name: IDPS:-1448821287844939
+    type: IDPS
+  -1292827617028738:
+    associated_assets:
+      protectedApps:
+        2742411526104658: Portfolio schedule
+    name: IDPS:-1292827617028738
+    type: IDPS
+  -1086921567772944:
+    associated_assets:
+      sysExecutedApps:
+        -5114234845171896: IED:-5114234845171896
+    name: Actuators/Sensors
+    type: Hardware
+  -768347189573278:
+    associated_assets:
+      connectionRules:
+        -2382528859003320: ConnectionRule:-2382528859003320
+      vulnerabilities:
+        -9201389203262567: SoftwareVulnerability:-9201389203262567
+    name: RoutingFirewall:-768347189573278
+    type: RoutingFirewall
+  -654610958363945:
+    associated_assets:
+      receiverApp:
+        -5208319683485633: File Transfer Server
+      transitNetwork:
+        842722045290389: SCADA DMZ LAN
+    name: Load Forecasts
+    type: Data
+  -608306527710144:
+    associated_assets:
+      receiverApp:
+        -7654322841029335: BRP FlexCom Agent
+      senderApp:
+        -7654322841029335: BRP FlexCom Agent
+      transitNetwork:
+        -8256539496874961: BRP Head End LAN
+    name: FlexRequests
+    type: Data
+  -587186372942762:
+    associated_assets:
+      senderApp:
+        -1602674236137938: Vendor File Transfer
+      transitNetwork:
+        8103222226739678984: Internet:8103222226739678984
+    name: Data
+    type: Data
+  -541175871370880:
+    associated_assets:
+      receiverApp:
+        9380764310104335: Historian
+      transitNetwork:
+        8570477488903583: SCADA Core LAN
+    name: Historic Data:-541175871370880
+    type: Data
+  -517954142080466:
+    associated_assets:
+      netConnections:
+        -2382528859003320: ConnectionRule:-2382528859003320
+        6370638661917646: ConnectionRule:6370638661917646
+    name: Fiber
+    type: Network
+  -89612217021576:
+    associated_assets:
+      applications:
+        -9420322571499164: Workstation:-9420322571499164
+        -5114234845171896: IED:-5114234845171896
+        235004733180216: Primary RTU
+      transitData:
+        -5641493601814029: Process Data:-5641493601814029
+    name: Primary Substation LAN
+    type: Network
+  -68581554093018:
+    associated_assets:
+      sysExecutedApps:
+        4926802818531537: Workstation
+    name: Hardware:-68581554093018
+    type: Hardware
+  18356053579920:
+    associated_assets:
+      connectionRules:
+        -3570956494551298: ConnectionRule:-3570956494551298
+    name: RoutingFirewall:18356053579920
+    type: RoutingFirewall
+  34831888698443:
+    associated_assets:
+      networks:
+        -8256539496874961: BRP Head End LAN
+        8103222226739678984: Internet:8103222226739678984
+      routingFirewalls:
+        793427202612141: RoutingFirewall:793427202612141
+    name: ConnectionRule:34831888698443
+    type: ConnectionRule
+  92452836070160:
+    associated_assets:
+      applications:
+        -8870229874954749: DER RTU
+        -6257796774946495: Kwh Meter
+        5738706579997441: IED:5738706579997441
+        8272649789576451: Work Station
+      netConnections:
+        -3678605937240693: ConnectionRule:-3678605937240693
+    name: Energy Supplier Network
+    type: Network
+  190367847761557:
+    associated_assets:
+      application:
+        2197678936095523: RoutingFirewall:2197678936095523
+    name: SoftwareVulnerability:190367847761557
+    type: SoftwareVulnerability
+  235004733180216:
+    associated_assets:
+      appConnections:
+        -2382528859003320: ConnectionRule:-2382528859003320
+      networks:
+        -89612217021576: Primary Substation LAN
+      receivedData:
+        -5641493601814029: Process Data:-5641493601814029
+      sentData:
+        -5641493601814029: Process Data:-5641493601814029
+      vulnerabilities:
+        -4410636419458807: SoftwareVulnerability:-4410636419458807
+    name: Primary RTU
+    type: Application
+  262052771218230:
+    associated_assets:
+      networks:
+        4810538876074176: GPRS, LTE, Powerline
+      vulnerabilities:
+        -9429960881847685: SoftwareVulnerability:-9429960881847685
+    name: RoutingFirewall:262052771218230
+    type: RoutingFirewall
+  499832317506584:
+    associated_assets:
+      encryptCreds:
+        6208161549452362: Encryption Keys:6208161549452362
+      receiverApp:
+        -1941676407479674: FlexCom Agent:-1941676407479674
+      senderApp:
+        -1941676407479674: FlexCom Agent:-1941676407479674
+      transitNetwork:
+        600668792933650: FMO Head End LAN
+        8103222226739678984: Internet:8103222226739678984
+    name: Flexibility Data
+    type: Data
+  565501130128237:
+    associated_assets:
+      receiverApp:
+        9307023299150916: Front End
+      senderApp:
+        9307023299150916: Front End
+      transitNetwork:
+        2585621109670201: Process LAN
+    name: Process Data:565501130128237
+    type: Data
+  589653745852670:
+    associated_assets:
+      applications:
+        -1462954905398273: Office Station:-1462954905398273
+        3973517088726031: Update Server
+        7503654769598865: Element Manager
+      netConnections:
+        -8454099160783938: ConnectionRule:-8454099160783938
+        -2947838551911668: ConnectionRule:-2947838551911668
+        1578926065051984: ConnectionRule
+      outgoingNetConnections:
+        7888433124736133: ConnectionRule:7888433124736133
+      transitData:
+        -8703606173499623: RTU Software Data
+        -2228290333757852: RTU Maintenance Data
+    name: Engineering LAN
+    type: Network
+  600668792933650:
+    associated_assets:
+      applications:
+        -1941676407479674: FlexCom Agent:-1941676407479674
+        4467712106477498: Web Server:4467712106477498
+        9487955995225705: RoutingFirewall:9487955995225705
+      netConnections:
+        741400175886211: ConnectionRule:741400175886211
+        9391517259115448: ConnectionRule:9391517259115448
+      transitData:
+        499832317506584: Flexibility Data
+    name: FMO Head End LAN
+    type: Network
+  688486541237038:
+    associated_assets:
+      sysExecutedApps:
+        -9420322571499164: Workstation:-9420322571499164
+    name: Hardware:688486541237038
+    type: Hardware
+  741400175886211:
+    associated_assets:
+      networks:
+        600668792933650: FMO Head End LAN
+        2057421012633155: FMO Market Zone LAN
+      routingFirewalls:
+        9487955995225705: RoutingFirewall:9487955995225705
+    name: ConnectionRule:741400175886211
+    type: ConnectionRule
+  793427202612141:
+    associated_assets:
+      connectionRules:
+        34831888698443: ConnectionRule:34831888698443
+      vulnerabilities:
+        -2363489135797891: SoftwareVulnerability:-2363489135797891
+    name: RoutingFirewall:793427202612141
+    type: RoutingFirewall
+  842722045290389:
+    associated_assets:
+      applications:
+        -5208319683485633: File Transfer Server
+        -1460321502591787: RoutingFirewall:-1460321502591787
+        1582738538604298: Replicated SCADA Server
+        7047552766962548: Replicated Historian
+      ingoingNetConnections:
+        8659571188208368: ConnectionRule:8659571188208368
+      netConnections:
+        -4510095452626393: ConnectionRule:-4510095452626393
+        -3570956494551298: ConnectionRule:-3570956494551298
+        1578926065051984: ConnectionRule
+        7704447063606809: ConnectionRule:7704447063606809
+        9355702465203396: ConnectionRule:9355702465203396
+      transitData:
+        -3765117887143931: Flex Requests/Offers
+        -654610958363945: Load Forecasts
+        1872311822941136: Historic Data
+        2435609967607638: Process Data:2435609967607638
+    name: SCADA DMZ LAN
+    type: Network
+  852119815715827:
+    associated_assets:
+      applications:
+        -5788304309433211: Secondary RTU
+        -1598234313036799: IED
+        4926802818531537: Workstation
+      transitData:
+        2482232589996571: Process Data:2482232589996571
+    name: Secondary Substation LAN
+    type: Network
+  885787957725823:
+    associated_assets:
+      application:
+        3181260853393134: RoutingFirewall:3181260853393134
+    name: SoftwareVulnerability:885787957725823
+    type: SoftwareVulnerability
+  998645070887503:
+    associated_assets:
+      connectionRules:
+        -9927256164015983: ConnectionRule:-9927256164015983
+      vulnerabilities:
+        3328074667683003: SoftwareVulnerability:3328074667683003
+    name: RoutingFirewall:998645070887503
+    type: RoutingFirewall
+  1007211369537407:
+    associated_assets:
+      networks:
+        -5760878004633065: Public DMZ LAN
+      vulnerabilities:
+        3660425509870275: SoftwareVulnerability:3660425509870275
+    name: Mail Server
+    type: Application
+  1277369061992223:
+    associated_assets:
+      networks:
+        2057421012633155: FMO Market Zone LAN
+      protectorIDPSs:
+        9602180365781539: IDPS:9602180365781539
+      vulnerabilities:
+        -7707594694914807: SoftwareVulnerability:-7707594694914807
+    name: Price Determination Module
+    type: Application
+  1320897277292250:
+    associated_assets:
+      userIds:
+        2910590799718682: Identity
+    name: User:1320897277292250
+    type: User
+  1578926065051984:
+    associated_assets:
+      networks:
+        589653745852670: Engineering LAN
+        842722045290389: SCADA DMZ LAN
+      routingFirewalls:
+        -1460321502591787: RoutingFirewall:-1460321502591787
+    name: ConnectionRule
+    type: ConnectionRule
+  1582738538604298:
+    associated_assets:
+      networks:
+        842722045290389: SCADA DMZ LAN
+      sentData:
+        2435609967607638: Process Data:2435609967607638
+    name: Replicated SCADA Server
+    type: Application
+  1613955278271262:
+    associated_assets:
+      application:
+        5861894220968398: RoutingFirewall:5861894220968398
+    name: SoftwareVulnerability:1613955278271262
+    type: SoftwareVulnerability
+  1872311822941136:
+    associated_assets:
+      senderApp:
+        7047552766962548: Replicated Historian
+      transitNetwork:
+        842722045290389: SCADA DMZ LAN
+    name: Historic Data
+    type: Data
+  1887782432075816:
+    associated_assets:
+      application:
+        -4607108148504890: RoutingFirewall:-4607108148504890
+    name: SoftwareVulnerability:1887782432075816
+    type: SoftwareVulnerability
+  1953908654782484:
+    associated_assets:
+      connectionRules:
+        8148353667981430: ConnectionRule:8148353667981430
+      networks:
+        2057421012633155: FMO Market Zone LAN
+      vulnerabilities:
+        6034390108907712: SoftwareVulnerability:6034390108907712
+    name: RoutingFirewall:1953908654782484
+    type: RoutingFirewall
+  2057421012633155:
+    associated_assets:
+      applications:
+        -6583342418988168: Flexibility Matching System
+        1277369061992223: Price Determination Module
+        1953908654782484: RoutingFirewall:1953908654782484
+        7450651581530868: HMI:7450651581530868
+      netConnections:
+        741400175886211: ConnectionRule:741400175886211
+        8148353667981430: ConnectionRule:8148353667981430
+      transitData:
+        -2367908803236308: Internal DB
+    name: FMO Market Zone LAN
+    type: Network
+  2197678936095523:
+    associated_assets:
+      connectionRules:
+        -2777251403626038: ConnectionRule:-2777251403626038
+      vulnerabilities:
+        190367847761557: SoftwareVulnerability:190367847761557
+    name: RoutingFirewall:2197678936095523
+    type: RoutingFirewall
+  2435609967607638:
+    associated_assets:
+      senderApp:
+        1582738538604298: Replicated SCADA Server
+      transitNetwork:
+        842722045290389: SCADA DMZ LAN
+    name: Process Data:2435609967607638
+    type: Data
+  2482232589996571:
+    associated_assets:
+      receiverApp:
+        -5788304309433211: Secondary RTU
+      senderApp:
+        -5788304309433211: Secondary RTU
+      transitNetwork:
+        852119815715827: Secondary Substation LAN
+    name: Process Data:2482232589996571
+    type: Data
+  2525952632573563:
+    associated_assets:
+      connectionRules:
+        7070505967061204: ConnectionRule:7070505967061204
+      vulnerabilities:
+        -2400249741287715: SoftwareVulnerability:-2400249741287715
+    name: RoutingFirewall:2525952632573563
+    type: RoutingFirewall
+  2585621109670201:
+    associated_assets:
+      applications:
+        -9570412575104082: ICCP Server
+        9307023299150916: Front End
+      netConnections:
+        -3450560489492182: ConnectionRule:-3450560489492182
+        -2947838551911668: ConnectionRule:-2947838551911668
+        -2508623130213907: ConnectionRule:-2508623130213907
+        6370638661917646: ConnectionRule:6370638661917646
+      transitData:
+        565501130128237: Process Data:565501130128237
+    name: Process LAN
+    type: Network
+  2742411526104658:
+    associated_assets:
+      containedData:
+        5212000181392011: Portfolio data
+      networks:
+        7958326016036668: BRP Oper Plan LAN
+      protectorIDPSs:
+        -1292827617028738: IDPS:-1292827617028738
+      vulnerabilities:
+        -8887258883554356: SoftwareVulnerability:-8887258883554356
+    name: Portfolio schedule
+    type: Application
+  2910590799718682:
+    associated_assets:
+      credentials:
+        -8604982296243443: Credentials
+      lowPrivApps:
+        6464489498169500: HMI:6464489498169500
+      users:
+        1320897277292250: User:1320897277292250
+    name: Identity
+    type: Identity
+  2927266354809653:
+    associated_assets:
+      sysExecutedApps:
+        5738706579997441: IED:5738706579997441
+    name: Actuators
+    type: Hardware
+  2988778213196154:
+    associated_assets:
+      protectedApps:
+        -1941676407479674: FlexCom Agent:-1941676407479674
+        4467712106477498: Web Server:4467712106477498
+    name: IDPS:2988778213196154
+    type: IDPS
+  3181260853393134:
+    associated_assets:
+      connectionRules:
+        9355702465203396: ConnectionRule:9355702465203396
+      networks:
+        -6008496273910131: DSO Office Zone LAN
+      vulnerabilities:
+        885787957725823: SoftwareVulnerability:885787957725823
+    name: RoutingFirewall:3181260853393134
+    type: RoutingFirewall
+  3198300969780794:
+    associated_assets:
+      application:
+        -6852300144031777: RoutingFirewall:-6852300144031777
+    name: SoftwareVulnerability:3198300969780794
+    type: SoftwareVulnerability
+  3263352402278627:
+    associated_assets:
+      networks:
+        -6008496273910131: DSO Office Zone LAN
+        -5760878004633065: Public DMZ LAN
+      routingFirewalls:
+        -4607108148504890: RoutingFirewall:-4607108148504890
+    name: ConnectionRule:3263352402278627
+    type: ConnectionRule
+  3328074667683003:
+    associated_assets:
+      application:
+        998645070887503: RoutingFirewall:998645070887503
+    name: SoftwareVulnerability:3328074667683003
+    type: SoftwareVulnerability
+  3660425509870275:
+    associated_assets:
+      application:
+        1007211369537407: Mail Server
+    name: SoftwareVulnerability:3660425509870275
+    type: SoftwareVulnerability
+  3719593162493644:
+    associated_assets:
+      protectedApps:
+        -6110539041029400: Realtime Portfolio Optimization
+        -1614407497478242: HMI
+    name: IDPS:3719593162493644
+    type: IDPS
+  3973517088726031:
+    associated_assets:
+      networks:
+        589653745852670: Engineering LAN
+      sentData:
+        -8703606173499623: RTU Software Data
+    name: Update Server
+    type: Application
+  4092801834149548:
+    associated_assets:
+      sysExecutedApps:
+        -6257796774946495: Kwh Meter
+    name: Sensors
+    type: Hardware
+  4125264733710762:
+    associated_assets:
+      application:
+        -7654322841029335: BRP FlexCom Agent
+    name: SoftwareVulnerability:4125264733710762
+    type: SoftwareVulnerability
+  4295296509147238:
+    associated_assets:
+      application:
+        9469868328120727: RoutingFirewall:9469868328120727
+    name: SoftwareVulnerability:4295296509147238
+    type: SoftwareVulnerability
+  4467712106477498:
+    associated_assets:
+      executionPrivIAMs:
+        5953117939489696: Identity:5953117939489696
+      networks:
+        600668792933650: FMO Head End LAN
+      protectorIDPSs:
+        2988778213196154: IDPS:2988778213196154
+      vulnerabilities:
+        -5265064215969554: SoftwareVulnerability:-5265064215969554
+    name: Web Server:4467712106477498
+    type: Application
+  4474101361168398:
+    associated_assets:
+      application:
+        8422929894975537: Office App:8422929894975537
+    name: SoftwareVulnerability:4474101361168398
+    type: SoftwareVulnerability
+  4810538876074176:
+    associated_assets:
+      applications:
+        262052771218230: RoutingFirewall:262052771218230
+      netConnections:
+        -3678605937240693: ConnectionRule:-3678605937240693
+        -2508623130213907: ConnectionRule:-2508623130213907
+        7070505967061204: ConnectionRule:7070505967061204
+      transitData:
+        -1835803994576097: Process Data:-1835803994576097
+    name: GPRS, LTE, Powerline
+    type: Network
+  4926802818531537:
+    associated_assets:
+      hostHardware:
+        -68581554093018: Hardware:-68581554093018
+      networks:
+        852119815715827: Secondary Substation LAN
+    name: Workstation
+    type: Application
+  4929350747587334:
+    associated_assets:
+      sysExecutedApps:
+        8272649789576451: Work Station
+    name: Hardware:4929350747587334
+    type: Hardware
+  5212000181392011:
+    associated_assets:
+      containingApp:
+        2742411526104658: Portfolio schedule
+    name: Portfolio data
+    type: Data
+  5342943235266378:
+    associated_assets:
+      hostHardware:
+        -3208148400870044: Hardware:-3208148400870044
+      networks:
+        -5947040935928612: FMO Office LAN
+      protectorIDPSs:
+        -1809447059000080: IDPS:-1809447059000080
+      vulnerabilities:
+        6025528716533036: SoftwareVulnerability:6025528716533036
+    name: Smart Phone:5342943235266378
+    type: Application
+  5430278858885866:
+    associated_assets:
+      networks:
+        -6777259446796164: BRP Office LAN
+      protectorIDPSs:
+        -3026791298869886: IDPS:-3026791298869886
+      vulnerabilities:
+        -7954441963410487: SoftwareVulnerability:-7954441963410487
+    name: Office Station:5430278858885866
+    type: Application
+  5466457068975510:
+    associated_assets:
+      information:
+        9289055741320983: SoftwareProduct
+      signingCreds:
+        7287651133259831: Credentials:7287651133259831
+    name: Vendor Repo
+    type: Data
+  5545655167309532:
+    associated_assets:
+      networks:
+        6253211857795028: Internet
+    name: Vendor
+    type: Application
+  5738706579997441:
+    associated_assets:
+      hostHardware:
+        2927266354809653: Actuators
+      networks:
+        92452836070160: Energy Supplier Network
+    name: IED:5738706579997441
+    type: Application
+  5816124483917771:
+    associated_assets:
+      networks:
+        -3777266917100335457: Head End LAN
+        8103222226739678984: Internet:8103222226739678984
+      routingFirewalls:
+        -2889968223457820481: RoutingFirewall
+    name: ConnectionRule:5816124483917771
+    type: ConnectionRule
+  5861894220968398:
+    associated_assets:
+      connectionRules:
+        6828937191462768: ConnectionRule:6828937191462768
+      vulnerabilities:
+        1613955278271262: SoftwareVulnerability:1613955278271262
+    name: RoutingFirewall:5861894220968398
+    type: RoutingFirewall
+  5953117495399963:
+    associated_assets:
+      applications:
+        -6257796774946495: Kwh Meter
+        7622638448884612: Meter Data Concentrator
+      netConnections:
+        -2777251403626038: ConnectionRule:-2777251403626038
+    name: PL-C/LoRaWAN
+    type: Network
+  5953117939489696:
+    associated_assets:
+      execPrivApps:
+        -1941676407479674: FlexCom Agent:-1941676407479674
+        4467712106477498: Web Server:4467712106477498
+    name: Identity:5953117939489696
+    type: Identity
+  5993509741369938:
+    associated_assets:
+      networks:
+        8570477488903583: SCADA Core LAN
+    name: DMS
+    type: Application
+  6025528716533036:
+    associated_assets:
+      application:
+        5342943235266378: Smart Phone:5342943235266378
+    name: SoftwareVulnerability:6025528716533036
+    type: SoftwareVulnerability
+  6034390108907712:
+    associated_assets:
+      application:
+        1953908654782484: RoutingFirewall:1953908654782484
+    name: SoftwareVulnerability:6034390108907712
+    type: SoftwareVulnerability
+  6106541789838796:
+    associated_assets:
+      networks:
+        8482151560692704: Operational Planning LAN
+      receivedData:
+        -3200821104842049: Historic/Process Data
+      sentData:
+        -8174541001566079: Flex Forecasts
+    name: Forecasting Server
+    type: Application
+  6208161549452362:
+    associated_assets:
+      containerData:
+        -3540500933244485: Enc Keys Data
+      encryptedData:
+        499832317506584: Flexibility Data
+    name: Encryption Keys:6208161549452362
+    type: Credentials
+  6253211857795028:
+    associated_assets:
+      applications:
+        5545655167309532: Vendor
+    name: Internet
+    type: Network
+  6281989515139199:
+    associated_assets:
+      application:
+        -1614407497478242: HMI
+    name: SoftwareVulnerability:6281989515139199
+    type: SoftwareVulnerability
+  6370638661917646:
+    associated_assets:
+      networks:
+        -517954142080466: Fiber
+        2585621109670201: Process LAN
+    name: ConnectionRule:6370638661917646
+    type: ConnectionRule
+  6388810805106014:
+    associated_assets:
+      hardware:
+        -9263438396079499: Hardware:-9263438396079499
+    name: HardwareVulnerability:6388810805106014
+    type: HardwareVulnerability
+  6464489498169500:
+    associated_assets:
+      lowPrivAppIAMs:
+        2910590799718682: Identity
+      networks:
+        8570477488903583: SCADA Core LAN
+    name: HMI:6464489498169500
+    type: Application
+  6722153441855174:
+    associated_assets:
+      receiverApp:
+        -5697593150595895: Data Engineering
+      transitNetwork:
+        8570477488903583: SCADA Core LAN
+    name: SCADA Maintenance Data
+    type: Data
+  6828937191462768:
+    associated_assets:
+      networks:
+        -8256539496874961: BRP Head End LAN
+        7958326016036668: BRP Oper Plan LAN
+      routingFirewalls:
+        5861894220968398: RoutingFirewall:5861894220968398
+    name: ConnectionRule:6828937191462768
+    type: ConnectionRule
+  7047552766962548:
+    associated_assets:
+      networks:
+        842722045290389: SCADA DMZ LAN
+      sentData:
+        1872311822941136: Historic Data
+    name: Replicated Historian
+    type: Application
+  7070505967061204:
+    associated_assets:
+      applications:
+        -5788304309433211: Secondary RTU
+      networks:
+        4810538876074176: GPRS, LTE, Powerline
+      routingFirewalls:
+        2525952632573563: RoutingFirewall:2525952632573563
+    name: ConnectionRule:7070505967061204
+    type: ConnectionRule
+  7169517639031100:
+    associated_assets:
+      credentials:
+        -8604982296243443: Credentials
+    name: Auth Token
+    type: Credentials
+  7202093728647641:
+    associated_assets:
+      senderApp:
+        -1602674236137938: Vendor File Transfer
+      transitNetwork:
+        8103222226739678984: Internet:8103222226739678984
+    name: Data:7202093728647641
+    type: Data
+  7287651133259831:
+    associated_assets:
+      signedData:
+        5466457068975510: Vendor Repo
+    name: Credentials:7287651133259831
+    type: Credentials
+  7450651581530868:
+    associated_assets:
+      networks:
+        2057421012633155: FMO Market Zone LAN
+      protectorIDPSs:
+        9602180365781539: IDPS:9602180365781539
+      vulnerabilities:
+        -1986726213113300: SoftwareVulnerability:-1986726213113300
+    name: HMI:7450651581530868
+    type: Application
+  7480460796777191:
+    associated_assets:
+      hostHardware:
+        -2872127310678765: Hardware:-2872127310678765
+      networks:
+        -6008496273910131: DSO Office Zone LAN
+    name: Office Station:7480460796777191
+    type: Application
+  7503654769598865:
+    associated_assets:
+      networks:
+        589653745852670: Engineering LAN
+      sentData:
+        -2228290333757852: RTU Maintenance Data
+    name: Element Manager
+    type: Application
+  7622638448884612:
+    associated_assets:
+      networks:
+        5953117495399963: PL-C/LoRaWAN
+      vulnerabilities:
+        -9231861957391459: SoftwareVulnerability:-9231861957391459
+    name: Meter Data Concentrator
+    type: Application
+  7704447063606809:
+    associated_assets:
+      networks:
+        842722045290389: SCADA DMZ LAN
+        8103222226739678984: Internet:8103222226739678984
+    name: ConnectionRule:7704447063606809
+    type: ConnectionRule
+  7763915806193668:
+    associated_assets:
+      application:
+        -1462954905398273: Office Station:-1462954905398273
+    name: SoftwareVulnerability:7763915806193668
+    type: SoftwareVulnerability
+  7888433124736133:
+    associated_assets:
+      inNetworks:
+        8570477488903583: SCADA Core LAN
+      outNetworks:
+        589653745852670: Engineering LAN
+    name: ConnectionRule:7888433124736133
+    type: ConnectionRule
+  7958326016036668:
+    associated_assets:
+      applications:
+        2742411526104658: Portfolio schedule
+      netConnections:
+        -9526882671881760: ConnectionRule:-9526882671881760
+        6828937191462768: ConnectionRule:6828937191462768
+    name: BRP Oper Plan LAN
+    type: Network
+  8148353667981430:
+    associated_assets:
+      networks:
+        -5947040935928612: FMO Office LAN
+        2057421012633155: FMO Market Zone LAN
+      routingFirewalls:
+        1953908654782484: RoutingFirewall:1953908654782484
+    name: ConnectionRule:8148353667981430
+    type: ConnectionRule
+  8272649789576451:
+    associated_assets:
+      hostHardware:
+        4929350747587334: Hardware:4929350747587334
+      networks:
+        92452836070160: Energy Supplier Network
+    name: Work Station
+    type: Application
+  8422929894975537:
+    associated_assets:
+      protectorIDPSs:
+        -1809447059000080: IDPS:-1809447059000080
+      vulnerabilities:
+        4474101361168398: SoftwareVulnerability:4474101361168398
+    name: Office App:8422929894975537
+    type: Application
+  8482151560692704:
+    associated_assets:
+      applications:
+        6106541789838796: Forecasting Server
+      netConnections:
+        -4510095452626393: ConnectionRule:-4510095452626393
+      transitData:
+        -8174541001566079: Flex Forecasts
+        -3200821104842049: Historic/Process Data
+    name: Operational Planning LAN
+    type: Network
+  8570477488903583:
+    associated_assets:
+      applications:
+        -9726397073303892: Time Server
+        -8443094682552890: SCADA Server
+        -5697593150595895: Data Engineering
+        -3173617957834005: DE HMI
+        5993509741369938: DMS
+        6464489498169500: HMI:6464489498169500
+        9380764310104335: Historian
+      ingoingNetConnections:
+        7888433124736133: ConnectionRule:7888433124736133
+      netConnections:
+        -3450560489492182: ConnectionRule:-3450560489492182
+      outgoingNetConnections:
+        8659571188208368: ConnectionRule:8659571188208368
+      transitData:
+        -2265848216488244: Process Data
+        -541175871370880: Historic Data:-541175871370880
+        6722153441855174: SCADA Maintenance Data
+    name: SCADA Core LAN
+    type: Network
+  8612535844597679:
+    associated_assets:
+      networks:
+        8103222226739678984: Internet:8103222226739678984
+    name: TSO
+    type: Application
+  8659571188208368:
+    associated_assets:
+      inNetworks:
+        842722045290389: SCADA DMZ LAN
+      outNetworks:
+        8570477488903583: SCADA Core LAN
+    name: ConnectionRule:8659571188208368
+    type: ConnectionRule
+  9052466880055915:
+    associated_assets:
+      hostHardware:
+        -1730398452712399: Hardware:-1730398452712399
+      networks:
+        -6008496273910131: DSO Office Zone LAN
+    name: Smart Phone:9052466880055915
+    type: Application
+  9109623079652680:
+    associated_assets:
+      transitNetwork:
+        -5632143023612311: BRP Core Zone LAN
+    name: Internal DB:9109623079652680
+    type: Data
+  9138167103786615:
+    associated_assets:
+      networks:
+        8103222226739678984: Internet:8103222226739678984
+    name: Application
+    type: Application
+  9277621535281875:
+    associated_assets:
+      application:
+        -6110539041029400: Realtime Portfolio Optimization
+    name: SoftwareVulnerability:9277621535281875
+    type: SoftwareVulnerability
+  9289055741320983:
+    associated_assets:
+      containerData:
+        5466457068975510: Vendor Repo
+      softApplications:
+        -6033484870431257593: FlexCom Agent
+        5185958517877591920: EV
+    name: SoftwareProduct
+    type: SoftwareProduct
+  9307023299150916:
+    associated_assets:
+      networks:
+        2585621109670201: Process LAN
+      receivedData:
+        565501130128237: Process Data:565501130128237
+      sentData:
+        565501130128237: Process Data:565501130128237
+    name: Front End
+    type: Application
+  9355702465203396:
+    associated_assets:
+      networks:
+        -6008496273910131: DSO Office Zone LAN
+        842722045290389: SCADA DMZ LAN
+      routingFirewalls:
+        3181260853393134: RoutingFirewall:3181260853393134
+    name: ConnectionRule:9355702465203396
+    type: ConnectionRule
+  9380764310104335:
+    associated_assets:
+      networks:
+        8570477488903583: SCADA Core LAN
+      receivedData:
+        -541175871370880: Historic Data:-541175871370880
+      vulnerabilities:
+        -9222184248081367: SoftwareVulnerability:-9222184248081367
+    name: Historian
+    type: Application
+  9391517259115448:
+    associated_assets:
+      networks:
+        600668792933650: FMO Head End LAN
+        8103222226739678984: Internet:8103222226739678984
+      routingFirewalls:
+        -6852300144031777: RoutingFirewall:-6852300144031777
+    name: ConnectionRule:9391517259115448
+    type: ConnectionRule
+  9469868328120727:
+    associated_assets:
+      appConnections:
+        -2947838551911668: ConnectionRule:-2947838551911668
+      vulnerabilities:
+        4295296509147238: SoftwareVulnerability:4295296509147238
+    name: RoutingFirewall:9469868328120727
+    type: RoutingFirewall
+  9487955995225705:
+    associated_assets:
+      connectionRules:
+        741400175886211: ConnectionRule:741400175886211
+      networks:
+        600668792933650: FMO Head End LAN
+      vulnerabilities:
+        -2438924479952409: SoftwareVulnerability:-2438924479952409
+    name: RoutingFirewall:9487955995225705
+    type: RoutingFirewall
+  9556865855020373:
+    associated_assets:
+      application:
+        -4915816806183320: RoutingFirewall:-4915816806183320
+    name: SoftwareVulnerability:9556865855020373
+    type: SoftwareVulnerability
+  9602180365781539:
+    associated_assets:
+      protectedApps:
+        1277369061992223: Price Determination Module
+        7450651581530868: HMI:7450651581530868
+    name: IDPS:9602180365781539
+    type: IDPS
+  9957005809635669:
+    associated_assets:
+      application:
+        -5788304309433211: Secondary RTU
+    name: SoftwareVulnerability:9957005809635669
+    type: SoftwareVulnerability
+  50952803218571521:
+    associated_assets:
+      senderApp:
+        -6033484870431257593: FlexCom Agent
+      transitNetwork:
+        6422000877406470711: Home LAN
+    name: Data:50952803218571521
+    type: Data
+  100898871897509330:
+    associated_assets:
+      applications:
+        2988480425314437128: Flexibility Aggr
+        5439473563977401412: Flex Asset Mgmt
+        5731145546840820397: Forecasting Engine
+        8647976104775730872: RoutingFirewall:8647976104775730872
+      netConnections:
+        -5710554851359565: ConnectionRule:-5710554851359565
+        6160499563261742524: ConnectionRule:6160499563261742524
+    name: Oper Plan LAN
+    type: Network
+  226926412673467811:
+    associated_assets:
+      protectedApps:
+        -7951899973500451269: HMI:-7951899973500451269
+        1655487620951591539: Flexibility Execution
+    name: IDPS:226926412673467811
+    type: IDPS
+  572737980420016761:
+    associated_assets:
+      sysExecutedApps:
+        4008919923640124487: Heating
+    name: Hardware:572737980420016761
+    type: Hardware
+  630599287284321073:
+    associated_assets:
+      connectionRules:
+        5284237359521220281: ConnectionRule:5284237359521220281
+      networks:
+        -9089467634319081467: Core Zone LAN
+      vulnerabilities:
+        -7874009323116212661: SoftwareVulnerability:-7874009323116212661
+    name: RoutingFirewall:630599287284321073
+    type: RoutingFirewall
+  724411689770437278:
+    associated_assets:
+      execPrivApps:
+        2988480425314437128: Flexibility Aggr
+        5731145546840820397: Forecasting Engine
+    name: Identity:724411689770437278
+    type: Identity
+  1655487620951591539:
+    associated_assets:
+      networks:
+        -9089467634319081467: Core Zone LAN
+      protectorIDPSs:
+        226926412673467811: IDPS:226926412673467811
+      vulnerabilities:
+        -5007517114276036027: SoftwareVulnerability:-5007517114276036027
+    name: Flexibility Execution
+    type: Application
+  1812001425566351437:
+    associated_assets:
+      application:
+        4383758825046034724: Data Acquisitions Server
+    name: SoftwareVulnerability:1812001425566351437
+    type: SoftwareVulnerability
+  2220090544218393038:
+    associated_assets:
+      userIds:
+        -6537745890440361712: Identity:-6537745890440361712
+    name: User:2220090544218393038
+    type: User
+  2853168851534234089:
+    associated_assets:
+      applications:
+        -7990077015743772938: Smart Phone:-7990077015743772938
+        -3726203282743803897: Office Station
+      netConnections:
+        5284237359521220281: ConnectionRule:5284237359521220281
+    name: Office LAN
+    type: Network
+  2988480425314437128:
+    associated_assets:
+      executionPrivIAMs:
+        724411689770437278: Identity:724411689770437278
+      networks:
+        100898871897509330: Oper Plan LAN
+      protectorIDPSs:
+        3751404497637033322: IDPS:3751404497637033322
+      vulnerabilities:
+        3156950436073719093: SoftwareVulnerability:3156950436073719093
+    name: Flexibility Aggr
+    type: Application
+  3156950436073719093:
+    associated_assets:
+      application:
+        2988480425314437128: Flexibility Aggr
+    name: SoftwareVulnerability:3156950436073719093
+    type: SoftwareVulnerability
+  3462987087913438036:
+    associated_assets:
+      sysExecutedApps:
+        6307075106216496016: SM Application
+      vulnerabilities:
+        -6018209343056098774: HardwareVulnerability:-6018209343056098774
+    name: SM Hardware
+    type: Hardware
+  3726723181526337121:
+    associated_assets:
+      application:
+        8647976104775730872: RoutingFirewall:8647976104775730872
+    name: SoftwareVulnerability:3726723181526337121
+    type: SoftwareVulnerability
+  3751404497637033322:
+    associated_assets:
+      protectedApps:
+        2988480425314437128: Flexibility Aggr
+        5439473563977401412: Flex Asset Mgmt
+        5731145546840820397: Forecasting Engine
+    name: IDPS:3751404497637033322
+    type: IDPS
+  3968070349114787769:
+    associated_assets:
+      containingApp:
+        5439473563977401412: Flex Asset Mgmt
+    name: Flex Asset DB
+    type: Data
+  4008919923640124487:
+    associated_assets:
+      hostHardware:
+        572737980420016761: Hardware:572737980420016761
+      networks:
+        6422000877406470711: Home LAN
+    name: Heating
+    type: Application
+  4369827036366654398:
+    associated_assets:
+      encryptCreds:
+        -9033956709002227818: Encryption Keys
+      receiverApp:
+        4383758825046034724: Data Acquisitions Server
+      senderApp:
+        -6033484870431257593: FlexCom Agent
+        4383758825046034724: Data Acquisitions Server
+      transitNetwork:
+        -3777266917100335457: Head End LAN
+        6422000877406470711: Home LAN
+        8103222226739678984: Internet:8103222226739678984
+    name: Flexibility Data:4369827036366654398
+    type: Data
+  4383758825046034724:
+    associated_assets:
+      containedData:
+        -6307008247164809928: Enc Keys Data:-6307008247164809928
+      executionPrivIAMs:
+        -4843381891044259938: Identity:-4843381891044259938
+      networks:
+        -3777266917100335457: Head End LAN
+      protectorIDPSs:
+        -4921966004899526197: IDPS
+      receivedData:
+        4369827036366654398: Flexibility Data:4369827036366654398
+      sentData:
+        4369827036366654398: Flexibility Data:4369827036366654398
+      vulnerabilities:
+        1812001425566351437: SoftwareVulnerability:1812001425566351437
+    name: Data Acquisitions Server
+    type: Application
+  4609041281564954080:
+    associated_assets:
+      protectorIDPSs:
+        5297210351268283906: IDPS:5297210351268283906
+      vulnerabilities:
+        -7061920610062218447: SoftwareVulnerability:-7061920610062218447
+    name: Office App:4609041281564954080
+    type: Application
+  4968758791644596546:
+    associated_assets:
+      executionPrivIAMs:
+        -4843381891044259938: Identity:-4843381891044259938
+      networks:
+        -3777266917100335457: Head End LAN
+      protectorIDPSs:
+        -4921966004899526197: IDPS
+      vulnerabilities:
+        8868704904159774854: SoftwareVulnerability:8868704904159774854
+    name: Web Server
+    type: Application
+  5185958517877591920:
+    associated_assets:
+      appSoftProduct:
+        9289055741320983: SoftwareProduct
+      hostHardware:
+        -8103987138566928689: Hardware:-8103987138566928689
+      networks:
+        6422000877406470711: Home LAN
+    name: EV
+    type: Application
+  5284237359521220281:
+    associated_assets:
+      networks:
+        -9089467634319081467: Core Zone LAN
+        2853168851534234089: Office LAN
+      routingFirewalls:
+        630599287284321073: RoutingFirewall:630599287284321073
+    name: ConnectionRule:5284237359521220281
+    type: ConnectionRule
+  5297210351268283906:
+    associated_assets:
+      protectedApps:
+        -7990077015743772938: Smart Phone:-7990077015743772938
+        -3726203282743803897: Office Station
+        4609041281564954080: Office App:4609041281564954080
+    name: IDPS:5297210351268283906
+    type: IDPS
+  5439473563977401412:
+    associated_assets:
+      containedData:
+        3968070349114787769: Flex Asset DB
+      networks:
+        100898871897509330: Oper Plan LAN
+      protectorIDPSs:
+        3751404497637033322: IDPS:3751404497637033322
+      vulnerabilities:
+        -3485356908833650528: SoftwareVulnerability:-3485356908833650528
+    name: Flex Asset Mgmt
+    type: Application
+  5703378694891258195:
+    associated_assets:
+      application:
+        -7990077015743772938: Smart Phone:-7990077015743772938
+    name: SoftwareVulnerability:5703378694891258195
+    type: SoftwareVulnerability
+  5731145546840820397:
+    associated_assets:
+      executionPrivIAMs:
+        724411689770437278: Identity:724411689770437278
+      networks:
+        100898871897509330: Oper Plan LAN
+      protectorIDPSs:
+        3751404497637033322: IDPS:3751404497637033322
+      vulnerabilities:
+        -9026544996769906227: SoftwareVulnerability:-9026544996769906227
+    name: Forecasting Engine
+    type: Application
+  5865964275402424820:
+    associated_assets:
+      hardware:
+        7263467691339827543: Hardware:7263467691339827543
+    name: HardwareVulnerability:5865964275402424820
+    type: HardwareVulnerability
+  6160499563261742524:
+    associated_assets:
+      networks:
+        -9089467634319081467: Core Zone LAN
+        100898871897509330: Oper Plan LAN
+      routingFirewalls:
+        8647976104775730872: RoutingFirewall:8647976104775730872
+    name: ConnectionRule:6160499563261742524
+    type: ConnectionRule
+  6307075106216496016:
+    associated_assets:
+      hostHardware:
+        3462987087913438036: SM Hardware
+      lowPrivAppIAMs:
+        -6537745890440361712: Identity:-6537745890440361712
+      networks:
+        6422000877406470711: Home LAN
+      vulnerabilities:
+        -5551238465842164351: SoftwareVulnerability:-5551238465842164351
+    name: SM Application
+    type: Application
+  6422000877406470711:
+    associated_assets:
+      applications:
+        4008919923640124487: Heating
+        5185958517877591920: EV
+        6307075106216496016: SM Application
+      netConnections:
+        -2427437992612770923: ConnectionRule:-2427437992612770923
+        -2777251403626038: ConnectionRule:-2777251403626038
+      transitData:
+        50952803218571521: Data:50952803218571521
+        4369827036366654398: Flexibility Data:4369827036366654398
+    name: Home LAN
+    type: Network
+  7263467691339827543:
+    associated_assets:
+      sysExecutedApps:
+        -7990077015743772938: Smart Phone:-7990077015743772938
+      vulnerabilities:
+        5865964275402424820: HardwareVulnerability:5865964275402424820
+    name: Hardware:7263467691339827543
+    type: Hardware
+  8103222226739678984:
+    associated_assets:
+      applications:
+        -2889968223457820481: RoutingFirewall
+        -6852300144031777: RoutingFirewall:-6852300144031777
+        8612535844597679: TSO
+        9138167103786615: Application
+      netConnections:
+        -7283750711606031546: ConnectionRule:-7283750711606031546
+        -2427437992612770923: ConnectionRule:-2427437992612770923
+        -8454099160783938: ConnectionRule:-8454099160783938
+        -3570956494551298: ConnectionRule:-3570956494551298
+        34831888698443: ConnectionRule:34831888698443
+        5816124483917771: ConnectionRule:5816124483917771
+        7704447063606809: ConnectionRule:7704447063606809
+        9391517259115448: ConnectionRule:9391517259115448
+      transitData:
+        -587186372942762: Data
+        499832317506584: Flexibility Data
+        7202093728647641: Data:7202093728647641
+        4369827036366654398: Flexibility Data:4369827036366654398
+    name: Internet:8103222226739678984
+    type: Network
+  8250211997815033318:
+    associated_assets:
+      application:
+        -7951899973500451269: HMI:-7951899973500451269
+    name: SoftwareVulnerability:8250211997815033318
+    type: SoftwareVulnerability
+  8647976104775730872:
+    associated_assets:
+      connectionRules:
+        6160499563261742524: ConnectionRule:6160499563261742524
+      networks:
+        100898871897509330: Oper Plan LAN
+      vulnerabilities:
+        3726723181526337121: SoftwareVulnerability:3726723181526337121
+    name: RoutingFirewall:8647976104775730872
+    type: RoutingFirewall
+  8868704904159774854:
+    associated_assets:
+      application:
+        4968758791644596546: Web Server
+    name: SoftwareVulnerability:8868704904159774854
+    type: SoftwareVulnerability
+metadata:
+  MAL-Toolbox Version: 1.2.1
+  info: Created by the mal-toolbox model python module.
+  langID: org.mal-lang.coreLang
+  langVersion: 1.0.0
+  malVersion: 0.1.0-SNAPSHOT
+  name: tests/testdata/Model-0.7.0-27sep.sCAD
