@@ -28,3 +28,6 @@ by_asset_name:
 ```
 
 Use this script to convert old scenarios to the new rewards format: https://github.com/mal-lang/mal-simulator/blob/main/scripts/convert_scenario_rewards_to_0.3.0.py
+
+Also, if you have an old model with attackers defined this script will help you convert your scenario:
+https://github.com/mal-lang/mal-simulator/blob/main/scripts/convert_scenario_attackers.py
