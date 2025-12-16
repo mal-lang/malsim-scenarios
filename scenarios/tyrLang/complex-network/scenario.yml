@@ -1,37 +1,34 @@
 lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.7.mar
 model_file: model.yml
-
 rewards:
-  secretApp:fullAccess: 1000
-
+  by_asset_name:
+    secretApp:
+      fullAccess: 1000
 observable_steps:
   by_asset_type:
     ConnectionRule:
-      - attemptConnectToApplications
-      - attemptAccessNetworks
+    - attemptConnectToApplications
+    - attemptAccessNetworks
     Application:
-      - fullAccess
-      - notPresent
-      - networkConnect
+    - fullAccess
+    - notPresent
+    - networkConnect
     Credentials:
-      - attemptGuessCredentials
-
+    - attemptGuessCredentials
 actionable_steps:
   by_asset_type:
     Application:
-      - notPresent
+    - notPresent
     ConnectionRule:
-      - restricted
+    - restricted
     Identity:
-      - notPresent
-
+    - notPresent
 agents:
-  'Attacker1':
+  Attacker1:
     type: attacker
     entry_points:
-      - 'WWW:fullAccess'
+    - WWW:fullAccess
     agent_class: BreadthFirstAttacker
-
-  'Defender1':
-    type: 'defender'
-    agent_class: 'PassiveAgent'
+  Defender1:
+    type: defender
+    agent_class: PassiveAgent

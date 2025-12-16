@@ -253,4 +253,4 @@ agents:
     agent_class: BreadthFirstAttacker
   Defender1:
     type: defender
-    agent_class: DefendFutureCompromisedDefender
+    agent_class: KeyboardAgent

@@ -2,43 +2,47 @@ lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.5.mar
 model_file: model.yml
 
 rewards:
-  App_A:fullAccess: 5
-  CR_A_to_B:restricted: 2
-  App_A_User:notPresent: 3
-  App_A:notPresent: 7
-  App_B:notPresent: 20
+  by_asset_name:
+    App_A:
+      fullAccess: 5
+      notPresent: 7
+    CR_A_to_B:
+      restricted: 2
+    App_A_User:
+      notPresent: 3
+    App_B:
+      notPresent: 20
 
 actionable_steps:
   by_asset_type:
     Application:
-      - notPresent
+    - notPresent
     ConnectionRule:
-      - restricted
+    - restricted
     Identity:
-      - notPresent
+    - notPresent
 
 observable_steps:
   by_asset_type:
     Application:
-      - notPresent
-      - fullAccess
-      - networkConnect
+    - notPresent
+    - fullAccess
+    - networkConnect
     ConnectionRule:
-      - restricted
-      - attemptConnectToApplications
-      - attemptAccessNetworks
+    - restricted
+    - attemptConnectToApplications
+    - attemptAccessNetworks
     Identity:
-      - notPresent
+    - notPresent
     Credentials:
-      - attemptGuessCredentials
+    - attemptGuessCredentials
 
 agents:
   EvilAttacker:
     type: attacker
-    agent_class: 'DepthFirstAttacker'
+    agent_class: DepthFirstAttacker
     entry_points:
-      - App_B:fullAccess
-
+    - App_B:fullAccess
   PassiveDefender:
     type: defender
-    agent_class: 'DefendFutureCompromisedDefender'
+    agent_class: DefendFutureCompromisedDefender

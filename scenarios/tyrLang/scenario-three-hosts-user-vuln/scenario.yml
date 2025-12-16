@@ -1,55 +1,52 @@
-# PassiveAgent: -2238
-# DefendFutureCompromisedDefender: -141
-# Initially defend B + IDc: -11
-# Initially defend CR_BC_D: -169
-
 lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.5.mar
 model_file: model.yml
-
 rewards:
-  App_A:notPresent: 50
-  CR_A_BC:restricted: 30
-  App_B:fullAccess: 3
-  App_B:notPresent: 2
-  App_C:fullAccess: 2
-  App_C:notPresent: 5
-  App_C_Identity:notPresent: 1 
-  CR_BC_D:restricted: 10
-  App_D:notPresent: 40
-  App_D:fullAccess: 100
-
+  by_asset_name:
+    App_A:
+      notPresent: 50
+    CR_A_BC:
+      restricted: 30
+    App_B:
+      fullAccess: 3
+      notPresent: 2
+    App_C:
+      fullAccess: 2
+      notPresent: 5
+    App_C_Identity:
+      notPresent: 1
+    CR_BC_D:
+      restricted: 10
+    App_D:
+      notPresent: 40
+      fullAccess: 100
 actionable_steps:
   by_asset_type:
     Application:
-      - notPresent
+    - notPresent
     ConnectionRule:
-      - restricted
+    - restricted
     Identity:
-      - notPresent
-
+    - notPresent
 observable_steps:
   by_asset_type:
     Application:
-      - notPresent
-      - fullAccess
-      - networkConnect
+    - notPresent
+    - fullAccess
+    - networkConnect
     ConnectionRule:
-      - restricted
-      - attemptConnectToApplications
-      - attemptAccessNetworks
+    - restricted
+    - attemptConnectToApplications
+    - attemptAccessNetworks
     Identity:
-      - notPresent
+    - notPresent
     Credentials:
-      - attemptGuessCredentials
-
+    - attemptGuessCredentials
 agents:
-
   EvilAttacker:
     type: attacker
-    agent_class: 'BreadthFirstAttacker'
+    agent_class: BreadthFirstAttacker
     entry_points:
-      - App_B:fullAccess
-
+    - App_B:fullAccess
   GoodDefender:
     type: defender
-    agent_class: 'KeyboardAgent'
+    agent_class: KeyboardAgent

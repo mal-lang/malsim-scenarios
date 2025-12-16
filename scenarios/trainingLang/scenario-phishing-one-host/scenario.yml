@@ -1,15 +1,12 @@
 lang_file: ../../../langs/org.mal-lang.trainingLang-1.0.0.mar
 model_file: model.yml
-
-# Rewards for each attack step
 rewards:
-  Host:0:notPresent: 10
-  Host:0:access: 100
-
-# Create attacker and entry points in resulting AttackGraph
+  by_asset_name:
+    Host:0:
+      notPresent: 10
+      access: 100
 attacker_entry_points:
-  'Attacker1':
-    - 'User:1:phishing'
-
-attacker_agent_class: 'BreadthFirstAttacker'
-defender_agent_class: 'KeyboardAgent'
+  Attacker1:
+  - User:1:phishing
+attacker_agent_class: BreadthFirstAttacker
+defender_agent_class: KeyboardAgent
