@@ -301,7 +301,7 @@ agents:
     type: attacker
     entry_points:
     - flightlogs:fullAccess
-    agent_class: BreadthFirstAttacker
+    agent_class: RandomAgent
   Defender1:
     type: defender
-    agent_class: DefendFutureCompromisedDefender
+    agent_class: PassiveAgent

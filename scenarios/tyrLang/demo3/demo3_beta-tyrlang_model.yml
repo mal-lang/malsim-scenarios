@@ -1845,7 +1845,6 @@ assets:
       agent_id: '002'
     name: Credentials - Admin Exec Identity - weborder
     type: Credentials
-attackers: {}
 metadata:
   MAL-Toolbox Version: 0.3.11
   info: Created by the mal-toolbox model python module.

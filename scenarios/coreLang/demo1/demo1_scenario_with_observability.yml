@@ -1,64 +1,79 @@
 lang_file: ../../../langs/org.mal-lang.coreLang-1.0.0.mar
 model_file: demo1_model.json
-
-attacker_agent_class: 'BreadthFirstAttacker'
-defender_agent_class: 'KeyboardAgent'
-
 rewards:
-  ca:read: 1
-  ca:fullAccess: 5
-  ca:deny: 4
-  ca:notPresent: 4
-  rootca:read: 1
-  rootca:fullAccess: 5
-  rootca:deny: 4
-  rootca:notPresent: 4
-  dc:read: 1
-  dc:fullAccess: 3
-  dc:deny: 4
-  dc:notPresent: 4
-  dc2:read: 1
-  dc2:fullAccess: 3
-  dc2:deny: 4
-  dc2:notPresent: 4
-  historian:read: 2
-  historian:fullAccess: 5
-  historian:deny: 5
-  historian:notPresent: 5
-  ftp:read: 2
-  ftp:fullAccess: 2
-  ftp:deny: 4
-  ftp:notPresent: 4
-  hqfile:read: 2
-  hqfile:fullAccess: 2
-  hqfile:deny: 4
-  hqfile:notPresent: 4
-  www:read: 1
-  www:fullAccess: 4
-  www:deny: 2
-  www:notPresent: 2
-  hq02:read: 2
-  hq02:fullAccess: 4
-  hq02:deny: 3
-  hq02:notPresent: 3
-  hq03:read: 2
-  hq03:fullAccess: 4
-  hq03:deny: 3
-  hq03:notPresent: 3
-  hq04:read: 2
-  hq04:fullAccess: 4
-  hq04:deny: 3
-  hq04:notPresent: 3
-  hq05:read: 2
-  hq05:fullAccess: 4
-  hq05:deny: 3
-  hq05:notPresent: 3
-  hq06:read: 2
-  hq06:fullAccess: 4
-  hq06:deny: 3
-  hq06:notPresent: 3
-
-observable_attack_steps:
-  by_asset_type:
-    Application:
-      - fullAccess
+  by_asset_name:
+    ca:
+      read: 1
+      modify: 5
+      deny: 4
+      notPresent: 4
+    rootca:
+      read: 1
+      modify: 5
+      deny: 4
+      notPresent: 4
+    dc:
+      read: 1
+      modify: 3
+      deny: 4
+      notPresent: 4
+    dc2:
+      read: 1
+      modify: 3
+      deny: 4
+      notPresent: 4
+    historian:
+      read: 2
+      modify: 5
+      deny: 5
+      notPresent: 5
+    ftp:
+      read: 2
+      modify: 2
+      deny: 4
+      notPresent: 4
+    hqfile:
+      read: 2
+      modify: 2
+      deny: 4
+      notPresent: 4
+    www:
+      read: 1
+      modify: 4
+      deny: 2
+      notPresent: 2
+    hq02:
+      read: 2
+      modify: 4
+      deny: 3
+      notPresent: 3
+    hq03:
+      read: 2
+      modify: 4
+      deny: 3
+      notPresent: 3
+    hq04:
+      read: 2
+      modify: 4
+      deny: 3
+      notPresent: 3
+    hq05:
+      read: 2
+      modify: 4
+      deny: 3
+      notPresent: 3
+    hq06:
+      read: 2
+      modify: 4
+      deny: 3
+      notPresent: 3
+agents:
+  Tyr Demo 1 Attacker:
+    type: attacker
+    name: Tyr Demo 1 Attacker
+    entry_points:
+    - www:fullAccess
+    agent_class: BreadthFirstAttacker
+  Defender:
+    type: defender
+    agent_class: KeyboardAgent
