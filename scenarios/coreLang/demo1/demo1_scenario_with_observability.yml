@@ -1,9 +1,5 @@
 lang_file: ../../../langs/org.mal-lang.coreLang-1.0.0.mar
 model_file: demo1_model.json
-
-attacker_agent_class: BreadthFirstAttacker
-defender_agent_class: KeyboardAgent
-
 rewards:
   by_asset_name:
     ca:
@@ -71,3 +67,13 @@ rewards:
       modify: 4
       deny: 3
       notPresent: 3
+agents:
+  Tyr Demo 1 Attacker:
+    type: attacker
+    name: Tyr Demo 1 Attacker
+    entry_points:
+    - www:fullAccess
+    agent_class: BreadthFirstAttacker
+  Defender:
+    type: defender
+    agent_class: KeyboardAgent

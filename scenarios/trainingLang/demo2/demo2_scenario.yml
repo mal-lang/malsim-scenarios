@@ -1,7 +1,5 @@
 lang_file: ../../../langs/org.mal-lang.trainingLang-1.0.0.mar
 model_file: demo2_model.yml
-attacker_agent_class: BreadthFirstAttacker
-defender_agent_class: KeyboardAgent
 rewards:
   by_asset_name:
     ap01:
@@ -70,9 +68,7 @@ rewards:
     weborder:
       access: 1000
       notPresent: 2
-attacker_entry_points:
-  TestAttacker:
-  - flightlogs:access
+
 observable_steps:
   by_asset_type:
     Host:
@@ -82,3 +78,15 @@ actionable_steps:
   by_asset_type:
     Host:
     - notPresent
+
+agents:
+  Defender:
+    type: defender
+    agent_class: KeyboardAgent
+
+  TestAttacker:
+    type: attacker
+    entry_points:
+    - flightlogs:access
+    agent_class: BreadthFirstAttacker
+

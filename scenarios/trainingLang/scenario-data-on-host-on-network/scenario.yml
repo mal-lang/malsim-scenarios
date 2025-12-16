@@ -9,9 +9,13 @@ rewards:
     Data:2:
       notPresent: 8
       read: 100
-attacker_entry_points:
+agents:
   Attacker1:
-  - User:3:phishing
-  - Network:4:access
-attacker_agent_class: BreadthFirstAttacker
-defender_agent_class: KeyboardAgent
+    type: attacker
+    entry_points:
+    - User:3:phishing
+    - Network:4:access
+    agent_class: BreadthFirstAttacker
+  Defender:
+    type: defender
+    agent_class: KeyboardAgent

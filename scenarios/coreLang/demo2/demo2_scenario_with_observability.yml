@@ -1,9 +1,5 @@
 lang_file: ../../../langs/org.mal-lang.coreLang-1.0.0.mar
 model_file: 2024_11_01_15_15_generated_model.yml
-
-attacker_agent_class: BreadthFirstAttacker
-defender_agent_class: KeyboardAgent
-
 rewards:
   by_asset_name:
     ap01:
@@ -116,7 +112,6 @@ rewards:
       fullAccess: 4
       deny: 2
       notPresent: 2
-
 observable_steps:
   by_asset_type:
     Application:
@@ -126,3 +121,13 @@ actionable_steps:
   by_asset_type:
     Application:
     - notPresent
+agents:
+  TestAttacker:
+    type: attacker
+    name: TestAttacker
+    entry_points:
+    - flightlogs:fullAccess
+    agent_class: BreadthFirstAttacker
+  Defender:
+    type: defender
+    agent_class: KeyboardAgent

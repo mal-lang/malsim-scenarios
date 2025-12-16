@@ -1,7 +1,5 @@
 lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.1.mar
 model_file: model.yml
-attacker_agent_class: DepthFirstAttacker
-defender_agent_class: KeyboardAgent
 rewards:
   by_asset_name:
     Application:0:
@@ -19,3 +17,13 @@ actionable_steps:
   by_asset_type:
     Application:
     - notPresent
+agents:
+  Attacker:6:
+    type: attacker
+    name: Attacker:6
+    entry_points:
+    - Application:5:fullAccess
+    agent_class: DepthFirstAttacker
+  Defender:
+    type: defender
+    agent_class: KeyboardAgent

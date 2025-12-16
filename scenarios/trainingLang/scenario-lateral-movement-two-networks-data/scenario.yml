@@ -11,9 +11,13 @@ rewards:
       read: 100
     Data 1:
       read: 500
-attacker_entry_points:
+agents:
   Attacker1:
-  - User 0:phishing
-  - Network 0:access
-attacker_agent_class: BreadthFirstAttacker
-defender_agent_class: KeyboardAgent
+    type: attacker
+    entry_points:
+    - User 0:phishing
+    - Network 0:access
+    agent_class: BreadthFirstAttacker
+  Defender:
+    type: defender
+    agent_class: KeyboardAgent

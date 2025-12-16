@@ -17,9 +17,13 @@ rewards:
       read: 200
     Sensitive Data C:
       read: 300
-attacker_entry_points:
+agents:
   Attacker1:
-  - User A:phishing
-  - Network A:access
-attacker_agent_class: BreadthFirstAttacker
-defender_agent_class: KeyboardAgent
+    type: attacker
+    entry_points:
+    - User A:phishing
+    - Network A:access
+    agent_class: BreadthFirstAttacker
+  Defender:
+    type: defender
+    agent_class: KeyboardAgent

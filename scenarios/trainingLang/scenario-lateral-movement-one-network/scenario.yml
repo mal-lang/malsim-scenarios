@@ -11,8 +11,12 @@ rewards:
     Host C:
       notPresent: 10
       authenticate: 100
-attacker_entry_points:
+agents:
   Attacker1:
-  - User:3:phishing
-attacker_agent_class: BreadthFirstAttacker
-defender_agent_class: KeyboardAgent
+    type: attacker
+    entry_points:
+    - User:3:phishing
+    agent_class: BreadthFirstAttacker
+  Defender:
+    type: defender
+    agent_class: KeyboardAgent
