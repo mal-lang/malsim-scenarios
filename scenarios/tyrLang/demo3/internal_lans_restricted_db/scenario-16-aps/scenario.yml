@@ -1,9 +1,5 @@
-actionable_steps:
-  by_asset_type:
-    Application:
-    - notPresent
-    ConnectionRule:
-    - restricted
+lang_file: ../../../../../langs/org.mal-lang.tyrLang-0.0.8.mar
+model_file: model.yml
 agents:
   Attacker1:
     agent_class: BreadthFirstAttacker
@@ -13,19 +9,23 @@ agents:
   Defender1:
     agent_class: DefendFutureCompromisedDefender
     type: defender
-lang_file: ../../../../../langs/org.mal-lang.tyrLang-0.0.8.mar
-model_file: model.yml
-observable_steps:
-  by_asset_type:
-    Application:
-    - fullAccess
-    - notPresent
-    - networkConnect
-    ConnectionRule:
-    - attemptConnectToApplications
-    - attemptAccessNetworks
-    Credentials:
-    - attemptGuessCredentials
+    actionable_steps:
+    by_asset_type:
+      Application:
+      - notPresent
+      ConnectionRule:
+      - restricted
+    observable_steps:
+      by_asset_type:
+        Application:
+        - fullAccess
+        - notPresent
+        - networkConnect
+        ConnectionRule:
+        - attemptConnectToApplications
+        - attemptAccessNetworks
+        Credentials:
+        - attemptGuessCredentials
 rewards:
   by_asset_name:
     Admin Exec Identity - ap01:
