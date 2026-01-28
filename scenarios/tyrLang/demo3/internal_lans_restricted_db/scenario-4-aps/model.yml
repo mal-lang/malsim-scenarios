@@ -431,8 +431,6 @@ assets:
         17: db
       networks:
         45: 134.24.4.0/24
-    defenses:
-      restricted: 1.0
     extras:
       agent_ids:
       - 009
