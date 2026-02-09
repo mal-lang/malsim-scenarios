@@ -226,29 +226,30 @@ rewards:
       restricted: 2.0
     Admin Exec Identity - weborder:
       notPresent: 2.0
-observable_steps:
-  by_asset_type:
-    ConnectionRule:
-    - attemptConnectToApplications
-    - attemptAccessNetworks
-    Application:
-    - fullAccess
-    - notPresent
-    - networkConnect
-    Credentials:
-    - attemptGuessCredentials
-actionable_steps:
-  by_asset_type:
-    Application:
-    - notPresent
-    ConnectionRule:
-    - restricted
+
 agents:
   Attacker1:
     type: attacker
     entry_points:
-    - db:fullAccess
+      - db:fullAccess
     agent_class: BreadthFirstAttacker
   Defender1:
     type: defender
     agent_class: DefendFutureCompromisedDefender
+    observable_steps:
+      by_asset_type:
+        ConnectionRule:
+          - attemptConnectToApplications
+          - attemptAccessNetworks
+        Application:
+          - fullAccess
+          - notPresent
+          - networkConnect
+        Credentials:
+          - attemptGuessCredentials
+    actionable_steps:
+      by_asset_type:
+        Application:
+          - notPresent
+        ConnectionRule:
+          - restricted
