@@ -14,11 +14,13 @@ agents:
           - attemptConnectToApplications
           - accessNetworks
           - connectToApplications
+          - restricted
         Application:
           - modify
           - networkAccess
           - notPresent
           - read
+          - useVulnerability
         Identity:
           - assume
         InternetworkConnectionRule:
