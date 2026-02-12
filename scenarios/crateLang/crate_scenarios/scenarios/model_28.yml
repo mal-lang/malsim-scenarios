@@ -1,0 +1,993 @@
+assets:
+  0:
+    associated_assets:
+      interNetConnections:
+        50: 134.24.3.0/24 <-> 134.24.2.0/24
+        86: 134.24.3.0/24 <-> 134.24.4.0/24
+      netConnections:
+        5: ap08/CR/134.24.3.22
+        6: ap14/CR/134.24.3.28
+        14: ap05/CR/134.24.3.15
+        15: ap03/CR/134.24.3.13
+        19: ap01/CR/134.24.3.11
+        24: ap15/CR/134.24.3.29
+        41: ap04/CR/134.24.3.14
+        65: ap11/CR/134.24.3.25
+        84: ap10/CR/134.24.3.24
+        87: ap06/CR/134.24.3.16
+        92: ap07/CR/134.24.3.21
+        110: ap16/CR/134.24.3.30
+        118: ap09/CR/134.24.3.23
+    name: 134.24.3.0/24
+    type: Network
+  1:
+    associated_assets:
+      application:
+        107: timereporter
+    name: timereporter/vuln/exploit
+    type: SoftwareVulnerability
+  2:
+    associated_assets:
+      appConnections:
+        110: ap16/CR/134.24.3.30
+      executionPrivIAMs:
+        3: ap16/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        29: ap16/vuln/exploit
+    name: ap16
+    type: Application
+  3:
+    associated_assets:
+      credentials:
+        74: ap16/users/Administrator/creds/id_rsa
+      execPrivApps:
+        2: ap16
+    name: ap16/users/Administrator
+    type: Identity
+  4:
+    associated_assets:
+      appConnections:
+        105: dc/CR/134.24.4.5
+      executionPrivIAMs:
+        66: dc/users/Administrator
+      interAppConnections:
+        44: 134.24.4.0/24 <-> 134.24.4.0/24
+      vulnerabilities:
+        30: dc/vuln/exploit
+    name: dc
+    type: Application
+  5:
+    associated_assets:
+      applications:
+        12: ap08
+      networks:
+        0: 134.24.3.0/24
+    name: ap08/CR/134.24.3.22
+    type: ConnectionRule
+  6:
+    associated_assets:
+      applications:
+        11: ap14
+      networks:
+        0: 134.24.3.0/24
+    name: ap14/CR/134.24.3.28
+    type: ConnectionRule
+  7:
+    associated_assets:
+      application:
+        20: ap07
+    name: ap07/vuln/exploit
+    type: SoftwareVulnerability
+  8:
+    associated_assets:
+      interApps:
+        81: payroll
+        107: timereporter
+    name: 134.24.2.0/24 <-> 134.24.2.0/24
+    type: InterappConnectionRule
+  9:
+    associated_assets:
+      credentials:
+        10: files/users/Administrator/creds/id_rsa
+      execPrivApps:
+        104: files
+    name: files/users/Administrator
+    type: Identity
+  10:
+    associated_assets:
+      identities:
+        9: files/users/Administrator
+    name: files/users/Administrator/creds/id_rsa
+    type: Credentials
+  11:
+    associated_assets:
+      appConnections:
+        6: ap14/CR/134.24.3.28
+      executionPrivIAMs:
+        18: ap14/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        101: ap14/vuln/exploit
+    name: ap14
+    type: Application
+  12:
+    associated_assets:
+      appConnections:
+        5: ap08/CR/134.24.3.22
+      executionPrivIAMs:
+        91: ap08/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        13: ap08/vuln/exploit
+    name: ap08
+    type: Application
+  13:
+    associated_assets:
+      application:
+        12: ap08
+    name: ap08/vuln/exploit
+    type: SoftwareVulnerability
+  14:
+    associated_assets:
+      applications:
+        89: ap05
+      networks:
+        0: 134.24.3.0/24
+    name: ap05/CR/134.24.3.15
+    type: ConnectionRule
+  15:
+    associated_assets:
+      applications:
+        26: ap03
+      networks:
+        0: 134.24.3.0/24
+    name: ap03/CR/134.24.3.13
+    type: ConnectionRule
+  16:
+    associated_assets:
+      credentials:
+        108: ap15/users/Administrator/creds/id_rsa
+      execPrivApps:
+        113: ap15
+    name: ap15/users/Administrator
+    type: Identity
+  17:
+    associated_assets:
+      applications:
+        25: ca
+      networks:
+        67: 134.24.4.0/24
+    name: ca/CR/134.24.4.44
+    type: ConnectionRule
+  18:
+    associated_assets:
+      credentials:
+        61: ap14/users/Administrator/creds/id_rsa
+      execPrivApps:
+        11: ap14
+    name: ap14/users/Administrator
+    type: Identity
+  19:
+    associated_assets:
+      applications:
+        76: ap01
+      networks:
+        0: 134.24.3.0/24
+    name: ap01/CR/134.24.3.11
+    type: ConnectionRule
+  20:
+    associated_assets:
+      appConnections:
+        92: ap07/CR/134.24.3.21
+      executionPrivIAMs:
+        96: ap07/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        7: ap07/vuln/exploit
+    name: ap07
+    type: Application
+  21:
+    associated_assets:
+      credentials:
+        51: flightlogs/users/root/creds/id_rsa
+      execPrivApps:
+        42: flightlogs
+    name: flightlogs/users/root
+    type: Identity
+  22:
+    associated_assets:
+      identities:
+        27: ap09/users/Administrator
+    name: ap09/users/Administrator/creds/id_rsa
+    type: Credentials
+  23:
+    associated_assets:
+      application:
+        104: files
+    name: files/vuln/exploit
+    type: SoftwareVulnerability
+  24:
+    associated_assets:
+      applications:
+        113: ap15
+      networks:
+        0: 134.24.3.0/24
+    name: ap15/CR/134.24.3.29
+    type: ConnectionRule
+  25:
+    associated_assets:
+      appConnections:
+        17: ca/CR/134.24.4.44
+      executionPrivIAMs:
+        78: ca/users/Administrator
+      interAppConnections:
+        44: 134.24.4.0/24 <-> 134.24.4.0/24
+      vulnerabilities:
+        79: ca/vuln/exploit
+    name: ca
+    type: Application
+  26:
+    associated_assets:
+      appConnections:
+        15: ap03/CR/134.24.3.13
+      executionPrivIAMs:
+        75: ap03/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        73: ap03/vuln/exploit
+    name: ap03
+    type: Application
+  27:
+    associated_assets:
+      credentials:
+        22: ap09/users/Administrator/creds/id_rsa
+      execPrivApps:
+        69: ap09
+    name: ap09/users/Administrator
+    type: Identity
+  28:
+    associated_assets:
+      interApps:
+        2: ap16
+        11: ap14
+        12: ap08
+        20: ap07
+        26: ap03
+        37: ap10
+        69: ap09
+        76: ap01
+        89: ap05
+        95: ap06
+        103: ap11
+        113: ap15
+        117: ap04
+    name: 134.24.3.0/24 <-> 134.24.3.0/24
+    type: InterappConnectionRule
+  29:
+    associated_assets:
+      application:
+        2: ap16
+    name: ap16/vuln/exploit
+    type: SoftwareVulnerability
+  30:
+    associated_assets:
+      application:
+        4: dc
+    name: dc/vuln/exploit
+    type: SoftwareVulnerability
+  31:
+    associated_assets:
+      credentials:
+        36: db/users/Administrator/creds/id_rsa
+      execPrivApps:
+        48: db
+    name: db/users/Administrator
+    type: Identity
+  32:
+    associated_assets:
+      identities:
+        91: ap08/users/Administrator
+    name: ap08/users/Administrator/creds/id_rsa
+    type: Credentials
+  33:
+    associated_assets:
+      credentials:
+        62: timereporter/users/root/creds/id_rsa
+      execPrivApps:
+        107: timereporter
+    name: timereporter/users/root
+    type: Identity
+  34:
+    associated_assets:
+      application:
+        37: ap10
+    name: ap10/vuln/exploit
+    type: SoftwareVulnerability
+  35:
+    associated_assets:
+      identities:
+        57: ap04/users/Administrator
+    name: ap04/users/Administrator/creds/id_rsa
+    type: Credentials
+  36:
+    associated_assets:
+      identities:
+        31: db/users/Administrator
+    name: db/users/Administrator/creds/id_rsa
+    type: Credentials
+  37:
+    associated_assets:
+      appConnections:
+        84: ap10/CR/134.24.3.24
+      executionPrivIAMs:
+        53: ap10/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        34: ap10/vuln/exploit
+    name: ap10
+    type: Application
+  38:
+    associated_assets:
+      application:
+        113: ap15
+    name: ap15/vuln/exploit
+    type: SoftwareVulnerability
+  39:
+    associated_assets:
+      credentials:
+        58: ap11/users/Administrator/creds/id_rsa
+      execPrivApps:
+        103: ap11
+    name: ap11/users/Administrator
+    type: Identity
+  40:
+    associated_assets:
+      identities:
+        53: ap10/users/Administrator
+    name: ap10/users/Administrator/creds/id_rsa
+    type: Credentials
+  41:
+    associated_assets:
+      applications:
+        117: ap04
+      networks:
+        0: 134.24.3.0/24
+    name: ap04/CR/134.24.3.14
+    type: ConnectionRule
+  42:
+    associated_assets:
+      appConnections:
+        112: flightlogs/CR/134.24.4.15
+      executionPrivIAMs:
+        21: flightlogs/users/root
+      interAppConnections:
+        44: 134.24.4.0/24 <-> 134.24.4.0/24
+      vulnerabilities:
+        77: flightlogs/vuln/exploit
+    name: flightlogs
+    type: Application
+  43:
+    associated_assets:
+      identities:
+        109: ntp/users/root
+    name: ntp/users/root/creds/id_rsa
+    type: Credentials
+  44:
+    associated_assets:
+      interApps:
+        4: dc
+        25: ca
+        42: flightlogs
+        48: db
+        68: print
+        104: files
+        114: ntp
+    name: 134.24.4.0/24 <-> 134.24.4.0/24
+    type: InterappConnectionRule
+  45:
+    associated_assets:
+      identities:
+        75: ap03/users/Administrator
+    name: ap03/users/Administrator/creds/id_rsa
+    type: Credentials
+  46:
+    associated_assets:
+      identities:
+        85: ap06/users/Administrator
+    name: ap06/users/Administrator/creds/id_rsa
+    type: Credentials
+  47:
+    associated_assets:
+      application:
+        76: ap01
+    name: ap01/vuln/exploit
+    type: SoftwareVulnerability
+  48:
+    associated_assets:
+      appConnections:
+        94: db/CR/134.24.4.13
+      executionPrivIAMs:
+        31: db/users/Administrator
+      interAppConnections:
+        44: 134.24.4.0/24 <-> 134.24.4.0/24
+      vulnerabilities:
+        56: db/vuln/exploit
+    name: db
+    type: Application
+  49:
+    associated_assets:
+      identities:
+        78: ca/users/Administrator
+    name: ca/users/Administrator/creds/id_rsa
+    type: Credentials
+  50:
+    associated_assets:
+      interNetworks:
+        0: 134.24.3.0/24
+        100: 134.24.2.0/24
+    name: 134.24.3.0/24 <-> 134.24.2.0/24
+    type: InternetworkConnectionRule
+  51:
+    associated_assets:
+      identities:
+        21: flightlogs/users/root
+    name: flightlogs/users/root/creds/id_rsa
+    type: Credentials
+  52:
+    associated_assets:
+      application:
+        69: ap09
+    name: ap09/vuln/exploit
+    type: SoftwareVulnerability
+  53:
+    associated_assets:
+      credentials:
+        40: ap10/users/Administrator/creds/id_rsa
+      execPrivApps:
+        37: ap10
+    name: ap10/users/Administrator
+    type: Identity
+  54:
+    associated_assets:
+      identities:
+        66: dc/users/Administrator
+    name: dc/users/Administrator/creds/id_rsa
+    type: Credentials
+  55:
+    associated_assets:
+      application:
+        114: ntp
+    name: ntp/vuln/exploit
+    type: SoftwareVulnerability
+  56:
+    associated_assets:
+      application:
+        48: db
+    name: db/vuln/exploit
+    type: SoftwareVulnerability
+  57:
+    associated_assets:
+      credentials:
+        35: ap04/users/Administrator/creds/id_rsa
+      execPrivApps:
+        117: ap04
+    name: ap04/users/Administrator
+    type: Identity
+  58:
+    associated_assets:
+      identities:
+        39: ap11/users/Administrator
+    name: ap11/users/Administrator/creds/id_rsa
+    type: Credentials
+  59:
+    associated_assets:
+      application:
+        81: payroll
+    name: payroll/vuln/exploit
+    type: SoftwareVulnerability
+  60:
+    associated_assets:
+      credentials:
+        90: payroll/users/Administrator/creds/id_rsa
+      execPrivApps:
+        81: payroll
+    name: payroll/users/Administrator
+    type: Identity
+  61:
+    associated_assets:
+      identities:
+        18: ap14/users/Administrator
+    name: ap14/users/Administrator/creds/id_rsa
+    type: Credentials
+  62:
+    associated_assets:
+      identities:
+        33: timereporter/users/root
+    name: timereporter/users/root/creds/id_rsa
+    type: Credentials
+  63:
+    associated_assets:
+      applications:
+        81: payroll
+      networks:
+        100: 134.24.2.0/24
+    name: payroll/CR/134.24.2.10
+    type: ConnectionRule
+  64:
+    associated_assets:
+      credentials:
+        115: ap05/users/Administrator/creds/id_rsa
+      execPrivApps:
+        89: ap05
+    name: ap05/users/Administrator
+    type: Identity
+  65:
+    associated_assets:
+      applications:
+        103: ap11
+      networks:
+        0: 134.24.3.0/24
+    name: ap11/CR/134.24.3.25
+    type: ConnectionRule
+  66:
+    associated_assets:
+      credentials:
+        54: dc/users/Administrator/creds/id_rsa
+      execPrivApps:
+        4: dc
+    name: dc/users/Administrator
+    type: Identity
+  67:
+    associated_assets:
+      interNetConnections:
+        72: 134.24.4.0/24 <-> 134.24.2.0/24
+        86: 134.24.3.0/24 <-> 134.24.4.0/24
+      netConnections:
+        17: ca/CR/134.24.4.44
+        71: print/CR/134.24.4.11
+        80: files/CR/134.24.4.12
+        94: db/CR/134.24.4.13
+        97: ntp/CR/134.24.4.21
+        105: dc/CR/134.24.4.5
+        112: flightlogs/CR/134.24.4.15
+    name: 134.24.4.0/24
+    type: Network
+  68:
+    associated_assets:
+      appConnections:
+        71: print/CR/134.24.4.11
+      executionPrivIAMs:
+        83: print/users/root
+      interAppConnections:
+        44: 134.24.4.0/24 <-> 134.24.4.0/24
+      vulnerabilities:
+        70: print/vuln/exploit
+    name: print
+    type: Application
+  69:
+    associated_assets:
+      appConnections:
+        118: ap09/CR/134.24.3.23
+      executionPrivIAMs:
+        27: ap09/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        52: ap09/vuln/exploit
+    name: ap09
+    type: Application
+  70:
+    associated_assets:
+      application:
+        68: print
+    name: print/vuln/exploit
+    type: SoftwareVulnerability
+  71:
+    associated_assets:
+      applications:
+        68: print
+      networks:
+        67: 134.24.4.0/24
+    name: print/CR/134.24.4.11
+    type: ConnectionRule
+  72:
+    associated_assets:
+      interNetworks:
+        67: 134.24.4.0/24
+        100: 134.24.2.0/24
+    name: 134.24.4.0/24 <-> 134.24.2.0/24
+    type: InternetworkConnectionRule
+  73:
+    associated_assets:
+      application:
+        26: ap03
+    name: ap03/vuln/exploit
+    type: SoftwareVulnerability
+  74:
+    associated_assets:
+      identities:
+        3: ap16/users/Administrator
+    name: ap16/users/Administrator/creds/id_rsa
+    type: Credentials
+  75:
+    associated_assets:
+      credentials:
+        45: ap03/users/Administrator/creds/id_rsa
+      execPrivApps:
+        26: ap03
+    name: ap03/users/Administrator
+    type: Identity
+  76:
+    associated_assets:
+      appConnections:
+        19: ap01/CR/134.24.3.11
+      executionPrivIAMs:
+        111: ap01/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        47: ap01/vuln/exploit
+    name: ap01
+    type: Application
+  77:
+    associated_assets:
+      application:
+        42: flightlogs
+    name: flightlogs/vuln/exploit
+    type: SoftwareVulnerability
+  78:
+    associated_assets:
+      credentials:
+        49: ca/users/Administrator/creds/id_rsa
+      execPrivApps:
+        25: ca
+    name: ca/users/Administrator
+    type: Identity
+  79:
+    associated_assets:
+      application:
+        25: ca
+    name: ca/vuln/exploit
+    type: SoftwareVulnerability
+  80:
+    associated_assets:
+      applications:
+        104: files
+      networks:
+        67: 134.24.4.0/24
+    name: files/CR/134.24.4.12
+    type: ConnectionRule
+  81:
+    associated_assets:
+      appConnections:
+        63: payroll/CR/134.24.2.10
+      executionPrivIAMs:
+        60: payroll/users/Administrator
+      interAppConnections:
+        8: 134.24.2.0/24 <-> 134.24.2.0/24
+      vulnerabilities:
+        59: payroll/vuln/exploit
+    name: payroll
+    type: Application
+  82:
+    associated_assets:
+      application:
+        117: ap04
+    name: ap04/vuln/exploit
+    type: SoftwareVulnerability
+  83:
+    associated_assets:
+      credentials:
+        116: print/users/root/creds/id_rsa
+      execPrivApps:
+        68: print
+    name: print/users/root
+    type: Identity
+  84:
+    associated_assets:
+      applications:
+        37: ap10
+      networks:
+        0: 134.24.3.0/24
+    name: ap10/CR/134.24.3.24
+    type: ConnectionRule
+  85:
+    associated_assets:
+      credentials:
+        46: ap06/users/Administrator/creds/id_rsa
+      execPrivApps:
+        95: ap06
+    name: ap06/users/Administrator
+    type: Identity
+  86:
+    associated_assets:
+      interNetworks:
+        0: 134.24.3.0/24
+        67: 134.24.4.0/24
+    name: 134.24.3.0/24 <-> 134.24.4.0/24
+    type: InternetworkConnectionRule
+  87:
+    associated_assets:
+      applications:
+        95: ap06
+      networks:
+        0: 134.24.3.0/24
+    name: ap06/CR/134.24.3.16
+    type: ConnectionRule
+  88:
+    associated_assets:
+      applications:
+        107: timereporter
+      networks:
+        100: 134.24.2.0/24
+    name: timereporter/CR/134.24.2.13
+    type: ConnectionRule
+  89:
+    associated_assets:
+      appConnections:
+        14: ap05/CR/134.24.3.15
+      executionPrivIAMs:
+        64: ap05/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        99: ap05/vuln/exploit
+    name: ap05
+    type: Application
+  90:
+    associated_assets:
+      identities:
+        60: payroll/users/Administrator
+    name: payroll/users/Administrator/creds/id_rsa
+    type: Credentials
+  91:
+    associated_assets:
+      credentials:
+        32: ap08/users/Administrator/creds/id_rsa
+      execPrivApps:
+        12: ap08
+    name: ap08/users/Administrator
+    type: Identity
+  92:
+    associated_assets:
+      applications:
+        20: ap07
+      networks:
+        0: 134.24.3.0/24
+    name: ap07/CR/134.24.3.21
+    type: ConnectionRule
+  93:
+    associated_assets:
+      application:
+        103: ap11
+    name: ap11/vuln/exploit
+    type: SoftwareVulnerability
+  94:
+    associated_assets:
+      applications:
+        48: db
+      networks:
+        67: 134.24.4.0/24
+    name: db/CR/134.24.4.13
+    type: ConnectionRule
+  95:
+    associated_assets:
+      appConnections:
+        87: ap06/CR/134.24.3.16
+      executionPrivIAMs:
+        85: ap06/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        106: ap06/vuln/exploit
+    name: ap06
+    type: Application
+  96:
+    associated_assets:
+      credentials:
+        102: ap07/users/Administrator/creds/id_rsa
+      execPrivApps:
+        20: ap07
+    name: ap07/users/Administrator
+    type: Identity
+  97:
+    associated_assets:
+      applications:
+        114: ntp
+      networks:
+        67: 134.24.4.0/24
+    name: ntp/CR/134.24.4.21
+    type: ConnectionRule
+  98:
+    associated_assets:
+      identities:
+        111: ap01/users/Administrator
+    name: ap01/users/Administrator/creds/id_rsa
+    type: Credentials
+  99:
+    associated_assets:
+      application:
+        89: ap05
+    name: ap05/vuln/exploit
+    type: SoftwareVulnerability
+  100:
+    associated_assets:
+      interNetConnections:
+        50: 134.24.3.0/24 <-> 134.24.2.0/24
+        72: 134.24.4.0/24 <-> 134.24.2.0/24
+      netConnections:
+        63: payroll/CR/134.24.2.10
+        88: timereporter/CR/134.24.2.13
+    name: 134.24.2.0/24
+    type: Network
+  101:
+    associated_assets:
+      application:
+        11: ap14
+    name: ap14/vuln/exploit
+    type: SoftwareVulnerability
+  102:
+    associated_assets:
+      identities:
+        96: ap07/users/Administrator
+    name: ap07/users/Administrator/creds/id_rsa
+    type: Credentials
+  103:
+    associated_assets:
+      appConnections:
+        65: ap11/CR/134.24.3.25
+      executionPrivIAMs:
+        39: ap11/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        93: ap11/vuln/exploit
+    name: ap11
+    type: Application
+  104:
+    associated_assets:
+      appConnections:
+        80: files/CR/134.24.4.12
+      executionPrivIAMs:
+        9: files/users/Administrator
+      interAppConnections:
+        44: 134.24.4.0/24 <-> 134.24.4.0/24
+      vulnerabilities:
+        23: files/vuln/exploit
+    name: files
+    type: Application
+  105:
+    associated_assets:
+      applications:
+        4: dc
+      networks:
+        67: 134.24.4.0/24
+    name: dc/CR/134.24.4.5
+    type: ConnectionRule
+  106:
+    associated_assets:
+      application:
+        95: ap06
+    name: ap06/vuln/exploit
+    type: SoftwareVulnerability
+  107:
+    associated_assets:
+      appConnections:
+        88: timereporter/CR/134.24.2.13
+      executionPrivIAMs:
+        33: timereporter/users/root
+      interAppConnections:
+        8: 134.24.2.0/24 <-> 134.24.2.0/24
+      vulnerabilities:
+        1: timereporter/vuln/exploit
+    name: timereporter
+    type: Application
+  108:
+    associated_assets:
+      identities:
+        16: ap15/users/Administrator
+    name: ap15/users/Administrator/creds/id_rsa
+    type: Credentials
+  109:
+    associated_assets:
+      credentials:
+        43: ntp/users/root/creds/id_rsa
+      execPrivApps:
+        114: ntp
+    name: ntp/users/root
+    type: Identity
+  110:
+    associated_assets:
+      applications:
+        2: ap16
+      networks:
+        0: 134.24.3.0/24
+    name: ap16/CR/134.24.3.30
+    type: ConnectionRule
+  111:
+    associated_assets:
+      credentials:
+        98: ap01/users/Administrator/creds/id_rsa
+      execPrivApps:
+        76: ap01
+    name: ap01/users/Administrator
+    type: Identity
+  112:
+    associated_assets:
+      applications:
+        42: flightlogs
+      networks:
+        67: 134.24.4.0/24
+    name: flightlogs/CR/134.24.4.15
+    type: ConnectionRule
+  113:
+    associated_assets:
+      appConnections:
+        24: ap15/CR/134.24.3.29
+      executionPrivIAMs:
+        16: ap15/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        38: ap15/vuln/exploit
+    name: ap15
+    type: Application
+  114:
+    associated_assets:
+      appConnections:
+        97: ntp/CR/134.24.4.21
+      executionPrivIAMs:
+        109: ntp/users/root
+      interAppConnections:
+        44: 134.24.4.0/24 <-> 134.24.4.0/24
+      vulnerabilities:
+        55: ntp/vuln/exploit
+    name: ntp
+    type: Application
+  115:
+    associated_assets:
+      identities:
+        64: ap05/users/Administrator
+    name: ap05/users/Administrator/creds/id_rsa
+    type: Credentials
+  116:
+    associated_assets:
+      identities:
+        83: print/users/root
+    name: print/users/root/creds/id_rsa
+    type: Credentials
+  117:
+    associated_assets:
+      appConnections:
+        41: ap04/CR/134.24.3.14
+      executionPrivIAMs:
+        57: ap04/users/Administrator
+      interAppConnections:
+        28: 134.24.3.0/24 <-> 134.24.3.0/24
+      vulnerabilities:
+        82: ap04/vuln/exploit
+    name: ap04
+    type: Application
+  118:
+    associated_assets:
+      applications:
+        69: ap09
+      networks:
+        0: 134.24.3.0/24
+    name: ap09/CR/134.24.3.23
+    type: ConnectionRule
+metadata:
+  MAL-Toolbox Version: 0.3.11
+  info: ''
+  langID: org.mal-lang.crateLang
+  langVersion: 0.0.9
+  malVersion: 0.1.0-SNAPSHOT
+  name: Demo Model
+

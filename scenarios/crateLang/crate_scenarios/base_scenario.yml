@@ -1,0 +1,31 @@
+lang_file: ./org.mal-lang.crateLang-0.0.9.mar
+
+agents:
+  Attacker1:
+    type: attacker
+    entry_points: []
+    agent_class:
+  Defender1:
+    type: defender
+    agent_class:
+    observable_steps:
+      by_asset_type:
+        ConnectionRule:
+          - attemptConnectToApplications
+          - accessNetworks
+          - connectToApplications
+        Application:
+          - modify
+          - networkAccess
+          - notPresent
+          - read
+        Identity:
+          - assume
+        InternetworkConnectionRule:
+          - accessNetworks
+    actionable_steps:
+      by_asset_type:
+        Application:
+          - notPresent
+        ConnectionRule:
+          - restricted
