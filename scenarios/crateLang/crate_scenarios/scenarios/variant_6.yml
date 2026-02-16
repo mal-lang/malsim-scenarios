@@ -8,166 +8,165 @@ rewards:
       notPresent: 5.0
       read: 2.0
     ap01/CR/134.24.3.11:
-      restricted: 5.0
+      restricted: 2.5
     ap03:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap03/CR/134.24.3.13:
-      restricted: 5.0
+      restricted: 2.5
     ap04:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap04/CR/134.24.3.14:
-      restricted: 5.0
+      restricted: 2.5
     ap05:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap05/CR/134.24.3.15:
-      restricted: 5.0
+      restricted: 2.5
     ap07:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap07/CR/134.24.3.21:
-      restricted: 5.0
+      restricted: 2.5
     ap08:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap08/CR/134.24.3.22:
-      restricted: 5.0
+      restricted: 2.5
     ap09:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap09/CR/134.24.3.23:
-      restricted: 5.0
+      restricted: 2.5
     ap10:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap10/CR/134.24.3.24:
-      restricted: 5.0
+      restricted: 2.5
     ap11:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap11/CR/134.24.3.25:
-      restricted: 5.0
+      restricted: 2.5
     ap12:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap12/CR/134.24.3.26:
-      restricted: 5.0
+      restricted: 2.5
     ap13:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap13/CR/134.24.3.27:
-      restricted: 5.0
+      restricted: 2.5
     ap15:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap15/CR/134.24.3.29:
-      restricted: 5.0
+      restricted: 2.5
     ap16:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap16/CR/134.24.3.30:
-      restricted: 5.0
+      restricted: 2.5
     ca:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 1.0
     ca/CR/134.24.4.44:
-      restricted: 5.0
+      restricted: 2.5
     db:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     db/CR/134.24.4.13:
-      restricted: 5.0
+      restricted: 2.5
     dc:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     dc/CR/134.24.4.5:
-      restricted: 5.0
+      restricted: 2.5
     files:
       deny: 4.0
       modify: 2.0
       notPresent: 4.0
       read: 2.0
     files/CR/134.24.4.12:
-      restricted: 4.0
+      restricted: 2.0
     flightlogs:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 4.0
     flightlogs/CR/134.24.4.15:
-      restricted: 5.0
+      restricted: 2.5
     mail:
       deny: 3.0
       modify: 4.0
       notPresent: 3.0
       read: 3.0
     mail/CR/134.24.4.16:
-      restricted: 3.0
+      restricted: 1.5
     mailrelay:
       deny: 3.0
       modify: 4.0
       notPresent: 3.0
       read: 3.0
     mailrelay/CR/134.24.2.16:
-      restricted: 3.0
+      restricted: 1.5
     ns:
       deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ns/CR/134.24.2.15:
-      restricted: 5.0
+      restricted: 2.5
     ntp:
       deny: 4.0
       modify: 5.0
       notPresent: 4.0
       read: 1.0
     ntp/CR/134.24.4.21:
-      restricted: 4.0
+      restricted: 2.0
     print:
       deny: 3.0
       modify: 4.0
       notPresent: 3.0
       read: 3.0
     print/CR/134.24.4.11:
-      restricted: 3.0
+      restricted: 1.5
     weborder:
       deny: 2.0
       modify: 4.0
       notPresent: 2.0
       read: 1.0
     weborder/CR/134.24.2.14:
-      restricted: 2.0
-
+      restricted: 1.0
