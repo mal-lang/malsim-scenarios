@@ -10,11 +10,11 @@ agents:
     agent_class: DefendFutureCompromisedDefender
     type: defender
     actionable_steps:
-    by_asset_type:
-      Application:
-      - notPresent
-      ConnectionRule:
-      - restricted
+      by_asset_type:
+        Application:
+        - notPresent
+        ConnectionRule:
+        - restricted
     observable_steps:
       by_asset_type:
         Application:
