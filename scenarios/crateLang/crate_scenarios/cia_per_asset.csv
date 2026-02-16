@@ -1,0 +1,31 @@
+name,class,availability,integrity,confidentiality
+timereporter,Time Server / NTP,4,5,1
+ntp,Time Server / NTP,4,5,1
+files,File Server,4,2,2
+dc,Domain Controller,5,5,2
+weborder,Web Server,2,4,1
+mail,Mail Server,3,4,3
+mailrelay,Mail Relay,3,4,3
+payroll,Payroll Server,5,5,2
+print,Mail Server,3,4,3
+ns,Name Server,5,5,2
+db,DB Server,5,5,2
+ca,CA-Server,5,5,1
+flightlogs,Log Server,5,5,4
+ap01,Clients,5,5,2
+ap02,Clients,5,5,2
+ap03,Clients,5,5,2
+ap04,Clients,5,5,2
+ap05,Clients,5,5,2
+ap06,Clients,5,5,2
+ap07,Clients,5,5,2
+ap08,Clients,5,5,2
+ap09,Clients,5,5,2
+ap10,Clients,5,5,2
+ap11,Clients,5,5,2
+ap12,Clients,5,5,2
+ap13,Clients,5,5,2
+ap14,Clients,5,5,2
+ap15,Clients,5,5,2
+ap16,Clients,5,5,2
+rootca,CA-Server,5,5,1
