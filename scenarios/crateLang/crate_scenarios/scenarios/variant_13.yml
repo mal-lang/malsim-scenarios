@@ -3,112 +3,96 @@ model_file: model_13.yml
 rewards:
   by_asset_name:
     ap01:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap01/CR/134.24.3.11:
       restricted: 2.5
     ap02:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap02/CR/134.24.3.12:
       restricted: 2.5
     ap04:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap04/CR/134.24.3.14:
       restricted: 2.5
     ap06:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap06/CR/134.24.3.16:
       restricted: 2.5
     ap07:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap07/CR/134.24.3.21:
       restricted: 2.5
     ap09:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap09/CR/134.24.3.23:
       restricted: 2.5
     ap11:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap11/CR/134.24.3.25:
       restricted: 2.5
     ap14:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap14/CR/134.24.3.28:
       restricted: 2.5
     ap16:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ap16/CR/134.24.3.30:
       restricted: 2.5
     db:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     db/CR/134.24.4.13:
       restricted: 2.5
     flightlogs:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 4.0
     flightlogs/CR/134.24.4.15:
       restricted: 2.5
     mail:
-      deny: 3.0
       modify: 4.0
       notPresent: 3.0
       read: 3.0
     mail/CR/134.24.4.16:
       restricted: 1.5
     ns:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     ns/CR/134.24.2.15:
       restricted: 2.5
     payroll:
-      deny: 5.0
       modify: 5.0
       notPresent: 5.0
       read: 2.0
     payroll/CR/134.24.2.10:
       restricted: 2.5
     print:
-      deny: 3.0
       modify: 4.0
       notPresent: 3.0
       read: 3.0
     print/CR/134.24.4.11:
       restricted: 1.5
     weborder:
-      deny: 2.0
       modify: 4.0
       notPresent: 2.0
       read: 1.0
