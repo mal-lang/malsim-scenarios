@@ -12,7 +12,7 @@ agents:
       by_asset_type:
         ConnectionRule:
           - attemptConnectToApplications
-          - accessNetworks
+          - attemptAccessNetworks
           - connectToApplications
           - restricted
         Application:
@@ -22,9 +22,9 @@ agents:
           - attemptRead
           - attemptUseVulnerability
         Identity:
-          - assume
+          - attemptAssume
         InternetworkConnectionRule:
-          - accessNetworks
+          - attemptAccessNetworks
     actionable_steps:
       by_asset_type:
         Application:
