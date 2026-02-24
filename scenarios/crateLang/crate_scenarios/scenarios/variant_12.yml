@@ -3,134 +3,134 @@ model_file: model_12.yml
 rewards:
   by_asset_name:
     ap01:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ap01/CR/134.24.3.11:
-      restricted: 2.5
+      restricted: 0.5
     ap02:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ap02/CR/134.24.3.12:
-      restricted: 2.5
+      restricted: 0.5
     ap03:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ap03/CR/134.24.3.13:
-      restricted: 2.5
+      restricted: 0.5
     ap04:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ap04/CR/134.24.3.14:
-      restricted: 2.5
+      restricted: 0.5
     ap05:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ap05/CR/134.24.3.15:
-      restricted: 2.5
+      restricted: 0.5
     ap06:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ap06/CR/134.24.3.16:
-      restricted: 2.5
+      restricted: 0.5
     ap07:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ap07/CR/134.24.3.21:
-      restricted: 2.5
+      restricted: 0.5
     ap08:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ap08/CR/134.24.3.22:
-      restricted: 2.5
+      restricted: 0.5
     ap09:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ap09/CR/134.24.3.23:
-      restricted: 2.5
+      restricted: 0.5
     ap11:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ap11/CR/134.24.3.25:
-      restricted: 2.5
+      restricted: 0.5
     ap14:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ap14/CR/134.24.3.28:
-      restricted: 2.5
+      restricted: 0.5
     ap15:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ap15/CR/134.24.3.29:
-      restricted: 2.5
+      restricted: 0.5
     ca:
-      modify: 5.0
-      notPresent: 5.0
-      read: 1.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.2
     ca/CR/134.24.4.44:
-      restricted: 2.5
+      restricted: 0.5
     db:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     db/CR/134.24.4.13:
-      restricted: 2.5
+      restricted: 0.5
     dc:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     dc/CR/134.24.4.5:
-      restricted: 2.5
+      restricted: 0.5
     files:
-      modify: 2.0
-      notPresent: 4.0
-      read: 2.0
+      modify: 0.4
+      notPresent: 0.8
+      read: 0.4
     files/CR/134.24.4.12:
-      restricted: 2.0
+      restricted: 0.4
     flightlogs:
-      modify: 5.0
-      notPresent: 5.0
-      read: 4.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.8
     flightlogs/CR/134.24.4.15:
-      restricted: 2.5
+      restricted: 0.5
     mail:
-      modify: 4.0
-      notPresent: 3.0
-      read: 3.0
+      modify: 0.8
+      notPresent: 0.6
+      read: 0.6
     mail/CR/134.24.4.16:
-      restricted: 1.5
+      restricted: 0.3
     mailrelay:
-      modify: 4.0
-      notPresent: 3.0
-      read: 3.0
+      modify: 0.8
+      notPresent: 0.6
+      read: 0.6
     mailrelay/CR/134.24.2.16:
-      restricted: 1.5
+      restricted: 0.3
     ns:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     ns/CR/134.24.2.15:
-      restricted: 2.5
+      restricted: 0.5
     ntp:
-      modify: 5.0
-      notPresent: 4.0
-      read: 1.0
+      modify: 1.0
+      notPresent: 0.8
+      read: 0.2
     ntp/CR/134.24.4.21:
-      restricted: 2.0
+      restricted: 0.4
     payroll:
-      modify: 5.0
-      notPresent: 5.0
-      read: 2.0
+      modify: 1.0
+      notPresent: 1.0
+      read: 0.4
     payroll/CR/134.24.2.10:
-      restricted: 2.5
+      restricted: 0.5
