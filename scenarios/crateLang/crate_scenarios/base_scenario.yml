@@ -17,9 +17,11 @@ agents:
           - restricted
         Application:
           - attemptModify
+          - modify
           - networkConnect
           - notPresent
           - attemptRead
+          - read
           - attemptUseVulnerability
         Identity:
           - attemptAssume
