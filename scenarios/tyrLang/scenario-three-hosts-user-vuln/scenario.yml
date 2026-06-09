@@ -1,52 +1,80 @@
 lang_file: ../../../langs/org.mal-lang.tyrLang-0.0.5.mar
 model_file: model.yml
-rewards:
-  by_asset_name:
-    App_A:
-      notPresent: 50
-    CR_A_BC:
-      restricted: 30
-    App_B:
-      fullAccess: 3
-      notPresent: 2
-    App_C:
-      fullAccess: 2
-      notPresent: 5
-    App_C_Identity:
-      notPresent: 1
-    CR_BC_D:
-      restricted: 10
-    App_D:
-      notPresent: 40
-      fullAccess: 100
-actionable_steps:
-  by_asset_type:
-    Application:
-    - notPresent
-    ConnectionRule:
-    - restricted
-    Identity:
-    - notPresent
-observable_steps:
-  by_asset_type:
-    Application:
-    - notPresent
-    - fullAccess
-    - networkConnect
-    ConnectionRule:
-    - restricted
-    - attemptConnectToApplications
-    - attemptAccessNetworks
-    Identity:
-    - notPresent
-    Credentials:
-    - attemptGuessCredentials
 agents:
   EvilAttacker:
     type: attacker
     agent_class: BreadthFirstAttacker
     entry_points:
     - App_B:fullAccess
+    rewards:
+      by_asset_name:
+        App_A:
+          notPresent: 50
+        CR_A_BC:
+          restricted: 30
+        App_B:
+          fullAccess: 3
+          notPresent: 2
+        App_C:
+          fullAccess: 2
+          notPresent: 5
+        App_C_Identity:
+          notPresent: 1
+        CR_BC_D:
+          restricted: 10
+        App_D:
+          notPresent: 40
+          fullAccess: 100
+    actionable_steps:
+      by_asset_type:
+        Application:
+        - notPresent
+        ConnectionRule:
+        - restricted
+        Identity:
+        - notPresent
   GoodDefender:
     type: defender
     agent_class: KeyboardAgent
+    rewards:
+      by_asset_name:
+        App_A:
+          notPresent: 50
+        CR_A_BC:
+          restricted: 30
+        App_B:
+          fullAccess: 3
+          notPresent: 2
+        App_C:
+          fullAccess: 2
+          notPresent: 5
+        App_C_Identity:
+          notPresent: 1
+        CR_BC_D:
+          restricted: 10
+        App_D:
+          notPresent: 40
+          fullAccess: 100
+    actionable_steps:
+      by_asset_type:
+        Application:
+        - notPresent
+        ConnectionRule:
+        - restricted
+        Identity:
+        - notPresent
+    observable_steps:
+      by_asset_type:
+        Application:
+        - notPresent
+        - fullAccess
+        - networkConnect
+        ConnectionRule:
+        - restricted
+        - attemptConnectToApplications
+        - attemptAccessNetworks
+        Identity:
+        - notPresent
+        Credentials:
+        - attemptGuessCredentials
+
