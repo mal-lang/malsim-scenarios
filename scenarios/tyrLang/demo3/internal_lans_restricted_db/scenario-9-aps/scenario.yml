@@ -4,195 +4,366 @@ agents:
   Attacker1:
     agent_class: BreadthFirstAttacker
     entry_points:
-      - db:fullAccess
+    - db:fullAccess
     type: attacker
+    rewards:
+      by_asset_name:
+        Admin Exec Identity - ap01:
+          notPresent: 5.0
+        Admin Exec Identity - ap02:
+          notPresent: 5.0
+        Admin Exec Identity - ap03:
+          notPresent: 5.0
+        Admin Exec Identity - ap04:
+          notPresent: 5.0
+        Admin Exec Identity - ap05:
+          notPresent: 5.0
+        Admin Exec Identity - ap06:
+          notPresent: 5.0
+        Admin Exec Identity - ap07:
+          notPresent: 5.0
+        Admin Exec Identity - ap08:
+          notPresent: 5.0
+        Admin Exec Identity - ap09:
+          notPresent: 5.0
+        Admin Exec Identity - ca:
+          notPresent: 5.0
+        Admin Exec Identity - db:
+          notPresent: 5.0
+        Admin Exec Identity - dc:
+          notPresent: 5.0
+        Admin Exec Identity - files:
+          notPresent: 4.0
+        Admin Exec Identity - mail:
+          notPresent: 3.0
+        Admin Exec Identity - mailrelay:
+          notPresent: 3.0
+        Admin Exec Identity - ns:
+          notPresent: 5.0
+        Admin Exec Identity - ntp:
+          notPresent: 4.0
+        Admin Exec Identity - payroll:
+          notPresent: 5.0
+        Admin Exec Identity - print:
+          notPresent: 3.0
+        Admin Exec Identity - timereporter:
+          notPresent: 4.0
+        Admin Exec Identity - weborder:
+          notPresent: 2.0
+        CR ap01-134.24.3.0/24:
+          restricted: 5.0
+        CR ap02-134.24.3.0/24:
+          restricted: 5.0
+        CR ap03-134.24.3.0/24:
+          restricted: 5.0
+        CR ap04-134.24.3.0/24:
+          restricted: 5.0
+        CR ap05-134.24.3.0/24:
+          restricted: 5.0
+        CR ap06-134.24.3.0/24:
+          restricted: 5.0
+        CR ap07-134.24.3.0/24:
+          restricted: 5.0
+        CR ap08-134.24.3.0/24:
+          restricted: 5.0
+        CR ap09-134.24.3.0/24:
+          restricted: 5.0
+        CR ca-134.24.4.0/24:
+          restricted: 5.0
+        CR db-134.24.4.0/24:
+          restricted: 5.0
+        CR dc-134.24.4.0/24:
+          restricted: 5.0
+        CR files-134.24.4.0/24:
+          restricted: 4.0
+        CR mail-134.24.4.0/24:
+          restricted: 3.0
+        CR mailrelay-134.24.2.0/24:
+          restricted: 3.0
+        CR ns-134.24.2.0/24:
+          restricted: 5.0
+        CR ntp-134.24.4.0/24:
+          restricted: 4.0
+        CR payroll-134.24.2.0/24:
+          restricted: 5.0
+        CR print-134.24.4.0/24:
+          restricted: 3.0
+        CR timereporter-134.24.2.0/24:
+          restricted: 4.0
+        CR weborder-134.24.2.0/24:
+          restricted: 2.0
+        ap01:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap02:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap03:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap04:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap05:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap06:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap07:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap08:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap09:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ca:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 1.0
+        db:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        dc:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        files:
+          fullAccess: 2.0
+          notPresent: 4.0
+          read: 2.0
+        mail:
+          fullAccess: 4.0
+          notPresent: 3.0
+          read: 3.0
+        mailrelay:
+          fullAccess: 4.0
+          notPresent: 3.0
+          read: 3.0
+        ns:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ntp:
+          fullAccess: 5.0
+          notPresent: 4.0
+          read: 1.0
+        payroll:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        print:
+          fullAccess: 4.0
+          notPresent: 3.0
+          read: 3.0
+        timereporter:
+          fullAccess: 5.0
+          notPresent: 4.0
+          read: 1.0
+        weborder:
+          fullAccess: 4.0
+          notPresent: 2.0
+          read: 1.0
   Defender1:
     agent_class: DefendFutureCompromisedDefender
     type: defender
     actionable_steps:
       by_asset_type:
         Application:
-          - notPresent
+        - notPresent
         ConnectionRule:
-          - restricted
+        - restricted
     observable_steps:
       by_asset_type:
         Application:
-          - fullAccess
-          - notPresent
-          - networkConnect
+        - fullAccess
+        - notPresent
+        - networkConnect
         ConnectionRule:
-          - attemptConnectToApplications
-          - attemptAccessNetworks
+        - attemptConnectToApplications
+        - attemptAccessNetworks
         Credentials:
-          - attemptGuessCredentials
-rewards:
-  by_asset_name:
-    Admin Exec Identity - ap01:
-      notPresent: 5.0
-    Admin Exec Identity - ap02:
-      notPresent: 5.0
-    Admin Exec Identity - ap03:
-      notPresent: 5.0
-    Admin Exec Identity - ap04:
-      notPresent: 5.0
-    Admin Exec Identity - ap05:
-      notPresent: 5.0
-    Admin Exec Identity - ap06:
-      notPresent: 5.0
-    Admin Exec Identity - ap07:
-      notPresent: 5.0
-    Admin Exec Identity - ap08:
-      notPresent: 5.0
-    Admin Exec Identity - ap09:
-      notPresent: 5.0
-    Admin Exec Identity - ca:
-      notPresent: 5.0
-    Admin Exec Identity - db:
-      notPresent: 5.0
-    Admin Exec Identity - dc:
-      notPresent: 5.0
-    Admin Exec Identity - files:
-      notPresent: 4.0
-    Admin Exec Identity - mail:
-      notPresent: 3.0
-    Admin Exec Identity - mailrelay:
-      notPresent: 3.0
-    Admin Exec Identity - ns:
-      notPresent: 5.0
-    Admin Exec Identity - ntp:
-      notPresent: 4.0
-    Admin Exec Identity - payroll:
-      notPresent: 5.0
-    Admin Exec Identity - print:
-      notPresent: 3.0
-    Admin Exec Identity - timereporter:
-      notPresent: 4.0
-    Admin Exec Identity - weborder:
-      notPresent: 2.0
-    CR ap01-134.24.3.0/24:
-      restricted: 5.0
-    CR ap02-134.24.3.0/24:
-      restricted: 5.0
-    CR ap03-134.24.3.0/24:
-      restricted: 5.0
-    CR ap04-134.24.3.0/24:
-      restricted: 5.0
-    CR ap05-134.24.3.0/24:
-      restricted: 5.0
-    CR ap06-134.24.3.0/24:
-      restricted: 5.0
-    CR ap07-134.24.3.0/24:
-      restricted: 5.0
-    CR ap08-134.24.3.0/24:
-      restricted: 5.0
-    CR ap09-134.24.3.0/24:
-      restricted: 5.0
-    CR ca-134.24.4.0/24:
-      restricted: 5.0
-    CR db-134.24.4.0/24:
-      restricted: 5.0
-    CR dc-134.24.4.0/24:
-      restricted: 5.0
-    CR files-134.24.4.0/24:
-      restricted: 4.0
-    CR mail-134.24.4.0/24:
-      restricted: 3.0
-    CR mailrelay-134.24.2.0/24:
-      restricted: 3.0
-    CR ns-134.24.2.0/24:
-      restricted: 5.0
-    CR ntp-134.24.4.0/24:
-      restricted: 4.0
-    CR payroll-134.24.2.0/24:
-      restricted: 5.0
-    CR print-134.24.4.0/24:
-      restricted: 3.0
-    CR timereporter-134.24.2.0/24:
-      restricted: 4.0
-    CR weborder-134.24.2.0/24:
-      restricted: 2.0
-    ap01:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    ap02:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    ap03:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    ap04:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    ap05:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    ap06:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    ap07:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    ap08:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    ap09:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    ca:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 1.0
-    db:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    dc:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    files:
-      fullAccess: 2.0
-      notPresent: 4.0
-      read: 2.0
-    mail:
-      fullAccess: 4.0
-      notPresent: 3.0
-      read: 3.0
-    mailrelay:
-      fullAccess: 4.0
-      notPresent: 3.0
-      read: 3.0
-    ns:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    ntp:
-      fullAccess: 5.0
-      notPresent: 4.0
-      read: 1.0
-    payroll:
-      fullAccess: 5.0
-      notPresent: 5.0
-      read: 2.0
-    print:
-      fullAccess: 4.0
-      notPresent: 3.0
-      read: 3.0
-    timereporter:
-      fullAccess: 5.0
-      notPresent: 4.0
-      read: 1.0
-    weborder:
-      fullAccess: 4.0
-      notPresent: 2.0
-      read: 1.0
+        - attemptGuessCredentials
+    rewards:
+      by_asset_name:
+        Admin Exec Identity - ap01:
+          notPresent: 5.0
+        Admin Exec Identity - ap02:
+          notPresent: 5.0
+        Admin Exec Identity - ap03:
+          notPresent: 5.0
+        Admin Exec Identity - ap04:
+          notPresent: 5.0
+        Admin Exec Identity - ap05:
+          notPresent: 5.0
+        Admin Exec Identity - ap06:
+          notPresent: 5.0
+        Admin Exec Identity - ap07:
+          notPresent: 5.0
+        Admin Exec Identity - ap08:
+          notPresent: 5.0
+        Admin Exec Identity - ap09:
+          notPresent: 5.0
+        Admin Exec Identity - ca:
+          notPresent: 5.0
+        Admin Exec Identity - db:
+          notPresent: 5.0
+        Admin Exec Identity - dc:
+          notPresent: 5.0
+        Admin Exec Identity - files:
+          notPresent: 4.0
+        Admin Exec Identity - mail:
+          notPresent: 3.0
+        Admin Exec Identity - mailrelay:
+          notPresent: 3.0
+        Admin Exec Identity - ns:
+          notPresent: 5.0
+        Admin Exec Identity - ntp:
+          notPresent: 4.0
+        Admin Exec Identity - payroll:
+          notPresent: 5.0
+        Admin Exec Identity - print:
+          notPresent: 3.0
+        Admin Exec Identity - timereporter:
+          notPresent: 4.0
+        Admin Exec Identity - weborder:
+          notPresent: 2.0
+        CR ap01-134.24.3.0/24:
+          restricted: 5.0
+        CR ap02-134.24.3.0/24:
+          restricted: 5.0
+        CR ap03-134.24.3.0/24:
+          restricted: 5.0
+        CR ap04-134.24.3.0/24:
+          restricted: 5.0
+        CR ap05-134.24.3.0/24:
+          restricted: 5.0
+        CR ap06-134.24.3.0/24:
+          restricted: 5.0
+        CR ap07-134.24.3.0/24:
+          restricted: 5.0
+        CR ap08-134.24.3.0/24:
+          restricted: 5.0
+        CR ap09-134.24.3.0/24:
+          restricted: 5.0
+        CR ca-134.24.4.0/24:
+          restricted: 5.0
+        CR db-134.24.4.0/24:
+          restricted: 5.0
+        CR dc-134.24.4.0/24:
+          restricted: 5.0
+        CR files-134.24.4.0/24:
+          restricted: 4.0
+        CR mail-134.24.4.0/24:
+          restricted: 3.0
+        CR mailrelay-134.24.2.0/24:
+          restricted: 3.0
+        CR ns-134.24.2.0/24:
+          restricted: 5.0
+        CR ntp-134.24.4.0/24:
+          restricted: 4.0
+        CR payroll-134.24.2.0/24:
+          restricted: 5.0
+        CR print-134.24.4.0/24:
+          restricted: 3.0
+        CR timereporter-134.24.2.0/24:
+          restricted: 4.0
+        CR weborder-134.24.2.0/24:
+          restricted: 2.0
+        ap01:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap02:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap03:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap04:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap05:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap06:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap07:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap08:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ap09:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ca:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 1.0
+        db:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        dc:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        files:
+          fullAccess: 2.0
+          notPresent: 4.0
+          read: 2.0
+        mail:
+          fullAccess: 4.0
+          notPresent: 3.0
+          read: 3.0
+        mailrelay:
+          fullAccess: 4.0
+          notPresent: 3.0
+          read: 3.0
+        ns:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        ntp:
+          fullAccess: 5.0
+          notPresent: 4.0
+          read: 1.0
+        payroll:
+          fullAccess: 5.0
+          notPresent: 5.0
+          read: 2.0
+        print:
+          fullAccess: 4.0
+          notPresent: 3.0
+          read: 3.0
+        timereporter:
+          fullAccess: 5.0
+          notPresent: 4.0
+          read: 1.0
+        weborder:
+          fullAccess: 4.0
+          notPresent: 2.0
+          read: 1.0
+

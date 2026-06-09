@@ -1,16 +1,5 @@
 lang_file: ../../../langs/org.mal-lang.trainingLang-1.0.0.mar
 model_file: model.yml
-rewards:
-  by_asset_name:
-    Host 0:
-      notPresent: 10
-    Host 1:
-      notPresent: 10
-    Data 0:
-      notPresent: 10
-      read: 100
-    Data 1:
-      read: 500
 agents:
   Attacker1:
     type: attacker
@@ -18,6 +7,29 @@ agents:
     - User 0:phishing
     - Network 0:access
     agent_class: BreadthFirstAttacker
+    rewards:
+      by_asset_name:
+        Host 0:
+          notPresent: 10
+        Host 1:
+          notPresent: 10
+        Data 0:
+          notPresent: 10
+          read: 100
+        Data 1:
+          read: 500
   Defender:
     type: defender
     agent_class: KeyboardAgent
+    rewards:
+      by_asset_name:
+        Host 0:
+          notPresent: 10
+        Host 1:
+          notPresent: 10
+        Data 0:
+          notPresent: 10
+          read: 100
+        Data 1:
+          read: 500
+

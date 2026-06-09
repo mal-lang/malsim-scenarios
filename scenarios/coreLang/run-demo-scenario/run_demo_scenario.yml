@@ -1,38 +1,64 @@
 lang_file: ../../../langs/org.mal-lang.coreLang-1.0.0.mar
 model_file: run_demo_model.json
-rewards:
-  by_asset_name:
-    OS App:
-      notPresent: 50
-      supplyChainAuditing: 1000000000
-      fullAccess: 100
-    Program 1:
-      notPresent: 30
-      supplyChainAuditing: 1000000000
-      fullAccess: 50
-    SoftwareVulnerability:2:
-      notPresent: 40
-    Data:3:
-      notPresent: 20
-    Credentials:4:
-      notPhishable: 1000000000
-    Identity:5:
-      notPresent: 35
-      assume: 50
-    ConnectionRule:6:
-      restricted: 40
-      payloadInspection: 30
-    Other OS App:
-      notPresent: 50
-      supplyChainAuditing: 1000000000
-      fullAccess: 200
 agents:
   Attacker:8:
     type: attacker
-    name: Attacker:8
     entry_points:
     - OS App:networkConnectUninspected
     agent_class: BreadthFirstAttacker
+    rewards:
+      by_asset_name:
+        OS App:
+          notPresent: 50
+          supplyChainAuditing: 1000000000
+          fullAccess: 100
+        Program 1:
+          notPresent: 30
+          supplyChainAuditing: 1000000000
+          fullAccess: 50
+        SoftwareVulnerability:2:
+          notPresent: 40
+        Data:3:
+          notPresent: 20
+        Credentials:4:
+          notPhishable: 1000000000
+        Identity:5:
+          notPresent: 35
+          assume: 50
+        ConnectionRule:6:
+          restricted: 40
+          payloadInspection: 30
+        Other OS App:
+          notPresent: 50
+          supplyChainAuditing: 1000000000
+          fullAccess: 200
   Defender:
     type: defender
     agent_class: KeyboardAgent
+    rewards:
+      by_asset_name:
+        OS App:
+          notPresent: 50
+          supplyChainAuditing: 1000000000
+          fullAccess: 100
+        Program 1:
+          notPresent: 30
+          supplyChainAuditing: 1000000000
+          fullAccess: 50
+        SoftwareVulnerability:2:
+          notPresent: 40
+        Data:3:
+          notPresent: 20
+        Credentials:4:
+          notPhishable: 1000000000
+        Identity:5:
+          notPresent: 35
+          assume: 50
+        ConnectionRule:6:
+          restricted: 40
+          payloadInspection: 30
+        Other OS App:
+          notPresent: 50
+          supplyChainAuditing: 1000000000
+          fullAccess: 200
+

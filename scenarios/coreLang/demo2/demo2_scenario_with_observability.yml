@@ -1,133 +1,249 @@
 lang_file: ../../../langs/org.mal-lang.coreLang-1.0.0.mar
 model_file: 2024_11_01_15_15_generated_model.yml
-rewards:
-  by_asset_name:
-    ap01:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap02:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap03:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap04:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap05:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap06:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap07:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap08:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap09:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap10:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap11:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap12:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap13:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap14:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap15:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ap16:
-      read: 2
-      fullAccess: 4
-      deny: 3
-      notPresent: 3
-    ca:
-      read: 1
-      fullAccess: 5
-      deny: 4
-      notPresent: 4
-    dc:
-      read: 1
-      fullAccess: 3
-      deny: 4
-      notPresent: 4
-    files:
-      read: 2
-      fullAccess: 2
-      deny: 4
-      notPresent: 4
-    flightlogs:
-      read: 2
-      fullAccess: 5
-      deny: 5
-      notPresent: 5
-    timereporter:
-      read: 1
-      fullAccess: 3
-      deny: 5
-      notPresent: 5
-    weborder:
-      read: 1
-      fullAccess: 4
-      deny: 2
-      notPresent: 2
-observable_steps:
-  by_asset_type:
-    Application:
-    - fullAccess
-    - notPresent
-actionable_steps:
-  by_asset_type:
-    Application:
-    - notPresent
 agents:
   TestAttacker:
     type: attacker
-    name: TestAttacker
     entry_points:
     - flightlogs:fullAccess
     agent_class: BreadthFirstAttacker
+    rewards:
+      by_asset_name:
+        ap01:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap02:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap03:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap04:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap05:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap06:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap07:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap08:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap09:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap10:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap11:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap12:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap13:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap14:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap15:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap16:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ca:
+          read: 1
+          fullAccess: 5
+          deny: 4
+          notPresent: 4
+        dc:
+          read: 1
+          fullAccess: 3
+          deny: 4
+          notPresent: 4
+        files:
+          read: 2
+          fullAccess: 2
+          deny: 4
+          notPresent: 4
+        flightlogs:
+          read: 2
+          fullAccess: 5
+          deny: 5
+          notPresent: 5
+        timereporter:
+          read: 1
+          fullAccess: 3
+          deny: 5
+          notPresent: 5
+        weborder:
+          read: 1
+          fullAccess: 4
+          deny: 2
+          notPresent: 2
+    actionable_steps:
+      by_asset_type:
+        Application:
+        - notPresent
   Defender:
     type: defender
     agent_class: KeyboardAgent
+    rewards:
+      by_asset_name:
+        ap01:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap02:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap03:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap04:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap05:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap06:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap07:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap08:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap09:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap10:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap11:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap12:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap13:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap14:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap15:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ap16:
+          read: 2
+          fullAccess: 4
+          deny: 3
+          notPresent: 3
+        ca:
+          read: 1
+          fullAccess: 5
+          deny: 4
+          notPresent: 4
+        dc:
+          read: 1
+          fullAccess: 3
+          deny: 4
+          notPresent: 4
+        files:
+          read: 2
+          fullAccess: 2
+          deny: 4
+          notPresent: 4
+        flightlogs:
+          read: 2
+          fullAccess: 5
+          deny: 5
+          notPresent: 5
+        timereporter:
+          read: 1
+          fullAccess: 3
+          deny: 5
+          notPresent: 5
+        weborder:
+          read: 1
+          fullAccess: 4
+          deny: 2
+          notPresent: 2
+    actionable_steps:
+      by_asset_type:
+        Application:
+        - notPresent
+    observable_steps:
+      by_asset_type:
+        Application:
+        - fullAccess
+        - notPresent
+
